@@ -1,0 +1,477 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayes 
+Relation:     train
+Instances:    258
+Attributes:   63
+              Date
+              USD/JPY
+              EUR/USD
+              GBP/USD
+              AUD/USD
+              S&P 500
+              Dow Jones Industrial Average
+              Nasdaq 100
+              Nikkei 225
+              Gold Futures
+              Silver Futures
+              Copper Futures
+              Crude Oil WTI Futures
+              Brent Oil Futures
+              Natural Gas Futures
+              US Cotton #2 Futures
+              US Coffee C Futures
+              Apple
+              Alphabet A
+              Facebook
+              NVIDIA
+              Citigroup
+              AT&T
+              3M
+              BP
+              Tesla
+              Amazon.com
+              Japan Government Bond Futures
+              US 10 Year T-Note Futures
+              US 30 Year T-Bond Futures
+              US 2 Year T-Note Futures
+              USD/JPY T-1
+              EUR/USD T-1
+              GBP/USD T-1
+              AUD/USD T-1
+              BTC/USD T-1
+              S&P 500 T-1
+              Dow Jones Industrial Average T-1
+              Nasdaq 100 T-1
+              Nikkei 225 T-1
+              Gold Futures T-1
+              Silver Futures T-1
+              Copper Futures T-1
+              Crude Oil WTI Futures T-1
+              Brent Oil Futures T-1
+              Natural Gas Futures T-1
+              US Cotton #2 Futures T-1
+              US Coffee C Futures T-1
+              Apple T-1
+              Alphabet A T-1
+              Facebook T-1
+              NVIDIA T-1
+              Citigroup T-1
+              AT&T T-1
+              3M T-1
+              BP T-1
+              Tesla T-1
+              Amazon.com T-1
+              Japan Government Bond Futures T-1
+              US 10 Year T-Note Futures T-1
+              US 30 Year T-Bond Futures T-1
+              US 2 Year T-Note Futures T-1
+              BTC/USD
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Naive Bayes Classifier
+
+                                       Class
+Attribute                                 up     down
+                                      (0.53)   (0.47)
+======================================================
+Date
+  mean                               193.7701 202.1375
+  std. dev.                          117.7648  100.968
+  weight sum                              138      120
+  precision                            1.4981   1.4981
+
+USD/JPY
+  up                                     63.0     54.0
+  down                                   74.0     63.0
+  equal                                   4.0      6.0
+  [total]                               141.0    123.0
+
+EUR/USD
+  up                                     70.0     55.0
+  down                                   69.0     63.0
+  equal                                   2.0      5.0
+  [total]                               141.0    123.0
+
+GBP/USD
+  down                                   72.0     67.0
+  up                                     67.0     55.0
+  equal                                   2.0      1.0
+  [total]                               141.0    123.0
+
+AUD/USD
+  up                                     75.0     50.0
+  down                                   64.0     69.0
+  equal                                   2.0      4.0
+  [total]                               141.0    123.0
+
+S&P 500
+  down                                   51.0     55.0
+  up                                     81.0     56.0
+  equal                                   9.0     12.0
+  [total]                               141.0    123.0
+
+Dow Jones Industrial Average
+  down                                   56.0     55.0
+  up                                     75.0     56.0
+  equal                                  10.0     12.0
+  [total]                               141.0    123.0
+
+Nasdaq 100
+  up                                     79.0     57.0
+  down                                   53.0     54.0
+  equal                                   9.0     12.0
+  [total]                               141.0    123.0
+
+Nikkei 225
+  down                                   62.0     47.0
+  equal                                  18.0     15.0
+  up                                     61.0     61.0
+  [total]                               141.0    123.0
+
+Gold Futures
+  down                                   45.0     62.0
+  up                                     94.0     60.0
+  equal                                   2.0      1.0
+  [total]                               141.0    123.0
+
+Silver Futures
+  down                                   54.0     65.0
+  up                                     86.0     57.0
+  [total]                               140.0    122.0
+
+Copper Futures
+  down                                   73.0     60.0
+  up                                     65.0     62.0
+  equal                                   3.0      1.0
+  [total]                               141.0    123.0
+
+Crude Oil WTI Futures
+  up                                     74.0     57.0
+  down                                   63.0     63.0
+  equal                                   4.0      3.0
+  [total]                               141.0    123.0
+
+Brent Oil Futures
+  up                                     74.0     60.0
+  down                                   63.0     57.0
+  equal                                   4.0      6.0
+  [total]                               141.0    123.0
+
+Natural Gas Futures
+  down                                   81.0     62.0
+  up                                     57.0     57.0
+  equal                                   3.0      4.0
+  [total]                               141.0    123.0
+
+US Cotton #2 Futures
+  up                                     69.0     54.0
+  down                                   63.0     57.0
+  equal                                   9.0     12.0
+  [total]                               141.0    123.0
+
+US Coffee C Futures
+  down                                   63.0     57.0
+  up                                     69.0     54.0
+  equal                                   9.0     12.0
+  [total]                               141.0    123.0
+
+Apple
+  up                                     76.0     59.0
+  down                                   56.0     51.0
+  equal                                   9.0     13.0
+  [total]                               141.0    123.0
+
+Alphabet A
+  down                                   62.0     57.0
+  up                                     70.0     54.0
+  equal                                   9.0     12.0
+  [total]                               141.0    123.0
+
+Facebook
+  down                                   59.0     53.0
+  up                                     73.0     58.0
+  equal                                   9.0     12.0
+  [total]                               141.0    123.0
+
+NVIDIA
+  up                                     75.0     56.0
+  down                                   57.0     54.0
+  equal                                   9.0     13.0
+  [total]                               141.0    123.0
+
+Citigroup
+  up                                     54.0     52.0
+  down                                   78.0     59.0
+  equal                                   9.0     12.0
+  [total]                               141.0    123.0
+
+AT&T
+  down                                   62.0     55.0
+  up                                     69.0     55.0
+  equal                                  10.0     13.0
+  [total]                               141.0    123.0
+
+3M
+  down                                   64.0     58.0
+  up                                     68.0     51.0
+  equal                                   9.0     14.0
+  [total]                               141.0    123.0
+
+BP
+  up                                     60.0     49.0
+  down                                   69.0     62.0
+  equal                                  12.0     12.0
+  [total]                               141.0    123.0
+
+Tesla
+  down                                   60.0     54.0
+  up                                     72.0     57.0
+  equal                                   9.0     12.0
+  [total]                               141.0    123.0
+
+Amazon.com
+  up                                     75.0     50.0
+  down                                   57.0     61.0
+  equal                                   9.0     12.0
+  [total]                               141.0    123.0
+
+Japan Government Bond Futures
+  down                                   72.0     60.0
+  up                                     62.0     59.0
+  equal                                   7.0      4.0
+  [total]                               141.0    123.0
+
+US 10 Year T-Note Futures
+  down                                   61.0     48.0
+  up                                     78.0     68.0
+  equal                                   2.0      7.0
+  [total]                               141.0    123.0
+
+US 30 Year T-Bond Futures
+  down                                   59.0     46.0
+  up                                     79.0     75.0
+  equal                                   3.0      2.0
+  [total]                               141.0    123.0
+
+US 2 Year T-Note Futures
+  down                                   57.0     52.0
+  up                                     68.0     58.0
+  equal                                  16.0     13.0
+  [total]                               141.0    123.0
+
+USD/JPY T-1
+  up                                     56.0     64.0
+  down                                   80.0     53.0
+  equal                                   5.0      6.0
+  [total]                               141.0    123.0
+
+EUR/USD T-1
+  down                                   73.0     54.0
+  up                                     65.0     67.0
+  equal                                   3.0      2.0
+  [total]                               141.0    123.0
+
+GBP/USD T-1
+  down                                   75.0     59.0
+  up                                     64.0     62.0
+  equal                                   2.0      2.0
+  [total]                               141.0    123.0
+
+AUD/USD T-1
+  down                                   70.0     57.0
+  up                                     67.0     63.0
+  equal                                   4.0      3.0
+  [total]                               141.0    123.0
+
+BTC/USD T-1
+  up                                     74.0     67.0
+  down                                   66.0     55.0
+  [total]                               140.0    122.0
+
+S&P 500 T-1
+  down                                   55.0     39.0
+  equal                                  13.0     10.0
+  up                                     73.0     74.0
+  [total]                               141.0    123.0
+
+Dow Jones Industrial Average T-1
+  down                                   57.0     45.0
+  equal                                  13.0     11.0
+  up                                     71.0     67.0
+  [total]                               141.0    123.0
+
+Nasdaq 100 T-1
+  down                                   58.0     36.0
+  equal                                  13.0     10.0
+  up                                     70.0     77.0
+  [total]                               141.0    123.0
+
+Nikkei 225 T-1
+  down                                   56.0     55.0
+  equal                                  18.0     14.0
+  up                                     67.0     54.0
+  [total]                               141.0    123.0
+
+Gold Futures T-1
+  up                                     76.0     74.0
+  down                                   64.0     48.0
+  equal                                   1.0      1.0
+  [total]                               141.0    123.0
+
+Silver Futures T-1
+  down                                   73.0     47.0
+  up                                     67.0     75.0
+  [total]                               140.0    122.0
+
+Copper Futures T-1
+  up                                     72.0     65.0
+  down                                   67.0     56.0
+  equal                                   2.0      2.0
+  [total]                               141.0    123.0
+
+Crude Oil WTI Futures T-1
+  down                                   68.0     60.0
+  up                                     68.0     61.0
+  equal                                   5.0      2.0
+  [total]                               141.0    123.0
+
+Brent Oil Futures T-1
+  up                                     65.0     64.0
+  down                                   69.0     56.0
+  equal                                   7.0      3.0
+  [total]                               141.0    123.0
+
+Natural Gas Futures T-1
+  up                                     56.0     62.0
+  down                                   81.0     58.0
+  equal                                   4.0      3.0
+  [total]                               141.0    123.0
+
+US Cotton #2 Futures T-1
+  up                                     61.0     59.0
+  down                                   67.0     54.0
+  equal                                  13.0     10.0
+  [total]                               141.0    123.0
+
+US Coffee C Futures T-1
+  up                                     68.0     57.0
+  down                                   60.0     55.0
+  equal                                  13.0     11.0
+  [total]                               141.0    123.0
+
+Apple T-1
+  down                                   62.0     37.0
+  up                                     66.0     75.0
+  equal                                  13.0     11.0
+  [total]                               141.0    123.0
+
+Alphabet A T-1
+  down                                   61.0     46.0
+  equal                                  13.0     10.0
+  up                                     67.0     67.0
+  [total]                               141.0    123.0
+
+Facebook T-1
+  down                                   57.0     48.0
+  equal                                  14.0     10.0
+  up                                     70.0     65.0
+  [total]                               141.0    123.0
+
+NVIDIA T-1
+  down                                   58.0     45.0
+  up                                     70.0     68.0
+  equal                                  13.0     10.0
+  [total]                               141.0    123.0
+
+Citigroup T-1
+  down                                   69.0     49.0
+  up                                     59.0     64.0
+  equal                                  13.0     10.0
+  [total]                               141.0    123.0
+
+AT&T T-1
+  down                                   58.0     51.0
+  up                                     68.0     61.0
+  equal                                  15.0     11.0
+  [total]                               141.0    123.0
+
+3M T-1
+  down                                   63.0     51.0
+  up                                     65.0     61.0
+  equal                                  13.0     11.0
+  [total]                               141.0    123.0
+
+BP T-1
+  up                                     61.0     48.0
+  down                                   69.0     64.0
+  equal                                  11.0     11.0
+  [total]                               141.0    123.0
+
+Tesla T-1
+  down                                   60.0     47.0
+  up                                     68.0     66.0
+  equal                                  13.0     10.0
+  [total]                               141.0    123.0
+
+Amazon.com T-1
+  down                                   56.0     53.0
+  equal                                  13.0     10.0
+  up                                     72.0     60.0
+  [total]                               141.0    123.0
+
+Japan Government Bond Futures T-1
+  up                                     60.0     67.0
+  equal                                   7.0      5.0
+  down                                   74.0     51.0
+  [total]                               141.0    123.0
+
+US 10 Year T-Note Futures T-1
+  up                                     74.0     65.0
+  down                                   60.0     55.0
+  equal                                   7.0      3.0
+  [total]                               141.0    123.0
+
+US 30 Year T-Bond Futures T-1
+  up                                     77.0     68.0
+  down                                   61.0     54.0
+  equal                                   3.0      1.0
+  [total]                               141.0    123.0
+
+US 2 Year T-Note Futures T-1
+  equal                                  13.0     11.0
+  down                                   61.0     52.0
+  up                                     67.0     60.0
+  [total]                               141.0    123.0
+
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         142               55.0388 %
+Incorrectly Classified Instances       116               44.9612 %
+Kappa statistic                          0.0993
+Mean absolute error                      0.4642
+Root mean squared error                  0.5754
+Relative absolute error                 93.2903 %
+Root relative squared error            115.3628 %
+Total Number of Instances              258     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.558    0.458    0.583      0.558    0.570      0.099    0.552     0.565     up
+                 0.542    0.442    0.516      0.542    0.528      0.099    0.552     0.503     down
+Weighted Avg.    0.550    0.451    0.552      0.550    0.551      0.099    0.552     0.536     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 77 61 |  a = up
+ 55 65 |  b = down
+

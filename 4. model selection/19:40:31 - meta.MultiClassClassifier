@@ -1,0 +1,475 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.MultiClassClassifier -M 0 -R 2.0 -S 1 -W weka.classifiers.functions.Logistic -- -R 1.0E-8 -M -1 -num-decimal-places 4
+Relation:     train
+Instances:    258
+Attributes:   63
+              Date
+              USD/JPY
+              EUR/USD
+              GBP/USD
+              AUD/USD
+              S&P 500
+              Dow Jones Industrial Average
+              Nasdaq 100
+              Nikkei 225
+              Gold Futures
+              Silver Futures
+              Copper Futures
+              Crude Oil WTI Futures
+              Brent Oil Futures
+              Natural Gas Futures
+              US Cotton #2 Futures
+              US Coffee C Futures
+              Apple
+              Alphabet A
+              Facebook
+              NVIDIA
+              Citigroup
+              AT&T
+              3M
+              BP
+              Tesla
+              Amazon.com
+              Japan Government Bond Futures
+              US 10 Year T-Note Futures
+              US 30 Year T-Bond Futures
+              US 2 Year T-Note Futures
+              USD/JPY T-1
+              EUR/USD T-1
+              GBP/USD T-1
+              AUD/USD T-1
+              BTC/USD T-1
+              S&P 500 T-1
+              Dow Jones Industrial Average T-1
+              Nasdaq 100 T-1
+              Nikkei 225 T-1
+              Gold Futures T-1
+              Silver Futures T-1
+              Copper Futures T-1
+              Crude Oil WTI Futures T-1
+              Brent Oil Futures T-1
+              Natural Gas Futures T-1
+              US Cotton #2 Futures T-1
+              US Coffee C Futures T-1
+              Apple T-1
+              Alphabet A T-1
+              Facebook T-1
+              NVIDIA T-1
+              Citigroup T-1
+              AT&T T-1
+              3M T-1
+              BP T-1
+              Tesla T-1
+              Amazon.com T-1
+              Japan Government Bond Futures T-1
+              US 10 Year T-Note Futures T-1
+              US 30 Year T-Bond Futures T-1
+              US 2 Year T-Note Futures T-1
+              BTC/USD
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+MultiClassClassifier
+
+Classifier 1
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                                                           Class
+Variable                                                      up
+================================================================
+Date                                                     -0.0026
+USD/JPY=up                                               -0.0696
+USD/JPY=down                                              0.4389
+USD/JPY=equal                                            -3.0723
+EUR/USD=up                                                0.3537
+EUR/USD=down                                              -0.298
+EUR/USD=equal                                            -0.7231
+GBP/USD=down                                             -0.3604
+GBP/USD=up                                               -0.5461
+GBP/USD=equal                                            58.4369
+AUD/USD=up                                                0.4004
+AUD/USD=down                                             -0.1481
+AUD/USD=equal                                            -4.1179
+S&P 500=down                                             -1.6319
+S&P 500=up                                               -0.3714
+S&P 500=equal                                             7.1137
+Dow Jones Industrial Average=down                        -2.0287
+Dow Jones Industrial Average=up                          -1.5634
+Dow Jones Industrial Average=equal                       12.3874
+Nasdaq 100=up                                            -2.1866
+Nasdaq 100=down                                           0.2508
+Nasdaq 100=equal                                          7.1137
+Nikkei 225=down                                          -0.1958
+Nikkei 225=equal                                          1.2429
+Nikkei 225=up                                            -0.3371
+Gold Futures=down                                        -0.9345
+Gold Futures=up                                           0.5425
+Gold Futures=equal                                       24.4062
+Silver Futures=up                                         0.6288
+Copper Futures=down                                       0.1538
+Copper Futures=up                                        -0.8747
+Copper Futures=equal                                     23.4042
+Crude Oil WTI Futures=up                                 -0.7416
+Crude Oil WTI Futures=down                                -1.342
+Crude Oil WTI Futures=equal                              27.3836
+Brent Oil Futures=up                                      0.0533
+Brent Oil Futures=down                                   -0.1237
+Brent Oil Futures=equal                                   0.5787
+Natural Gas Futures=down                                  1.4373
+Natural Gas Futures=up                                    0.7292
+Natural Gas Futures=equal                               -28.1697
+US Cotton #2 Futures=up                                   0.3693
+US Cotton #2 Futures=down                                -0.2514
+US Cotton #2 Futures=equal                               -0.4336
+US Coffee C Futures=down                                 -1.7599
+US Coffee C Futures=up                                   -0.1948
+US Coffee C Futures=equal                                 7.1137
+Apple=up                                                  3.2222
+Apple=down                                                3.4021
+Apple=equal                                             -22.7363
+Alphabet A=down                                          -0.4873
+Alphabet A=up                                            -1.4624
+Alphabet A=equal                                          7.1137
+Facebook=down                                            -0.9489
+Facebook=up                                              -1.0129
+Facebook=equal                                            7.1137
+NVIDIA=up                                                 4.0221
+NVIDIA=down                                               2.0229
+NVIDIA=equal                                            -20.9634
+Citigroup=up                                              -2.271
+Citigroup=down                                             0.245
+Citigroup=equal                                           7.1137
+AT&T=down                                                 0.2406
+AT&T=up                                                   0.9583
+AT&T=equal                                               -3.9896
+3M=down                                                   3.3732
+3M=up                                                     3.6554
+3M=equal                                                -23.3401
+BP=up                                                     -0.446
+BP=down                                                  -0.2299
+BP=equal                                                  2.1248
+Tesla=down                                               -0.5137
+Tesla=up                                                 -1.4367
+Tesla=equal                                               7.1137
+Amazon.com=up                                            -0.1196
+Amazon.com=down                                          -1.8405
+Amazon.com=equal                                          7.1137
+Japan Government Bond Futures=down                        0.5749
+Japan Government Bond Futures=up                          -0.521
+Japan Government Bond Futures=equal                      -0.4231
+US 10 Year T-Note Futures=down                            0.0248
+US 10 Year T-Note Futures=up                              0.8722
+US 10 Year T-Note Futures=equal                          -8.3766
+US 30 Year T-Bond Futures=down                            1.5709
+US 30 Year T-Bond Futures=up                             -1.3178
+US 30 Year T-Bond Futures=equal                          -5.0288
+US 2 Year T-Note Futures=down                              0.168
+US 2 Year T-Note Futures=up                              -0.5007
+US 2 Year T-Note Futures=equal                            0.8989
+USD/JPY T-1=up                                           -1.1696
+USD/JPY T-1=down                                          1.1829
+USD/JPY T-1=equal                                          -0.16
+EUR/USD T-1=down                                          0.0733
+EUR/USD T-1=up                                           -0.2636
+EUR/USD T-1=equal                                         4.1416
+GBP/USD T-1=down                                          0.1733
+GBP/USD T-1=up                                           -0.2538
+GBP/USD T-1=equal                                         2.6081
+AUD/USD T-1=down                                           0.139
+AUD/USD T-1=up                                           -0.2986
+AUD/USD T-1=equal                                         2.1016
+BTC/USD T-1=down                                         -0.4678
+S&P 500 T-1=down                                         -3.5201
+S&P 500 T-1=equal                                          11.14
+S&P 500 T-1=up                                           -0.1028
+Dow Jones Industrial Average T-1=down                     4.9608
+Dow Jones Industrial Average T-1=equal                  -25.4754
+Dow Jones Industrial Average T-1=up                       3.2478
+Nasdaq 100 T-1=down                                      -0.2215
+Nasdaq 100 T-1=equal                                       11.14
+Nasdaq 100 T-1=up                                        -3.1773
+Nikkei 225 T-1=down                                      -0.6596
+Nikkei 225 T-1=equal                                     -1.0997
+Nikkei 225 T-1=up                                         1.1024
+Gold Futures T-1=up                                      -0.2865
+Gold Futures T-1=down                                     0.2865
+Gold Futures T-1=equal                                         0
+Silver Futures T-1=up                                    -2.3787
+Copper Futures T-1=up                                    -0.0337
+Copper Futures T-1=down                                   -0.285
+Copper Futures T-1=equal                                 10.3205
+Crude Oil WTI Futures T-1=down                           -1.6328
+Crude Oil WTI Futures T-1=up                             -1.1725
+Crude Oil WTI Futures T-1=equal                          36.8887
+Brent Oil Futures T-1=up                                 -0.8438
+Brent Oil Futures T-1=down                                0.4122
+Brent Oil Futures T-1=equal                               3.5972
+Natural Gas Futures T-1=up                                0.7407
+Natural Gas Futures T-1=down                              2.2362
+Natural Gas Futures T-1=equal                           -38.9492
+US Cotton #2 Futures T-1=up                              -0.4841
+US Cotton #2 Futures T-1=down                            -0.3335
+US Cotton #2 Futures T-1=equal                            2.7152
+US Coffee C Futures T-1=up                                2.9169
+US Coffee C Futures T-1=down                                 3.2
+US Coffee C Futures T-1=equal                           -19.4275
+Apple T-1=down                                            4.4195
+Apple T-1=up                                              2.8932
+Apple T-1=equal                                         -22.5107
+Alphabet A T-1=down                                       -1.957
+Alphabet A T-1=equal                                       11.14
+Alphabet A T-1=up                                        -1.4433
+Facebook T-1=down                                        -0.9689
+Facebook T-1=equal                                        5.1256
+Facebook T-1=up                                          -0.6702
+NVIDIA T-1=down                                          -1.5713
+NVIDIA T-1=up                                            -1.8399
+NVIDIA T-1=equal                                           11.14
+Citigroup T-1=down                                       -1.2991
+Citigroup T-1=up                                         -2.0538
+Citigroup T-1=equal                                        11.14
+AT&T T-1=down                                            -0.1028
+AT&T T-1=up                                                0.564
+AT&T T-1=equal                                           -1.3752
+3M T-1=down                                               2.8587
+3M T-1=up                                                 2.3414
+3M T-1=equal                                            -16.4966
+BP T-1=up                                                 1.6956
+BP T-1=down                                              -0.2665
+BP T-1=equal                                              -4.824
+Tesla T-1=down                                            -1.652
+Tesla T-1=up                                             -1.7379
+Tesla T-1=equal                                            11.14
+Amazon.com T-1=down                                      -2.8756
+Amazon.com T-1=equal                                       11.14
+Amazon.com T-1=up                                        -0.5398
+Japan Government Bond Futures T-1=up                     -0.3925
+Japan Government Bond Futures T-1=equal                   2.1172
+Japan Government Bond Futures T-1=down                    0.0767
+US 10 Year T-Note Futures T-1=up                          0.0428
+US 10 Year T-Note Futures T-1=down                       -0.5599
+US 10 Year T-Note Futures T-1=equal                       4.2326
+US 30 Year T-Bond Futures T-1=up                         -0.6582
+US 30 Year T-Bond Futures T-1=down                        0.0114
+US 30 Year T-Bond Futures T-1=equal                      20.7748
+US 2 Year T-Note Futures T-1=equal                        2.0408
+US 2 Year T-Note Futures T-1=down                        -0.7014
+US 2 Year T-Note Futures T-1=up                           0.0511
+Intercept                                                  2.132
+
+
+Odds Ratios...
+                                                           Class
+Variable                                                      up
+================================================================
+Date                                                      0.9974
+USD/JPY=up                                                0.9328
+USD/JPY=down                                              1.5511
+USD/JPY=equal                                             0.0463
+EUR/USD=up                                                1.4244
+EUR/USD=down                                              0.7423
+EUR/USD=equal                                             0.4853
+GBP/USD=down                                              0.6974
+GBP/USD=up                                                0.5792
+GBP/USD=equal                              2.3923419571391917E25
+AUD/USD=up                                                1.4924
+AUD/USD=down                                              0.8623
+AUD/USD=equal                                             0.0163
+S&P 500=down                                              0.1956
+S&P 500=up                                                0.6898
+S&P 500=equal                                          1228.6258
+Dow Jones Industrial Average=down                         0.1315
+Dow Jones Industrial Average=up                           0.2094
+Dow Jones Industrial Average=equal                   239750.2312
+Nasdaq 100=up                                             0.1123
+Nasdaq 100=down                                           1.2851
+Nasdaq 100=equal                                        1228.626
+Nikkei 225=down                                           0.8222
+Nikkei 225=equal                                          3.4656
+Nikkei 225=up                                             0.7138
+Gold Futures=down                                         0.3928
+Gold Futures=up                                           1.7202
+Gold Futures=equal                          3.976172240744555E10
+Silver Futures=up                                         1.8753
+Copper Futures=down                                       1.1662
+Copper Futures=up                                          0.417
+Copper Futures=equal                       1.4599096396986307E10
+Crude Oil WTI Futures=up                                  0.4763
+Crude Oil WTI Futures=down                                0.2613
+Crude Oil WTI Futures=equal                 7.808194093168535E11
+Brent Oil Futures=up                                      1.0548
+Brent Oil Futures=down                                    0.8836
+Brent Oil Futures=equal                                   1.7836
+Natural Gas Futures=down                                  4.2092
+Natural Gas Futures=up                                    2.0734
+Natural Gas Futures=equal                                      0
+US Cotton #2 Futures=up                                   1.4467
+US Cotton #2 Futures=down                                 0.7777
+US Cotton #2 Futures=equal                                0.6482
+US Coffee C Futures=down                                  0.1721
+US Coffee C Futures=up                                     0.823
+US Coffee C Futures=equal                              1228.6259
+Apple=up                                                 25.0844
+Apple=down                                               30.0276
+Apple=equal                                                    0
+Alphabet A=down                                           0.6143
+Alphabet A=up                                             0.2317
+Alphabet A=equal                                       1228.6259
+Facebook=down                                             0.3872
+Facebook=up                                               0.3632
+Facebook=equal                                         1228.6259
+NVIDIA=up                                                55.8162
+NVIDIA=down                                               7.5605
+NVIDIA=equal                                                   0
+Citigroup=up                                              0.1032
+Citigroup=down                                            1.2776
+Citigroup=equal                                        1228.6259
+AT&T=down                                                  1.272
+AT&T=up                                                   2.6071
+AT&T=equal                                                0.0185
+3M=down                                                  29.1712
+3M=up                                                    38.6839
+3M=equal                                                       0
+BP=up                                                     0.6402
+BP=down                                                   0.7946
+BP=equal                                                  8.3709
+Tesla=down                                                0.5983
+Tesla=up                                                  0.2377
+Tesla=equal                                            1228.6259
+Amazon.com=up                                             0.8873
+Amazon.com=down                                           0.1587
+Amazon.com=equal                                       1228.6259
+Japan Government Bond Futures=down                        1.7769
+Japan Government Bond Futures=up                          0.5939
+Japan Government Bond Futures=equal                        0.655
+US 10 Year T-Note Futures=down                            1.0251
+US 10 Year T-Note Futures=up                              2.3921
+US 10 Year T-Note Futures=equal                           0.0002
+US 30 Year T-Bond Futures=down                            4.8108
+US 30 Year T-Bond Futures=up                              0.2677
+US 30 Year T-Bond Futures=equal                           0.0065
+US 2 Year T-Note Futures=down                             1.1829
+US 2 Year T-Note Futures=up                               0.6061
+US 2 Year T-Note Futures=equal                            2.4568
+USD/JPY T-1=up                                            0.3105
+USD/JPY T-1=down                                          3.2639
+USD/JPY T-1=equal                                         0.8521
+EUR/USD T-1=down                                           1.076
+EUR/USD T-1=up                                            0.7683
+EUR/USD T-1=equal                                        62.9017
+GBP/USD T-1=down                                          1.1892
+GBP/USD T-1=up                                            0.7758
+GBP/USD T-1=equal                                        13.5736
+AUD/USD T-1=down                                          1.1491
+AUD/USD T-1=up                                            0.7419
+AUD/USD T-1=equal                                         8.1791
+BTC/USD T-1=down                                          0.6264
+S&P 500 T-1=down                                          0.0296
+S&P 500 T-1=equal                                     68869.8828
+S&P 500 T-1=up                                            0.9023
+Dow Jones Industrial Average T-1=down                   142.7031
+Dow Jones Industrial Average T-1=equal                         0
+Dow Jones Industrial Average T-1=up                      25.7346
+Nasdaq 100 T-1=down                                       0.8013
+Nasdaq 100 T-1=equal                                   68869.882
+Nasdaq 100 T-1=up                                         0.0417
+Nikkei 225 T-1=down                                       0.5171
+Nikkei 225 T-1=equal                                       0.333
+Nikkei 225 T-1=up                                         3.0113
+Gold Futures T-1=up                                       0.7509
+Gold Futures T-1=down                                     1.3317
+Gold Futures T-1=equal                                         1
+Silver Futures T-1=up                                     0.0927
+Copper Futures T-1=up                                     0.9669
+Copper Futures T-1=down                                    0.752
+Copper Futures T-1=equal                              30348.5016
+Crude Oil WTI Futures T-1=down                            0.1954
+Crude Oil WTI Futures T-1=up                              0.3096
+Crude Oil WTI Futures T-1=equal            1.0484711310714874E16
+Brent Oil Futures T-1=up                                  0.4301
+Brent Oil Futures T-1=down                                1.5101
+Brent Oil Futures T-1=equal                              36.4961
+Natural Gas Futures T-1=up                                2.0975
+Natural Gas Futures T-1=down                              9.3576
+Natural Gas Futures T-1=equal                                  0
+US Cotton #2 Futures T-1=up                               0.6162
+US Cotton #2 Futures T-1=down                             0.7164
+US Cotton #2 Futures T-1=equal                           15.1076
+US Coffee C Futures T-1=up                               18.4837
+US Coffee C Futures T-1=down                             24.5334
+US Coffee C Futures T-1=equal                                  0
+Apple T-1=down                                            83.058
+Apple T-1=up                                             18.0502
+Apple T-1=equal                                                0
+Alphabet A T-1=down                                       0.1413
+Alphabet A T-1=equal                                  68869.8501
+Alphabet A T-1=up                                         0.2362
+Facebook T-1=down                                         0.3795
+Facebook T-1=equal                                      168.2709
+Facebook T-1=up                                           0.5116
+NVIDIA T-1=down                                           0.2078
+NVIDIA T-1=up                                             0.1588
+NVIDIA T-1=equal                                      68869.8537
+Citigroup T-1=down                                        0.2728
+Citigroup T-1=up                                          0.1283
+Citigroup T-1=equal                                   68869.8534
+AT&T T-1=down                                             0.9023
+AT&T T-1=up                                               1.7577
+AT&T T-1=equal                                            0.2528
+3M T-1=down                                              17.4391
+3M T-1=up                                                10.3956
+3M T-1=equal                                                   0
+BP T-1=up                                                   5.45
+BP T-1=down                                               0.7661
+BP T-1=equal                                               0.008
+Tesla T-1=down                                            0.1917
+Tesla T-1=up                                              0.1759
+Tesla T-1=equal                                       68869.8568
+Amazon.com T-1=down                                       0.0564
+Amazon.com T-1=equal                                  68869.8542
+Amazon.com T-1=up                                         0.5828
+Japan Government Bond Futures T-1=up                      0.6754
+Japan Government Bond Futures T-1=equal                   8.3076
+Japan Government Bond Futures T-1=down                    1.0798
+US 10 Year T-Note Futures T-1=up                          1.0437
+US 10 Year T-Note Futures T-1=down                        0.5712
+US 10 Year T-Note Futures T-1=equal                      68.8971
+US 30 Year T-Bond Futures T-1=up                          0.5178
+US 30 Year T-Bond Futures T-1=down                        1.0115
+US 30 Year T-Bond Futures T-1=equal              1052852764.6049
+US 2 Year T-Note Futures T-1=equal                        7.6971
+US 2 Year T-Note Futures T-1=down                         0.4959
+US 2 Year T-Note Futures T-1=up                           1.0524
+
+
+
+
+Time taken to build model: 0.14 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         138               53.4884 %
+Incorrectly Classified Instances       120               46.5116 %
+Kappa statistic                          0.0662
+Mean absolute error                      0.4697
+Root mean squared error                  0.6375
+Relative absolute error                 94.394  %
+Root relative squared error            127.8072 %
+Total Number of Instances              258     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.558    0.492    0.566      0.558    0.562      0.066    0.525     0.538     up
+                 0.508    0.442    0.500      0.508    0.504      0.066    0.525     0.482     down
+Weighted Avg.    0.535    0.469    0.535      0.535    0.535      0.066    0.525     0.512     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 77 61 |  a = up
+ 59 61 |  b = down
+

@@ -1,0 +1,335 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.AdaBoostM1 -P 100 -S 1 -I 10 -W weka.classifiers.trees.DecisionStump
+Relation:     train
+Instances:    258
+Attributes:   63
+              Date
+              USD/JPY
+              EUR/USD
+              GBP/USD
+              AUD/USD
+              S&P 500
+              Dow Jones Industrial Average
+              Nasdaq 100
+              Nikkei 225
+              Gold Futures
+              Silver Futures
+              Copper Futures
+              Crude Oil WTI Futures
+              Brent Oil Futures
+              Natural Gas Futures
+              US Cotton #2 Futures
+              US Coffee C Futures
+              Apple
+              Alphabet A
+              Facebook
+              NVIDIA
+              Citigroup
+              AT&T
+              3M
+              BP
+              Tesla
+              Amazon.com
+              Japan Government Bond Futures
+              US 10 Year T-Note Futures
+              US 30 Year T-Bond Futures
+              US 2 Year T-Note Futures
+              USD/JPY T-1
+              EUR/USD T-1
+              GBP/USD T-1
+              AUD/USD T-1
+              BTC/USD T-1
+              S&P 500 T-1
+              Dow Jones Industrial Average T-1
+              Nasdaq 100 T-1
+              Nikkei 225 T-1
+              Gold Futures T-1
+              Silver Futures T-1
+              Copper Futures T-1
+              Crude Oil WTI Futures T-1
+              Brent Oil Futures T-1
+              Natural Gas Futures T-1
+              US Cotton #2 Futures T-1
+              US Coffee C Futures T-1
+              Apple T-1
+              Alphabet A T-1
+              Facebook T-1
+              NVIDIA T-1
+              Citigroup T-1
+              AT&T T-1
+              3M T-1
+              BP T-1
+              Tesla T-1
+              Amazon.com T-1
+              Japan Government Bond Futures T-1
+              US 10 Year T-Note Futures T-1
+              US 30 Year T-Bond Futures T-1
+              US 2 Year T-Note Futures T-1
+              BTC/USD
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+AdaBoostM1: Base classifiers and their weights: 
+
+Decision Stump
+
+Classifications
+
+Date <= 75.5 : up
+Date > 75.5 : down
+Date is missing : up
+
+Class distributions
+
+Date <= 75.5
+up	down	
+0.7555555555555555	0.24444444444444444	
+Date > 75.5
+up	down	
+0.48826291079812206	0.5117370892018779	
+Date is missing
+up	down	
+0.5348837209302325	0.46511627906976744	
+
+
+Weight: 0.22
+
+Decision Stump
+
+Classifications
+
+Gold Futures = down : down
+Gold Futures != down : up
+Gold Futures is missing : up
+
+Class distributions
+
+Gold Futures = down
+up	down	
+0.4564106475478603	0.5435893524521398	
+Gold Futures != down
+up	down	
+0.6470499014105869	0.3529500985894131	
+Gold Futures is missing
+up	down	
+0.571055031924597	0.428944968075403	
+
+
+Weight: 0.43
+
+Decision Stump
+
+Classifications
+
+Date <= 380.5 : up
+Date > 380.5 : up
+Date is missing : up
+
+Class distributions
+
+Date <= 380.5
+up	down	
+0.5437432038208052	0.45625679617919473	
+Date > 380.5
+up	down	
+1.0000000000000053	-5.276372991212053E-15	
+Date is missing
+up	down	
+0.5519294926355636	0.4480705073644363	
+
+
+Weight: 0.21
+
+Decision Stump
+
+Classifications
+
+Date <= 380.5 : down
+Date > 380.5 : up
+Date is missing : down
+
+Class distributions
+
+Date <= 380.5
+up	down	
+0.4917386464656323	0.5082613535343676	
+Date > 380.5
+up	down	
+0.9999999999999977	2.32974869439656E-15	
+Date is missing
+up	down	
+0.49999999999999933	0.5000000000000008	
+
+
+Weight: 0.07
+
+Decision Stump
+
+Classifications
+
+Date <= 380.5 : up
+Date > 380.5 : up
+Date is missing : up
+
+Class distributions
+
+Date <= 380.5
+up	down	
+0.5079970864991106	0.49200291350088937	
+Date > 380.5
+up	down	
+0.9999999999999952	4.920309897365422E-15	
+Date is missing
+up	down	
+0.5157423865444245	0.48425761345557544	
+
+
+Weight: 0.06
+
+Decision Stump
+
+Classifications
+
+Date <= 380.5 : down
+Date > 380.5 : up
+Date is missing : up
+
+Class distributions
+
+Date <= 380.5
+up	down	
+0.4922507976663365	0.5077492023336635	
+Date > 380.5
+up	down	
+1.0000000000000042	-4.1729625623645295E-15	
+Date is missing
+up	down	
+0.5000000000000017	0.49999999999999833	
+
+
+Weight: 0.06
+
+Decision Stump
+
+Classifications
+
+Silver Futures T-1 = up : down
+Silver Futures T-1 != up : up
+Silver Futures T-1 is missing : up
+
+Class distributions
+
+Silver Futures T-1 = up
+up	down	
+0.4480880548296102	0.5519119451703898	
+Silver Futures T-1 != up
+up	down	
+0.5915562108300265	0.4084437891699735	
+Silver Futures T-1 is missing
+up	down	
+0.514809818965212	0.4851901810347879	
+
+
+Weight: 0.28
+
+Decision Stump
+
+Classifications
+
+US 10 Year T-Note Futures = equal : down
+US 10 Year T-Note Futures != equal : up
+US 10 Year T-Note Futures is missing : up
+
+Class distributions
+
+US 10 Year T-Note Futures = equal
+up	down	
+0.09625066139023358	0.9037493386097665	
+US 10 Year T-Note Futures != equal
+up	down	
+0.5335052861926767	0.4664947138073233	
+US 10 Year T-Note Futures is missing
+up	down	
+0.5201237231651348	0.4798762768348651	
+
+
+Weight: 0.18
+
+Decision Stump
+
+Classifications
+
+S&P 500 = up : up
+S&P 500 != up : down
+S&P 500 is missing : down
+
+Class distributions
+
+S&P 500 = up
+up	down	
+0.5505564304175874	0.44944356958241266	
+S&P 500 != up
+up	down	
+0.4043230357440664	0.5956769642559335	
+S&P 500 is missing
+up	down	
+0.4778538496109273	0.5221461503890726	
+
+
+Weight: 0.29
+
+Decision Stump
+
+Classifications
+
+Date <= 380.5 : down
+Date > 380.5 : up
+Date is missing : down
+
+Class distributions
+
+Date <= 380.5
+up	down	
+0.4693465358933248	0.5306534641066751	
+Date > 380.5
+up	down	
+1.0000000000000067	-6.607774165063579E-15	
+Date is missing
+up	down	
+0.4769492562525496	0.5230507437474505	
+
+
+Weight: 0.15
+
+Number of performed Iterations: 10
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         147               56.9767 %
+Incorrectly Classified Instances       111               43.0233 %
+Kappa statistic                          0.1282
+Mean absolute error                      0.4834
+Root mean squared error                  0.5081
+Relative absolute error                 97.1487 %
+Root relative squared error            101.8737 %
+Total Number of Instances              258     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.652    0.525    0.588      0.652    0.619      0.129    0.564     0.584     up
+                 0.475    0.348    0.543      0.475    0.507      0.129    0.564     0.510     down
+Weighted Avg.    0.570    0.443    0.567      0.570    0.567      0.129    0.564     0.550     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 90 48 |  a = up
+ 63 57 |  b = down
+

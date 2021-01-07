@@ -1,0 +1,90 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.LMT -I -1 -M 15 -W 0.0
+Relation:     set1.train
+Instances:    258
+Attributes:   11
+              AUD/USD
+              Gold Futures
+              Silver Futures
+              Amazon.com
+              US 10 Year T-Note Futures
+              USD/JPY T-1
+              Silver Futures T-1
+              Natural Gas Futures T-1
+              Apple T-1
+              Japan Government Bond Futures T-1
+              BTC/USD
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+Logistic model tree 
+------------------
+: LM_1:12/12 (258)
+
+Number of Leaves  : 	1
+
+Size of the Tree : 	1
+LM_1:
+Class up :
+-0.13 + 
+[AUD/USD=up] * 0.13 +
+[AUD/USD=equal] * -0.8 +
+[Gold Futures=down] * -0.39 +
+[Gold Futures=equal] * 1.09 +
+[Amazon.com=up] * 0.27 +
+[US 10 Year T-Note Futures=down] * 0.23 +
+[US 10 Year T-Note Futures=equal] * -0.88 +
+[USD/JPY T-1=down] * 0.26 +
+[Silver Futures T-1=up] * -0.26 +
+[Natural Gas Futures T-1=down] * 0.23 +
+[Apple T-1=down] * 0.29 +
+[Japan Government Bond Futures T-1=up] * -0.25
+
+Class down :
+0.13 + 
+[AUD/USD=up] * -0.13 +
+[AUD/USD=equal] * 0.8  +
+[Gold Futures=down] * 0.39 +
+[Gold Futures=equal] * -1.09 +
+[Amazon.com=up] * -0.27 +
+[US 10 Year T-Note Futures=down] * -0.23 +
+[US 10 Year T-Note Futures=equal] * 0.88 +
+[USD/JPY T-1=down] * -0.26 +
+[Silver Futures T-1=up] * 0.26 +
+[Natural Gas Futures T-1=down] * -0.23 +
+[Apple T-1=down] * -0.29 +
+[Japan Government Bond Futures T-1=up] * 0.25
+
+
+Time taken to build model: 0.09 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances          75               58.1395 %
+Incorrectly Classified Instances        54               41.8605 %
+Kappa statistic                          0.1615
+Mean absolute error                      0.4539
+Root mean squared error                  0.4951
+Relative absolute error                 90.823  %
+Root relative squared error             98.8365 %
+Total Number of Instances              129     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.677    0.516    0.571      0.677    0.620      0.164    0.621     0.646     up
+                 0.484    0.323    0.596      0.484    0.534      0.164    0.621     0.622     down
+Weighted Avg.    0.581    0.420    0.584      0.581    0.577      0.164    0.621     0.634     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 44 21 |  a = up
+ 33 31 |  b = down
+

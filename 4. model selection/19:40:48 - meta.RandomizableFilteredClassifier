@@ -1,0 +1,125 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.RandomizableFilteredClassifier -F "weka.filters.unsupervised.attribute.RandomProjection -N 10 -R 42 -D Sparse1" -S 1 -W weka.classifiers.lazy.IBk -- -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     train
+Instances:    258
+Attributes:   63
+              Date
+              USD/JPY
+              EUR/USD
+              GBP/USD
+              AUD/USD
+              S&P 500
+              Dow Jones Industrial Average
+              Nasdaq 100
+              Nikkei 225
+              Gold Futures
+              Silver Futures
+              Copper Futures
+              Crude Oil WTI Futures
+              Brent Oil Futures
+              Natural Gas Futures
+              US Cotton #2 Futures
+              US Coffee C Futures
+              Apple
+              Alphabet A
+              Facebook
+              NVIDIA
+              Citigroup
+              AT&T
+              3M
+              BP
+              Tesla
+              Amazon.com
+              Japan Government Bond Futures
+              US 10 Year T-Note Futures
+              US 30 Year T-Bond Futures
+              US 2 Year T-Note Futures
+              USD/JPY T-1
+              EUR/USD T-1
+              GBP/USD T-1
+              AUD/USD T-1
+              BTC/USD T-1
+              S&P 500 T-1
+              Dow Jones Industrial Average T-1
+              Nasdaq 100 T-1
+              Nikkei 225 T-1
+              Gold Futures T-1
+              Silver Futures T-1
+              Copper Futures T-1
+              Crude Oil WTI Futures T-1
+              Brent Oil Futures T-1
+              Natural Gas Futures T-1
+              US Cotton #2 Futures T-1
+              US Coffee C Futures T-1
+              Apple T-1
+              Alphabet A T-1
+              Facebook T-1
+              NVIDIA T-1
+              Citigroup T-1
+              AT&T T-1
+              3M T-1
+              BP T-1
+              Tesla T-1
+              Amazon.com T-1
+              Japan Government Bond Futures T-1
+              US 10 Year T-Note Futures T-1
+              US 30 Year T-Bond Futures T-1
+              US 2 Year T-Note Futures T-1
+              BTC/USD
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+RandomizableFilteredClassifier using weka.classifiers.lazy.IBk -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\"" on data filtered through weka.filters.unsupervised.attribute.RandomProjection -N 10 -R -623426683 -D Sparse1
+
+Filtered Header
+@relation train-weka.filters.supervised.attribute.NominalToBinary-weka.filters.unsupervised.attribute.RandomProjection-N10-R-623426683-DSparse1
+
+@attribute K1 numeric
+@attribute K2 numeric
+@attribute K3 numeric
+@attribute K4 numeric
+@attribute K5 numeric
+@attribute K6 numeric
+@attribute K7 numeric
+@attribute K8 numeric
+@attribute K9 numeric
+@attribute K10 numeric
+@attribute BTC/USD {up,down}
+
+@data
+
+
+Classifier Model
+IB1 instance-based classifier
+using 1 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         135               52.3256 %
+Incorrectly Classified Instances       123               47.6744 %
+Kappa statistic                          0.0413
+Mean absolute error                      0.4769
+Root mean squared error                  0.6875
+Relative absolute error                 95.8489 %
+Root relative squared error            137.8377 %
+Total Number of Instances              258     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.558    0.517    0.554      0.558    0.556      0.041    0.497     0.532     up
+                 0.483    0.442    0.487      0.483    0.485      0.041    0.497     0.463     down
+Weighted Avg.    0.523    0.482    0.523      0.523    0.523      0.041    0.497     0.500     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 77 61 |  a = up
+ 62 58 |  b = down
+

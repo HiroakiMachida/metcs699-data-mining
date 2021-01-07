@@ -1,0 +1,196 @@
+@relation test
+
+@attribute Date numeric
+@attribute USD/JPY {up,down,equal}
+@attribute EUR/USD {up,down,equal}
+@attribute GBP/USD {down,up,equal}
+@attribute AUD/USD {up,down,equal}
+@attribute 'S&P 500' {down,up,equal}
+@attribute 'Dow Jones Industrial Average' {down,up,equal}
+@attribute 'Nasdaq 100' {up,down,equal}
+@attribute 'Nikkei 225' {down,equal,up}
+@attribute 'Gold Futures' {down,up,equal}
+@attribute 'Silver Futures' {down,up}
+@attribute 'Copper Futures' {down,up,equal}
+@attribute 'Crude Oil WTI Futures' {up,down,equal}
+@attribute 'Brent Oil Futures' {up,down,equal}
+@attribute 'Natural Gas Futures' {down,up,equal}
+@attribute 'US Cotton #2 Futures' {up,down,equal}
+@attribute 'US Coffee C Futures' {down,up,equal}
+@attribute Apple {up,down,equal}
+@attribute 'Alphabet A' {down,up,equal}
+@attribute Facebook {down,up,equal}
+@attribute NVIDIA {up,down,equal}
+@attribute Citigroup {up,down,equal}
+@attribute AT&T {down,up,equal}
+@attribute 3M {down,up,equal}
+@attribute BP {up,down,equal}
+@attribute Tesla {down,up,equal}
+@attribute Amazon.com {up,down,equal}
+@attribute 'Japan Government Bond Futures' {down,up,equal}
+@attribute 'US 10 Year T-Note Futures' {down,up,equal}
+@attribute 'US 30 Year T-Bond Futures' {down,up,equal}
+@attribute 'US 2 Year T-Note Futures' {down,up,equal}
+@attribute 'USD/JPY T-1' {up,down,equal}
+@attribute 'EUR/USD T-1' {down,up,equal}
+@attribute 'GBP/USD T-1' {down,up,equal}
+@attribute 'AUD/USD T-1' {down,up,equal}
+@attribute 'BTC/USD T-1' {up,down}
+@attribute 'S&P 500 T-1' {down,equal,up}
+@attribute 'Dow Jones Industrial Average T-1' {down,equal,up}
+@attribute 'Nasdaq 100 T-1' {down,equal,up}
+@attribute 'Nikkei 225 T-1' {down,equal,up}
+@attribute 'Gold Futures T-1' {up,down,equal}
+@attribute 'Silver Futures T-1' {down,up}
+@attribute 'Copper Futures T-1' {up,down,equal}
+@attribute 'Crude Oil WTI Futures T-1' {down,up,equal}
+@attribute 'Brent Oil Futures T-1' {up,down,equal}
+@attribute 'Natural Gas Futures T-1' {up,down,equal}
+@attribute 'US Cotton #2 Futures T-1' {up,down,equal}
+@attribute 'US Coffee C Futures T-1' {up,down,equal}
+@attribute 'Apple T-1' {down,up,equal}
+@attribute 'Alphabet A T-1' {down,equal,up}
+@attribute 'Facebook T-1' {down,equal,up}
+@attribute 'NVIDIA T-1' {down,up,equal}
+@attribute 'Citigroup T-1' {down,up,equal}
+@attribute 'AT&T T-1' {down,up,equal}
+@attribute '3M T-1' {down,up,equal}
+@attribute 'BP T-1' {up,down,equal}
+@attribute 'Tesla T-1' {down,up,equal}
+@attribute 'Amazon.com T-1' {down,equal,up}
+@attribute 'Japan Government Bond Futures T-1' {up,equal,down}
+@attribute 'US 10 Year T-Note Futures T-1' {up,down,equal}
+@attribute 'US 30 Year T-Bond Futures T-1' {up,down,equal}
+@attribute 'US 2 Year T-Note Futures T-1' {equal,down,up}
+@attribute BTC/USD {up,down}
+
+@data
+66,up,up,down,up,down,down,up,down,down,down,down,up,up,down,up,down,up,down,down,up,up,down,down,up,down,up,down,down,down,down,up,down,down,down,up,down,down,down,down,up,down,up,down,up,up,up,up,down,down,down,down,down,down,down,up,down,down,up,up,up,equal,up
+186,up,up,up,up,up,up,up,down,up,up,up,down,down,down,down,up,up,up,up,up,down,up,up,down,up,up,down,up,up,up,down,up,up,down,down,down,down,down,down,up,up,up,up,up,up,up,up,up,down,down,up,up,up,down,down,up,down,up,down,up,down,down
+249,up,up,up,down,down,down,down,down,up,down,down,down,down,up,down,up,down,down,down,down,down,down,down,down,down,down,up,up,up,up,down,up,up,up,up,down,down,down,down,up,down,down,down,down,down,down,down,down,down,down,down,down,down,up,down,down,down,up,up,up,up,down
+28,down,up,up,up,up,up,up,equal,up,up,up,up,up,down,up,down,up,up,up,down,up,up,up,up,up,up,equal,up,up,up,down,down,down,down,up,down,down,down,equal,down,down,down,down,down,down,down,up,down,down,down,up,up,down,down,down,up,down,equal,down,down,down,up
+45,up,down,down,up,equal,equal,equal,up,up,up,up,down,equal,down,equal,equal,equal,equal,equal,equal,equal,equal,equal,equal,equal,equal,up,up,up,down,down,down,down,down,up,equal,equal,equal,up,down,down,down,up,up,down,equal,equal,equal,equal,equal,equal,equal,equal,equal,equal,equal,equal,down,up,down,up,down
+54,up,down,down,down,up,up,up,up,down,down,up,down,down,up,down,down,up,up,up,up,up,down,up,up,up,up,up,down,down,down,up,up,up,up,up,up,up,up,up,up,up,down,up,up,up,down,down,up,up,up,up,down,up,up,up,down,up,down,up,up,up,up
+51,down,down,down,down,up,up,up,up,up,up,down,down,down,down,down,down,up,down,up,down,down,up,down,down,up,up,up,up,down,up,up,up,up,up,down,up,up,up,down,up,up,up,up,up,up,down,up,up,up,up,up,up,up,up,up,up,up,up,down,down,down,up
+25,down,up,up,down,up,up,down,equal,up,up,up,up,up,down,down,up,down,down,down,up,down,up,down,up,down,down,equal,up,up,up,down,up,up,up,down,up,up,up,equal,down,down,up,up,down,up,down,down,up,up,up,up,up,up,down,down,up,down,up,down,down,down,up
+318,down,down,down,up,up,up,up,down,down,down,up,down,up,down,down,down,up,up,up,up,up,up,up,up,down,down,up,down,down,down,up,down,down,down,down,down,down,down,down,up,up,down,down,down,up,down,down,down,down,down,down,down,down,down,down,down,down,up,up,up,down,up
+15,up,down,down,up,up,up,up,up,down,down,down,up,up,down,up,down,equal,up,down,up,up,up,up,down,up,up,down,down,down,down,down,up,up,up,down,down,down,up,up,down,up,down,down,down,down,down,up,up,up,up,down,down,down,down,down,down,up,down,up,up,equal,up
+131,up,down,down,down,up,up,up,down,down,down,up,down,down,down,up,up,up,up,up,up,up,equal,down,down,up,up,up,down,down,down,up,up,up,up,down,down,down,down,equal,up,down,down,down,down,down,down,up,down,down,down,down,down,down,down,down,down,down,up,up,up,up,down
+276,up,down,down,down,down,down,down,down,down,down,down,down,down,down,up,up,down,down,down,down,down,down,down,down,up,up,down,up,up,up,up,up,up,up,up,up,up,up,up,up,up,up,down,down,down,down,down,up,up,up,up,down,up,up,equal,up,up,down,up,down,up,down
+32,up,up,up,equal,down,down,down,down,up,down,down,down,up,down,down,up,down,down,down,down,down,up,down,down,down,down,down,up,up,up,down,up,down,down,up,down,up,down,down,down,down,down,up,up,up,down,up,equal,down,down,up,up,down,down,up,down,down,up,down,down,down,up
+146,down,up,up,up,down,down,down,up,up,up,down,up,up,down,up,down,down,up,up,down,down,down,down,down,up,up,down,up,up,up,down,up,up,down,down,up,up,up,equal,down,down,down,down,down,up,up,down,down,up,up,up,up,up,up,down,up,up,down,down,down,down,down
+50,up,up,up,up,up,up,up,down,up,up,up,up,up,up,down,up,up,up,up,up,up,up,up,up,up,up,up,down,down,down,up,up,up,up,down,down,up,down,down,up,up,up,down,down,down,up,down,down,down,down,down,up,up,up,up,down,down,down,up,up,up,down
+282,down,down,up,up,down,up,down,up,up,up,up,up,up,down,up,up,down,up,up,down,up,up,up,up,down,up,down,down,up,down,down,down,up,up,up,up,up,up,down,up,up,up,up,up,up,up,up,up,up,up,up,up,down,up,up,up,up,up,down,down,down,up
+211,up,up,up,up,up,up,up,down,up,up,down,down,down,down,down,down,down,up,up,down,down,down,down,down,down,down,up,up,up,up,down,down,up,down,up,down,up,down,equal,down,down,up,up,up,up,up,up,down,down,down,down,up,down,up,down,up,down,down,up,up,up,down
+14,down,up,up,up,down,down,up,up,down,up,down,down,down,down,down,up,up,up,up,down,down,down,down,down,down,up,down,up,up,equal,equal,up,up,up,up,up,up,up,up,up,up,up,up,up,down,up,up,down,up,up,down,up,equal,up,down,down,down,down,down,down,down,down
+88,up,down,down,down,up,up,up,down,up,down,down,up,up,down,up,down,up,up,down,up,up,up,down,down,down,down,down,down,up,down,up,up,down,down,up,down,down,down,up,down,down,down,up,up,up,down,down,down,down,down,down,down,up,down,up,down,down,up,down,down,down,down
+109,down,down,down,up,up,up,up,down,down,up,up,down,down,up,down,up,up,up,up,up,up,up,up,equal,up,up,up,down,down,down,up,up,up,down,up,down,down,down,up,up,up,down,down,down,down,down,down,down,down,down,down,down,down,down,down,down,down,down,up,up,up,down
+190,up,up,down,down,up,up,up,up,up,down,up,up,up,down,down,down,up,down,up,up,up,down,down,up,down,up,down,up,down,up,down,up,up,up,down,up,up,up,down,down,up,up,up,up,up,up,up,up,up,up,up,up,up,up,up,up,up,equal,down,down,down,down
+46,up,down,down,down,down,down,down,down,up,up,down,down,down,up,down,up,down,down,down,down,down,down,down,down,up,down,up,up,up,up,up,down,down,up,down,equal,equal,equal,up,up,up,up,down,equal,down,equal,equal,equal,equal,equal,equal,equal,equal,equal,equal,equal,equal,up,up,up,down,down
+298,up,up,down,down,up,up,up,up,up,up,down,up,up,down,up,down,down,up,up,up,down,down,up,up,down,up,up,down,down,down,down,down,down,up,up,up,up,up,down,up,up,equal,up,up,up,up,up,up,up,up,up,up,up,down,down,up,up,up,up,up,up,down
+147,down,up,up,up,up,up,up,down,up,up,up,up,up,up,up,down,up,up,up,up,up,up,up,up,up,up,down,down,down,down,down,up,up,up,down,down,down,down,up,up,up,down,up,up,down,up,down,down,up,up,down,down,down,down,down,up,up,down,up,up,up,up
+347,down,up,up,down,down,down,down,equal,up,down,up,down,down,up,down,down,down,down,down,down,up,down,up,down,down,down,down,up,up,down,down,up,up,up,up,up,up,up,down,up,up,down,down,down,up,down,up,up,up,down,up,down,down,up,down,up,down,down,up,up,down,up
+194,equal,up,down,up,up,up,up,up,up,up,up,up,up,down,up,down,up,down,down,down,up,down,up,up,up,up,down,down,down,up,down,down,down,up,up,up,up,up,down,down,up,down,down,down,up,up,up,down,down,up,up,up,up,up,up,up,down,down,down,down,down,up
+278,up,up,up,up,up,up,up,up,down,down,up,down,up,up,down,down,down,up,up,down,up,up,up,up,up,down,down,down,down,down,down,down,down,up,up,up,up,up,down,down,up,down,equal,up,up,up,down,up,up,down,up,down,up,down,down,up,up,up,up,up,equal,down
+180,up,up,up,up,down,down,down,down,up,up,down,up,down,up,down,up,down,up,down,down,down,up,down,down,up,down,down,up,up,up,down,up,up,up,down,down,down,down,up,down,down,down,up,down,up,down,up,down,down,down,down,down,down,down,up,up,down,down,down,down,down,down
+204,up,up,up,down,up,up,up,equal,up,up,up,up,up,up,up,down,up,up,up,up,down,up,up,up,up,up,down,down,down,down,up,down,down,down,up,down,down,down,equal,up,up,down,up,up,up,up,down,down,down,down,down,down,up,down,up,up,down,up,up,up,up,up
+181,down,down,up,up,up,up,up,down,down,down,up,up,up,down,up,down,up,up,down,up,up,up,up,up,down,down,up,down,down,down,up,up,up,up,down,down,down,down,down,up,up,down,up,down,up,down,up,down,up,down,down,down,up,down,down,up,down,down,up,up,up,down
+325,up,up,up,up,up,up,up,up,up,up,up,down,down,down,down,up,up,up,up,down,up,up,up,up,up,up,up,up,down,down,down,up,up,up,up,up,up,up,down,up,up,up,up,up,down,down,up,up,up,up,up,down,down,down,down,down,up,up,down,down,equal,down
+293,up,up,up,up,up,up,up,up,down,up,up,up,up,down,up,up,up,up,up,up,up,up,up,equal,up,up,up,down,down,down,up,up,up,up,up,up,up,up,equal,up,up,up,down,down,down,up,down,up,up,up,up,up,up,down,up,down,up,down,up,up,up,down
+375,up,down,up,down,up,up,up,down,up,up,down,up,up,down,up,up,up,up,up,up,up,down,up,equal,down,up,up,up,up,down,up,up,up,up,up,down,down,up,up,up,up,up,down,up,down,up,up,up,down,down,up,down,down,down,equal,up,up,up,up,up,up,up
+373,up,up,up,up,up,up,up,down,up,up,up,down,down,up,down,up,down,up,up,up,up,up,up,down,down,up,down,up,up,up,down,down,down,up,down,up,up,down,down,down,down,up,down,down,up,down,up,down,down,down,down,up,down,up,down,up,down,up,down,down,down,up
+222,down,up,up,down,up,up,up,down,up,up,down,down,down,down,down,down,down,down,down,up,up,up,up,down,up,up,up,up,up,up,down,down,down,down,down,down,up,up,up,up,up,down,down,up,down,down,down,up,up,up,down,down,down,down,down,up,up,down,up,up,up,up
+38,down,down,down,down,down,down,down,up,down,down,down,down,down,down,down,down,down,down,down,down,down,up,down,up,down,down,down,up,up,equal,up,down,down,down,down,up,up,up,down,down,down,up,up,up,up,up,down,down,up,up,up,up,up,down,up,down,up,up,down,down,down,down
+112,down,down,down,down,up,up,up,down,down,down,up,up,up,up,up,down,up,up,up,up,up,up,up,up,up,up,up,down,down,down,up,down,down,down,down,up,up,up,up,down,up,up,up,up,up,up,up,up,up,up,down,up,up,up,up,up,up,up,up,up,up,down
+280,down,down,down,down,down,down,down,down,down,down,down,down,down,down,down,down,down,down,down,down,down,down,down,down,down,down,down,up,up,equal,up,down,down,down,down,down,down,down,down,up,up,down,down,down,up,up,down,down,down,down,down,down,down,down,down,down,up,equal,up,up,down,up
+281,down,down,up,up,up,up,up,down,up,up,up,up,up,up,up,up,up,up,up,up,up,down,up,up,up,up,up,down,down,down,down,down,down,down,up,down,down,down,down,down,down,down,down,down,down,down,down,down,down,down,down,down,down,down,down,down,down,down,up,up,equal,up
+132,up,down,down,down,down,down,down,up,up,down,down,down,up,down,down,down,down,down,down,down,down,equal,down,up,up,down,down,up,up,up,up,down,down,down,down,up,up,up,down,down,down,up,down,down,down,up,up,up,up,up,up,up,equal,down,down,up,up,up,down,down,down,down
+289,down,down,down,up,up,up,up,equal,up,down,up,up,up,up,down,up,up,up,up,up,down,down,down,up,up,up,down,up,up,up,down,up,down,down,up,down,down,down,down,up,down,down,up,up,down,down,down,down,down,down,down,down,down,down,down,down,down,down,down,down,down,up
+68,up,equal,up,up,up,up,up,down,up,up,equal,down,equal,down,down,up,down,up,up,up,up,up,up,down,up,down,up,up,down,up,up,up,down,up,down,up,down,up,up,down,down,up,up,up,up,down,up,down,down,up,up,up,up,down,down,up,up,down,up,up,up,up
+39,up,up,up,up,down,down,down,up,up,up,down,up,down,up,up,up,down,down,down,down,down,up,down,up,down,down,down,down,down,down,down,down,down,down,down,down,down,down,up,down,down,down,down,down,down,down,down,down,down,down,down,down,up,down,up,down,down,down,up,up,equal,up
+134,down,down,equal,down,up,up,up,down,down,down,down,down,down,down,down,up,up,down,up,up,down,up,down,down,down,up,down,down,down,down,up,up,down,up,up,down,down,down,down,down,down,up,down,down,down,up,up,down,down,down,down,up,up,up,up,down,down,down,up,up,down,up
+142,up,up,up,up,up,up,up,up,down,down,up,up,up,down,down,down,up,up,up,up,up,up,up,down,up,down,down,down,down,down,up,up,down,down,up,up,up,up,down,up,up,down,down,up,down,up,down,up,up,up,up,up,down,up,up,up,up,up,down,down,down,down
+299,up,up,up,up,up,up,up,up,down,up,up,up,up,up,down,up,up,up,up,up,up,up,up,up,up,up,up,down,down,down,up,up,down,down,down,up,up,up,up,up,up,down,up,up,down,up,down,down,up,up,up,down,down,up,up,down,up,up,down,down,down,up
+354,down,down,down,down,up,up,up,up,up,up,up,up,up,up,up,down,up,down,down,up,up,up,down,up,up,down,down,down,down,down,up,down,down,down,up,up,up,up,down,up,up,down,up,up,down,down,up,up,down,up,up,down,up,down,down,down,up,up,up,down,up,down
+242,down,up,down,up,down,down,down,down,down,down,down,down,down,down,down,down,down,down,down,down,down,down,up,down,down,down,up,up,up,up,down,equal,down,down,down,down,down,up,down,down,down,down,down,down,down,down,up,up,up,up,up,down,down,up,down,down,up,down,up,up,up,up
+329,up,up,down,up,up,up,up,down,up,up,up,up,up,up,up,up,up,up,up,up,up,up,up,up,up,down,equal,up,down,up,up,up,down,down,down,down,down,down,up,up,up,down,down,down,up,down,up,down,down,down,down,down,down,down,down,down,down,up,up,up,up,up
+35,down,down,down,equal,up,up,up,down,down,up,up,up,up,up,up,up,up,down,down,up,up,up,up,up,up,up,equal,down,down,down,up,down,down,down,up,down,down,down,down,up,down,down,down,down,up,down,up,down,down,down,down,down,down,down,up,down,down,down,up,up,up,up
+133,up,up,down,up,down,down,down,down,down,down,up,down,down,down,up,up,down,down,down,down,up,up,up,up,down,down,down,up,up,down,up,down,down,down,down,down,down,down,up,up,down,down,down,up,down,down,down,down,down,down,down,down,equal,down,up,up,down,down,up,up,up,up
+114,down,down,down,down,equal,equal,equal,down,down,down,down,down,down,up,equal,equal,equal,equal,equal,equal,equal,equal,equal,up,equal,equal,down,up,down,up,down,down,down,up,up,up,up,down,up,down,up,down,down,down,down,down,up,down,down,up,up,up,up,up,down,up,down,down,up,equal,up,up
+182,down,up,up,down,up,up,up,up,up,up,up,equal,up,up,down,up,up,up,up,down,up,up,down,down,down,down,up,down,down,up,down,down,up,up,down,up,up,up,down,down,down,up,up,up,down,up,down,up,up,down,up,up,up,up,up,down,down,up,down,down,down,up
+148,up,up,up,up,down,down,down,up,down,down,up,down,down,up,up,up,up,down,down,down,up,up,down,down,down,down,down,up,up,up,down,up,up,up,up,up,up,up,down,up,up,up,up,up,up,up,down,up,up,up,up,up,up,up,up,up,up,down,down,down,down,down
+370,down,up,up,up,up,down,up,up,down,down,up,up,up,down,down,up,down,up,up,up,up,down,down,down,up,up,down,down,down,up,up,down,down,equal,up,up,up,up,up,down,down,up,up,up,up,up,up,up,up,up,up,up,up,up,up,down,up,up,down,down,down,down
+360,up,up,down,down,down,down,down,equal,down,down,up,down,down,up,up,down,down,down,down,down,up,equal,up,up,down,down,down,down,down,down,up,down,up,down,up,up,up,down,equal,up,up,up,up,up,down,up,down,up,down,down,down,up,up,up,up,down,down,down,down,down,down,down
+246,down,down,up,up,up,up,up,up,down,up,up,down,down,up,up,down,up,up,up,up,up,up,up,up,up,up,up,up,up,up,up,up,up,up,down,down,down,down,down,up,up,down,up,down,up,down,up,down,down,down,down,down,down,down,up,up,down,down,up,up,up,up
+387,down,up,up,up,down,down,down,down,down,down,up,up,up,down,down,down,down,down,down,down,down,down,up,down,down,down,up,equal,up,up,down,down,up,up,up,down,up,down,up,up,up,down,up,up,down,up,down,down,down,down,down,up,up,up,down,down,down,down,down,down,equal,down
+332,up,down,down,up,up,up,up,up,up,up,up,up,up,up,up,down,equal,up,down,up,up,up,up,up,up,up,up,up,up,up,up,up,up,up,up,up,down,up,down,down,down,up,up,up,down,up,up,down,up,up,up,down,down,down,up,up,up,down,down,down,up,down
+67,up,up,down,up,up,down,up,up,down,down,up,up,up,up,down,up,down,down,up,up,up,up,down,down,up,up,down,up,up,up,up,up,down,up,up,down,down,up,down,down,down,down,up,up,down,up,down,up,down,down,up,up,down,down,up,down,up,down,down,down,down,down
+191,down,down,down,up,down,down,up,down,down,down,down,down,up,down,up,up,down,down,up,up,up,up,down,up,up,down,up,down,down,up,up,up,down,down,down,up,up,up,up,up,down,up,up,up,down,down,down,up,down,up,up,up,down,down,up,down,up,down,up,down,up,up
+150,up,down,down,down,down,down,down,equal,down,down,down,up,up,up,up,up,down,down,down,down,up,down,up,up,up,down,down,up,up,up,down,down,down,up,up,up,up,up,up,down,up,up,down,down,down,down,up,up,down,up,up,up,down,up,up,down,up,down,down,down,down,down
+174,up,down,up,down,up,up,up,up,down,down,up,up,up,down,up,up,up,up,up,up,up,down,up,up,up,up,up,up,up,up,up,down,down,equal,down,up,up,up,up,up,down,up,down,down,up,up,down,down,down,up,up,up,up,up,up,down,up,down,down,up,down,down
+312,up,up,up,up,down,up,down,up,up,up,up,up,up,up,down,down,down,down,down,down,up,up,up,down,down,down,down,down,down,up,up,up,up,up,up,up,up,up,up,down,down,down,up,up,up,down,up,up,down,down,down,up,up,up,up,up,up,down,down,down,down,up
+37,up,down,down,down,up,up,up,down,down,down,up,up,up,up,up,down,down,up,up,up,up,up,down,up,down,up,up,down,down,down,up,down,down,down,up,up,up,up,up,up,down,up,up,up,down,down,up,up,up,up,down,down,up,down,up,down,up,equal,up,up,up,down
+78,up,up,up,up,up,up,up,up,up,up,up,up,up,up,down,up,up,up,up,up,up,up,up,up,up,up,down,up,up,up,down,up,up,up,down,up,up,down,up,down,down,down,down,down,down,down,down,down,up,down,up,up,down,up,up,down,down,up,down,down,down,up
+316,down,up,up,up,down,down,up,up,down,up,up,up,up,up,up,down,up,up,down,up,down,down,down,down,up,up,down,up,up,up,down,up,up,down,down,down,down,up,down,up,down,up,up,up,down,down,down,up,up,up,up,down,down,down,down,down,up,up,up,up,up,up
+31,down,up,down,down,down,up,down,down,down,down,down,up,up,up,down,up,equal,down,down,up,up,down,down,up,down,down,up,down,down,down,down,down,down,up,up,down,down,down,equal,up,down,down,down,down,up,down,down,down,down,down,down,down,down,down,equal,down,down,down,up,up,up,up
+369,up,down,down,equal,up,up,up,up,down,down,up,up,up,up,up,up,up,up,up,up,up,up,up,up,down,up,up,down,down,down,up,down,down,down,down,up,up,up,up,up,down,down,down,down,up,down,up,up,down,down,up,down,up,down,down,up,down,down,equal,up,equal,up
+185,down,up,up,down,down,down,down,down,up,up,up,up,up,up,up,up,up,down,down,up,up,up,down,down,up,down,up,down,up,down,up,up,up,down,down,down,down,down,up,down,up,up,down,down,down,down,up,down,up,up,equal,down,down,down,down,up,down,down,up,up,equal,down
+272,equal,up,up,up,up,up,up,down,up,up,up,down,down,down,up,down,up,down,up,down,up,up,down,up,up,down,up,up,up,up,down,down,up,up,up,up,up,up,up,up,down,down,up,up,down,up,down,up,up,up,up,up,down,up,down,up,up,down,down,down,up,down
+176,down,down,up,down,up,up,up,up,down,down,equal,down,down,up,up,up,up,down,up,up,up,up,up,down,up,up,up,down,down,down,up,up,down,up,up,up,up,up,up,up,up,up,up,up,down,up,down,down,up,down,down,down,up,down,down,down,up,up,up,up,up,up
+33,down,up,down,up,up,up,up,down,up,up,up,down,up,up,down,down,down,down,down,down,up,up,up,down,down,down,up,equal,down,up,up,up,up,equal,up,down,down,down,down,up,down,down,down,up,down,down,up,down,down,down,down,down,up,down,down,down,down,down,up,up,up,up
+119,up,up,up,up,down,up,down,up,down,up,down,up,up,up,up,up,up,down,up,up,up,up,up,up,up,down,up,down,down,down,up,down,down,up,down,up,up,down,up,down,down,down,up,up,up,down,up,down,down,down,down,down,up,down,down,down,down,down,up,up,up,down
+5,up,down,up,down,up,down,up,down,up,down,down,up,up,down,up,down,up,up,up,up,up,down,up,up,down,down,down,up,up,up,down,down,up,up,up,up,up,up,up,down,down,down,up,up,up,down,down,up,up,up,up,up,up,up,up,up,up,down,down,down,down,up
+73,up,down,down,down,equal,equal,equal,up,up,up,up,up,up,up,equal,equal,equal,equal,equal,equal,equal,equal,equal,down,equal,equal,up,down,down,down,up,up,up,down,down,equal,equal,equal,up,down,down,down,down,down,down,equal,equal,equal,equal,equal,equal,equal,equal,equal,down,equal,equal,down,up,up,up,down
+72,up,up,up,down,equal,equal,equal,up,down,down,down,down,down,down,equal,equal,equal,equal,equal,equal,equal,equal,equal,down,equal,equal,down,up,up,up,down,down,down,up,up,up,up,up,down,up,up,up,up,up,up,up,up,up,up,up,up,up,up,up,down,up,up,up,up,up,equal,down
+321,down,down,down,down,down,down,up,down,down,up,up,down,down,up,up,up,down,up,down,up,down,down,down,down,up,up,up,up,up,up,down,down,down,down,up,up,up,up,up,up,up,down,up,up,down,up,down,up,up,up,down,up,up,up,up,down,up,down,down,down,down,down
+6,up,up,up,up,up,up,up,up,up,up,up,down,down,down,down,up,up,up,down,up,up,up,up,down,up,up,down,down,down,down,up,down,up,down,up,up,down,up,down,up,down,down,up,up,down,up,down,up,up,up,up,up,down,up,up,down,down,down,up,up,up,up
+123,up,up,up,up,down,up,down,up,down,down,up,down,down,up,up,down,down,up,down,down,up,down,up,up,down,down,down,down,down,down,down,up,up,up,up,up,up,up,up,up,up,up,down,down,up,up,up,down,up,down,down,up,down,up,down,down,up,up,down,down,down,down
+366,down,down,down,down,down,down,down,up,down,down,up,up,down,up,up,down,up,down,up,down,down,down,down,up,down,down,up,down,down,equal,up,up,up,up,down,up,down,up,down,up,up,up,equal,up,up,down,up,up,up,up,down,down,down,down,down,up,up,up,up,up,up,down
+96,down,down,down,down,up,down,up,down,up,up,up,down,down,down,up,down,up,up,up,up,down,up,down,down,up,up,up,up,up,up,down,down,up,up,down,up,up,up,down,up,up,up,down,down,up,up,up,up,up,up,up,up,up,down,down,up,up,down,down,up,down,up
+383,down,up,down,up,up,up,down,up,down,down,up,up,down,down,up,up,down,down,down,down,up,up,up,down,up,down,up,up,up,up,up,up,down,down,up,down,down,down,up,up,up,down,down,down,down,up,up,down,down,down,down,down,down,down,equal,up,down,down,up,up,up,up
+224,up,down,down,equal,up,up,up,down,down,down,down,down,down,down,down,down,down,up,up,up,up,down,down,down,up,down,up,down,up,down,up,up,up,down,down,down,down,down,up,down,up,down,down,down,up,down,up,down,down,down,down,down,up,down,down,up,up,up,up,up,up,down
+107,down,down,up,down,down,up,down,up,down,down,down,down,down,down,down,up,down,down,down,up,up,up,down,down,up,down,up,down,down,down,down,down,down,up,down,up,up,up,down,up,up,up,down,up,down,up,up,up,up,down,up,down,up,up,up,down,up,up,down,down,down,down
+121,up,down,down,up,up,up,up,up,up,down,down,down,down,down,up,down,up,up,up,up,down,up,down,down,up,up,down,down,down,down,up,down,up,down,down,up,up,down,up,down,up,up,down,down,down,up,up,up,up,down,up,up,up,up,up,up,down,down,down,down,down,up
+118,up,down,down,up,up,up,down,up,down,down,down,up,up,up,down,up,down,down,down,down,down,up,down,down,down,down,down,up,up,up,equal,up,up,up,down,up,up,up,up,down,down,up,up,up,down,up,down,up,up,up,up,up,up,up,equal,up,up,down,down,down,down,down
+16,down,up,down,up,down,down,up,up,down,up,up,down,down,down,up,down,up,up,down,down,up,down,up,up,down,up,down,up,down,up,up,down,down,up,up,up,up,up,up,down,down,down,up,up,down,up,down,equal,up,down,up,up,up,up,down,up,up,down,down,down,down,up
+287,down,up,up,down,down,down,up,equal,down,down,down,up,up,up,up,up,up,up,up,down,down,down,down,down,down,up,down,up,down,up,up,up,up,up,up,up,up,up,equal,down,down,up,up,up,up,up,down,up,up,up,up,up,up,down,up,up,up,up,down,down,up,down
+271,down,down,up,up,up,up,up,up,up,down,down,up,up,down,up,down,up,up,up,up,up,down,up,down,up,up,down,down,down,up,up,up,up,up,down,down,down,down,up,down,up,up,down,down,up,down,up,down,down,up,down,up,up,up,up,up,up,up,down,down,down,up
+120,up,down,up,down,up,up,down,up,down,up,up,down,down,down,up,up,up,up,down,up,up,up,up,up,up,down,down,down,down,down,up,up,up,up,down,down,up,down,up,down,up,down,up,up,up,up,up,up,down,up,up,up,up,up,up,up,down,up,down,down,down,down
+169,down,up,up,down,up,up,up,up,up,up,down,down,down,down,up,down,up,down,up,up,equal,up,down,down,down,up,up,up,up,up,down,up,up,up,down,up,up,up,up,down,down,up,up,up,up,up,down,up,up,up,down,up,up,up,up,up,down,down,down,down,down,down
+128,equal,down,down,down,down,down,down,up,up,down,down,down,down,down,up,up,down,down,down,down,down,up,down,up,down,down,down,up,down,up,down,up,up,down,up,up,down,up,up,down,down,down,up,up,down,down,down,down,up,up,down,down,up,down,up,up,up,up,up,up,equal,down
+167,up,up,up,down,up,down,down,down,up,up,down,down,down,up,down,up,down,up,down,up,down,down,up,down,up,up,up,up,up,up,down,down,up,down,down,up,up,down,down,up,up,down,up,up,down,down,up,up,down,down,down,down,down,down,down,down,down,up,up,up,up,down
+29,down,down,down,down,down,down,down,equal,up,down,up,up,up,down,down,up,down,up,down,down,down,down,down,equal,up,down,equal,up,up,up,down,up,up,up,up,up,up,up,equal,up,up,up,up,up,down,up,down,up,up,up,down,up,up,up,up,up,up,equal,up,up,up,up
+140,up,down,down,down,down,down,down,up,down,up,down,down,down,down,down,down,down,down,down,down,down,down,down,down,up,down,down,up,up,up,down,down,down,down,up,down,down,down,down,down,down,up,down,down,down,up,down,up,down,down,up,down,up,down,up,up,down,up,down,down,down,down
+365,up,up,up,up,up,down,up,down,up,up,up,equal,up,up,down,up,up,up,up,down,down,down,down,down,up,up,up,up,up,up,down,up,up,up,up,up,down,up,down,up,up,up,up,up,down,up,up,down,up,down,up,down,down,down,down,up,up,up,up,up,down,down
+24,down,up,up,up,up,up,up,equal,down,down,up,up,down,up,down,down,up,up,up,up,up,up,down,down,up,down,up,down,down,down,up,up,up,up,up,up,up,up,down,up,up,up,down,down,up,down,up,down,up,down,down,up,up,up,down,down,up,up,up,up,up,down
+269,down,down,down,up,up,up,up,up,up,up,up,down,down,up,up,up,up,up,up,up,up,up,up,down,up,up,down,down,down,down,up,down,down,down,down,down,down,down,up,up,down,down,up,up,up,up,down,down,down,down,down,down,down,down,down,up,down,down,up,up,up,up
+158,up,up,down,up,up,up,up,down,down,down,up,up,up,up,up,up,up,up,up,up,up,up,up,up,down,up,up,down,down,down,up,up,up,down,down,down,down,up,up,up,up,down,down,down,down,down,up,up,down,up,down,down,up,down,down,down,down,up,up,up,up,up
+230,up,up,up,up,up,down,up,equal,down,down,up,up,up,up,up,up,down,up,down,up,up,down,up,up,up,up,down,down,down,down,up,down,up,up,up,up,up,up,down,up,up,down,down,down,down,up,up,up,up,up,up,down,down,up,down,up,up,up,up,up,up,up
+355,down,up,down,up,up,up,up,up,up,up,down,up,up,up,up,up,up,down,down,up,down,up,up,up,up,up,up,up,up,up,down,down,down,down,down,up,up,up,up,up,up,up,up,up,up,up,down,up,down,down,up,up,up,down,up,up,down,down,down,down,down,down
+314,down,up,up,up,up,up,up,up,up,up,up,down,down,up,down,equal,up,up,up,down,up,up,down,up,up,up,up,up,up,down,down,down,up,up,down,up,up,up,up,down,down,up,up,up,down,up,up,up,up,up,up,up,up,up,up,up,up,down,down,down,down,up
+205,up,down,down,down,down,down,down,up,up,up,up,down,down,up,down,up,down,down,up,up,down,up,down,down,up,up,down,down,down,down,up,up,up,down,up,up,up,up,equal,up,up,up,up,up,up,up,down,up,up,up,up,down,up,up,up,up,up,down,down,down,down,up
+22,down,down,down,down,down,down,up,up,up,down,down,down,down,up,up,up,down,up,up,down,down,down,down,down,down,up,down,down,down,down,down,down,down,down,down,down,down,down,down,up,up,up,down,up,up,down,down,down,down,down,up,down,down,down,down,down,down,up,up,up,up,down
+367,down,up,up,up,up,up,up,down,down,down,down,down,down,down,up,up,up,up,up,up,down,down,down,down,up,up,down,up,up,equal,down,down,down,down,down,down,down,down,up,down,down,up,up,down,up,up,down,up,down,up,down,down,down,down,up,down,down,up,down,down,equal,up
+358,up,down,down,down,up,up,down,down,down,down,down,down,down,up,down,down,down,down,up,down,up,up,up,down,down,down,up,down,down,down,up,up,up,up,up,up,up,up,down,up,up,down,down,down,down,up,down,up,up,up,up,down,down,up,down,up,up,down,up,up,equal,down
+244,down,up,down,up,up,up,up,up,up,up,up,up,up,up,up,up,up,up,up,up,up,up,up,up,up,up,down,up,up,up,up,up,down,down,down,down,down,up,down,down,down,down,down,down,down,down,up,down,up,up,up,down,down,down,down,down,down,up,up,up,up,up
+307,up,up,up,up,down,down,down,up,up,up,up,up,up,up,down,down,up,down,down,down,down,down,down,down,down,down,equal,down,down,equal,down,up,down,down,up,up,up,up,up,equal,up,down,down,down,down,up,down,up,down,down,down,up,up,up,up,up,down,down,up,up,equal,up
+356,down,up,up,up,up,up,up,down,up,up,up,up,up,down,up,up,up,up,down,up,up,down,up,up,down,up,up,down,down,down,down,up,down,up,down,up,up,up,up,up,up,down,up,up,up,up,up,up,down,down,up,down,up,up,up,up,up,up,up,up,up,up
+170,up,up,down,up,down,down,up,down,up,up,up,down,down,down,down,down,down,down,up,down,up,down,up,up,up,up,up,up,up,down,down,up,up,down,down,up,up,up,up,up,up,down,down,down,down,up,down,up,down,up,up,equal,up,down,down,down,up,up,up,up,up,down
+319,up,up,up,up,up,up,up,down,down,down,down,up,up,down,down,down,up,up,up,up,up,equal,up,down,up,up,up,equal,up,up,down,down,down,up,up,up,up,up,down,down,down,up,down,up,down,down,down,up,up,up,up,up,up,up,up,down,down,up,down,down,down,down
+130,up,up,up,up,down,down,down,equal,up,down,down,down,down,down,down,up,down,down,down,down,down,down,down,down,down,down,up,up,up,up,down,down,down,up,down,down,up,down,equal,up,up,up,up,up,down,up,up,up,up,down,up,up,down,equal,down,up,down,up,up,up,up,down
+247,down,up,up,down,down,down,down,up,up,up,down,down,down,down,up,down,down,down,down,down,down,down,down,down,down,down,down,up,up,up,down,down,up,up,up,up,up,up,up,down,up,up,down,down,up,up,down,up,up,up,up,up,up,up,up,up,up,up,up,up,up,up
+82,up,up,up,up,up,up,up,down,up,up,down,down,down,down,down,down,up,up,down,up,up,down,down,down,down,down,up,up,up,up,down,up,up,down,up,down,down,down,down,up,up,up,down,down,down,down,up,down,down,down,up,down,down,down,down,up,down,equal,up,up,up,up
+251,up,down,down,down,down,down,down,down,down,down,down,down,down,down,up,down,down,down,down,down,down,down,down,down,down,down,up,down,up,up,down,down,down,down,down,up,up,up,up,down,down,up,up,up,up,up,up,up,up,up,up,up,up,up,up,up,up,down,down,down,down,up
+343,up,up,up,up,up,down,up,down,up,up,up,down,down,down,down,up,down,up,up,up,down,down,down,down,up,down,up,down,down,equal,down,down,down,down,down,down,down,down,down,down,down,up,down,down,down,up,up,down,down,up,down,down,up,up,up,down,down,up,up,up,up,up
+23,up,up,up,up,up,up,up,down,up,up,up,down,down,up,down,up,down,up,down,down,up,up,up,down,down,up,up,up,up,up,down,down,down,down,down,down,down,up,up,up,down,down,down,down,up,up,up,down,up,up,down,down,down,down,down,down,up,down,down,down,down,up
+151,down,up,up,down,up,up,up,equal,up,up,up,up,up,up,up,down,up,up,up,down,up,down,up,up,down,down,up,up,up,equal,up,down,down,down,down,down,down,down,equal,down,down,down,up,up,up,up,up,down,down,down,down,up,down,up,up,up,down,down,up,up,up,down
+235,up,down,down,down,equal,equal,equal,down,up,up,down,down,up,up,equal,equal,equal,equal,equal,equal,equal,equal,equal,down,equal,equal,up,up,up,up,down,up,down,down,down,equal,equal,equal,down,down,down,up,up,up,up,equal,equal,equal,equal,equal,equal,equal,equal,equal,up,equal,equal,up,up,up,equal,up
+212,equal,down,up,down,up,up,up,up,down,down,down,up,up,down,up,down,up,up,up,up,down,up,up,up,down,up,up,down,down,down,up,up,up,up,down,up,up,up,down,up,up,down,down,down,down,down,down,down,up,up,down,down,down,down,down,down,down,up,up,up,up,down
+156,down,up,up,up,up,up,up,down,up,up,down,down,down,up,up,up,down,up,down,up,down,up,down,up,down,up,up,up,up,up,down,up,up,up,up,down,down,down,up,down,down,up,down,up,up,down,down,down,down,down,down,down,down,down,down,down,down,down,up,up,up,down
+220,down,up,down,up,up,up,up,down,down,down,down,up,up,up,up,down,up,up,up,up,up,up,down,up,up,up,down,down,down,down,up,down,down,down,up,down,down,down,down,up,down,down,down,down,up,down,down,down,down,down,down,down,down,down,down,down,down,up,up,up,up,up
+11,up,up,up,up,up,up,up,down,up,up,down,up,up,up,down,up,up,up,up,up,up,up,up,up,up,up,up,up,up,up,down,up,down,down,down,down,down,down,up,up,down,up,down,down,down,down,up,down,down,up,down,down,down,down,down,down,down,down,up,up,up,up
+333,down,up,up,up,equal,equal,equal,up,down,down,down,down,down,up,equal,equal,equal,equal,equal,equal,equal,equal,equal,down,equal,equal,up,up,up,equal,up,down,down,up,down,up,up,up,up,up,up,up,up,up,up,up,down,equal,up,down,up,up,up,up,up,up,up,up,up,up,up,down
+202,down,down,down,down,equal,equal,equal,equal,up,up,up,down,equal,down,equal,equal,equal,equal,equal,equal,equal,equal,equal,equal,equal,equal,equal,up,up,up,down,equal,down,down,up,equal,equal,equal,equal,down,down,down,up,equal,down,equal,equal,equal,equal,equal,equal,equal,equal,equal,equal,equal,equal,equal,down,down,up,down
+104,down,down,down,down,up,up,up,up,down,down,up,up,up,up,down,down,up,up,up,up,up,up,up,up,up,up,equal,down,down,down,up,down,up,up,up,up,up,up,up,down,down,down,up,up,down,up,down,up,up,up,up,up,up,up,up,up,up,down,down,down,up,up
+324,down,up,up,up,up,up,up,down,up,up,up,up,up,down,down,up,up,up,up,up,down,down,down,down,down,up,up,down,down,equal,equal,down,down,down,down,down,down,down,up,up,up,up,up,up,up,up,down,down,down,up,up,down,down,down,up,down,up,down,down,up,up,up
+69,down,down,down,down,up,up,up,up,down,down,down,up,down,down,down,up,up,up,equal,up,up,down,up,up,up,up,down,down,down,up,up,equal,up,up,up,up,up,up,down,up,up,equal,down,equal,down,down,up,down,up,up,up,up,up,up,down,up,down,up,up,down,up,down

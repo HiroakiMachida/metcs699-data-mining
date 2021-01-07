@@ -1,0 +1,95 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.LMT -I -1 -M 15 -W 0.0
+Relation:     set3.train
+Instances:    258
+Attributes:   4
+              Gold Futures
+              Silver Futures
+              Apple T-1
+              BTC/USD
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+Logistic model tree 
+------------------
+
+Gold Futures = down: LM_1:2/4 (105)
+Gold Futures = up: LM_2:2/4 (152)
+Gold Futures = equal: LM_3:0/2 (1)
+
+Number of Leaves  : 	3
+
+Size of the Tree : 	4
+
+LM_1:
+Class up :
+0.03 + 
+[Gold Futures=down] * -0.39 +
+[Silver Futures=up] * 0.09 +
+[Apple T-1=down] * 0.29 +
+[Apple T-1=up] * 0.13
+
+Class down :
+-0.03 + 
+[Gold Futures=down] * 0.39 +
+[Silver Futures=up] * -0.09 +
+[Apple T-1=down] * -0.29 +
+[Apple T-1=up] * -0.13
+
+LM_2:
+Class up :
+-0.05 + 
+[Gold Futures=down] * -0.39 +
+[Silver Futures=up] * 0.16 +
+[Apple T-1=down] * 0.41
+
+Class down :
+0.05 + 
+[Gold Futures=down] * 0.39 +
+[Silver Futures=up] * -0.16 +
+[Apple T-1=down] * -0.41
+
+LM_3:
+Class up :
+0.12 + 
+[Gold Futures=down] * -0.39 +
+[Apple T-1=down] * 0.29
+
+Class down :
+-0.12 + 
+[Gold Futures=down] * 0.39 +
+[Apple T-1=down] * -0.29
+
+
+Time taken to build model: 0.04 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances          73               56.5891 %
+Incorrectly Classified Instances        56               43.4109 %
+Kappa statistic                          0.1315
+Mean absolute error                      0.4776
+Root mean squared error                  0.4947
+Relative absolute error                 95.5732 %
+Root relative squared error             98.7599 %
+Total Number of Instances              129     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.585    0.453    0.567      0.585    0.576      0.132    0.603     0.585     up
+                 0.547    0.415    0.565      0.547    0.556      0.132    0.603     0.578     down
+Weighted Avg.    0.566    0.434    0.566      0.566    0.566      0.132    0.603     0.582     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 38 27 |  a = up
+ 29 35 |  b = down
+

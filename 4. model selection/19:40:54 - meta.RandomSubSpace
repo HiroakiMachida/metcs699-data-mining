@@ -1,0 +1,886 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.RandomSubSpace -P 0.5 -S 1 -num-slots 1 -I 10 -W weka.classifiers.trees.REPTree -- -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
+Relation:     train
+Instances:    258
+Attributes:   63
+              Date
+              USD/JPY
+              EUR/USD
+              GBP/USD
+              AUD/USD
+              S&P 500
+              Dow Jones Industrial Average
+              Nasdaq 100
+              Nikkei 225
+              Gold Futures
+              Silver Futures
+              Copper Futures
+              Crude Oil WTI Futures
+              Brent Oil Futures
+              Natural Gas Futures
+              US Cotton #2 Futures
+              US Coffee C Futures
+              Apple
+              Alphabet A
+              Facebook
+              NVIDIA
+              Citigroup
+              AT&T
+              3M
+              BP
+              Tesla
+              Amazon.com
+              Japan Government Bond Futures
+              US 10 Year T-Note Futures
+              US 30 Year T-Bond Futures
+              US 2 Year T-Note Futures
+              USD/JPY T-1
+              EUR/USD T-1
+              GBP/USD T-1
+              AUD/USD T-1
+              BTC/USD T-1
+              S&P 500 T-1
+              Dow Jones Industrial Average T-1
+              Nasdaq 100 T-1
+              Nikkei 225 T-1
+              Gold Futures T-1
+              Silver Futures T-1
+              Copper Futures T-1
+              Crude Oil WTI Futures T-1
+              Brent Oil Futures T-1
+              Natural Gas Futures T-1
+              US Cotton #2 Futures T-1
+              US Coffee C Futures T-1
+              Apple T-1
+              Alphabet A T-1
+              Facebook T-1
+              NVIDIA T-1
+              Citigroup T-1
+              AT&T T-1
+              3M T-1
+              BP T-1
+              Tesla T-1
+              Amazon.com T-1
+              Japan Government Bond Futures T-1
+              US 10 Year T-Note Futures T-1
+              US 30 Year T-Bond Futures T-1
+              US 2 Year T-Note Futures T-1
+              BTC/USD
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+All the base classifiers: 
+
+FilteredClassifier using weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S -525755769 -L -1 -I 0.0 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 29,31,16,25,44,8,53,30,40,39,35,20,47,60,34,33,2,10,21,14,27,22,43,51,49,15,62,24,7,37,42,63
+
+Filtered Header
+@relation 'train-weka.filters.unsupervised.attribute.Remove-V-R29,31,16,25,44,8,53,30,40,39,35,20,47,60,34,33,2,10,21,14,27,22,43,51,49,15,62,24,7,37,42,63'
+
+@attribute 'US 10 Year T-Note Futures' {down,up,equal}
+@attribute 'US 2 Year T-Note Futures' {down,up,equal}
+@attribute 'US Cotton #2 Futures' {up,down,equal}
+@attribute BP {up,down,equal}
+@attribute 'Crude Oil WTI Futures T-1' {down,up,equal}
+@attribute 'Nasdaq 100' {up,down,equal}
+@attribute 'Citigroup T-1' {down,up,equal}
+@attribute 'US 30 Year T-Bond Futures' {down,up,equal}
+@attribute 'Nikkei 225 T-1' {down,equal,up}
+@attribute 'Nasdaq 100 T-1' {down,equal,up}
+@attribute 'AUD/USD T-1' {down,up,equal}
+@attribute Facebook {down,up,equal}
+@attribute 'US Cotton #2 Futures T-1' {up,down,equal}
+@attribute 'US 10 Year T-Note Futures T-1' {up,down,equal}
+@attribute 'GBP/USD T-1' {down,up,equal}
+@attribute 'EUR/USD T-1' {down,up,equal}
+@attribute USD/JPY {up,down,equal}
+@attribute 'Gold Futures' {down,up,equal}
+@attribute NVIDIA {up,down,equal}
+@attribute 'Brent Oil Futures' {up,down,equal}
+@attribute Amazon.com {up,down,equal}
+@attribute Citigroup {up,down,equal}
+@attribute 'Copper Futures T-1' {up,down,equal}
+@attribute 'Facebook T-1' {down,equal,up}
+@attribute 'Apple T-1' {down,up,equal}
+@attribute 'Natural Gas Futures' {down,up,equal}
+@attribute 'US 2 Year T-Note Futures T-1' {equal,down,up}
+@attribute 3M {down,up,equal}
+@attribute 'Dow Jones Industrial Average' {down,up,equal}
+@attribute 'S&P 500 T-1' {down,equal,up}
+@attribute 'Silver Futures T-1' {down,up}
+@attribute BTC/USD {up,down}
+
+@data
+
+
+Classifier Model
+
+REPTree
+============
+
+Gold Futures = down
+|   US 10 Year T-Note Futures = down : down (35/16) [24/10]
+|   US 10 Year T-Note Futures = up
+|   |   Nasdaq 100 T-1 = down : up (10/4) [6/1]
+|   |   Nasdaq 100 T-1 = equal : up (1/0) [0/0]
+|   |   Nasdaq 100 T-1 = up : down (20/5) [6/1]
+|   US 10 Year T-Note Futures = equal : down (3/0) [0/0]
+Gold Futures = up
+|   Apple T-1 = down : up (43/11) [18/6]
+|   Apple T-1 = up : up (44/21) [29/13]
+|   Apple T-1 = equal
+|   |   NVIDIA = up : down (5/2) [1/0]
+|   |   NVIDIA = down : up (2/0) [1/0]
+|   |   NVIDIA = equal : up (8/4) [1/0]
+Gold Futures = equal : up (1/0) [0/0]
+
+Size of the tree : 16
+
+FilteredClassifier using weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 783126948 -L -1 -I 0.0 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 58,27,32,11,35,49,4,20,7,62,8,30,12,54,39,33,6,36,23,21,46,25,34,51,53,47,24,60,3,41,52,63
+
+Filtered Header
+@relation 'train-weka.filters.unsupervised.attribute.Remove-V-R58,27,32,11,35,49,4,20,7,62,8,30,12,54,39,33,6,36,23,21,46,25,34,51,53,47,24,60,3,41,52,63'
+
+@attribute 'Amazon.com T-1' {down,equal,up}
+@attribute Amazon.com {up,down,equal}
+@attribute 'USD/JPY T-1' {up,down,equal}
+@attribute 'Silver Futures' {down,up}
+@attribute 'AUD/USD T-1' {down,up,equal}
+@attribute 'Apple T-1' {down,up,equal}
+@attribute GBP/USD {down,up,equal}
+@attribute Facebook {down,up,equal}
+@attribute 'Dow Jones Industrial Average' {down,up,equal}
+@attribute 'US 2 Year T-Note Futures T-1' {equal,down,up}
+@attribute 'Nasdaq 100' {up,down,equal}
+@attribute 'US 30 Year T-Bond Futures' {down,up,equal}
+@attribute 'Copper Futures' {down,up,equal}
+@attribute 'AT&T T-1' {down,up,equal}
+@attribute 'Nasdaq 100 T-1' {down,equal,up}
+@attribute 'EUR/USD T-1' {down,up,equal}
+@attribute 'S&P 500' {down,up,equal}
+@attribute 'BTC/USD T-1' {up,down}
+@attribute AT&T {down,up,equal}
+@attribute NVIDIA {up,down,equal}
+@attribute 'Natural Gas Futures T-1' {up,down,equal}
+@attribute BP {up,down,equal}
+@attribute 'GBP/USD T-1' {down,up,equal}
+@attribute 'Facebook T-1' {down,equal,up}
+@attribute 'Citigroup T-1' {down,up,equal}
+@attribute 'US Cotton #2 Futures T-1' {up,down,equal}
+@attribute 3M {down,up,equal}
+@attribute 'US 10 Year T-Note Futures T-1' {up,down,equal}
+@attribute EUR/USD {up,down,equal}
+@attribute 'Gold Futures T-1' {up,down,equal}
+@attribute 'NVIDIA T-1' {down,up,equal}
+@attribute BTC/USD {up,down}
+
+@data
+
+
+Classifier Model
+
+REPTree
+============
+
+Apple T-1 = down
+|   EUR/USD T-1 = down
+|   |   NVIDIA T-1 = down : up (19/2) [15/5]
+|   |   NVIDIA T-1 = up
+|   |   |   GBP/USD T-1 = down : down (7/2) [3/0]
+|   |   |   GBP/USD T-1 = up : up (3/0) [1/0]
+|   |   |   GBP/USD T-1 = equal : down (0/0) [0/0]
+|   |   NVIDIA T-1 = equal : up (0/0) [0/0]
+|   EUR/USD T-1 = up : up (33/15) [16/6]
+|   EUR/USD T-1 = equal : up (0/0) [0/0]
+Apple T-1 = up
+|   US 2 Year T-Note Futures T-1 = equal
+|   |   EUR/USD = up : up (4/2) [2/0]
+|   |   EUR/USD = down : down (5/0) [0/0]
+|   |   EUR/USD = equal : up (1/0) [0/0]
+|   US 2 Year T-Note Futures T-1 = down
+|   |   Amazon.com = up
+|   |   |   Natural Gas Futures T-1 = up
+|   |   |   |   S&P 500 = down
+|   |   |   |   |   Silver Futures = down : up (2/0) [1/1]
+|   |   |   |   |   Silver Futures = up : down (3/1) [1/0]
+|   |   |   |   S&P 500 = up : up (7/0) [1/1]
+|   |   |   |   S&P 500 = equal : up (0/0) [0/0]
+|   |   |   Natural Gas Futures T-1 = down : up (16/8) [4/1]
+|   |   |   Natural Gas Futures T-1 = equal : up (0/0) [0/0]
+|   |   Amazon.com = down : down (24/11) [10/5]
+|   |   Amazon.com = equal : down (1/0) [2/0]
+|   US 2 Year T-Note Futures T-1 = up
+|   |   AT&T = down : down (19/4) [7/4]
+|   |   AT&T = up : up (13/6) [12/5]
+|   |   AT&T = equal : down (1/0) [3/1]
+Apple T-1 = equal
+|   NVIDIA = up : down (5/2) [3/1]
+|   NVIDIA = down : up (3/0) [2/1]
+|   NVIDIA = equal : up (6/2) [3/2]
+
+Size of the tree : 36
+
+FilteredClassifier using weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S -1819011769 -L -1 -I 0.0 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 41,45,47,4,20,30,32,56,44,5,43,8,18,21,33,55,60,26,28,19,24,25,2,6,54,16,38,46,57,13,12,63
+
+Filtered Header
+@relation 'train-weka.filters.unsupervised.attribute.Remove-V-R41,45,47,4,20,30,32,56,44,5,43,8,18,21,33,55,60,26,28,19,24,25,2,6,54,16,38,46,57,13,12,63'
+
+@attribute 'Gold Futures T-1' {up,down,equal}
+@attribute 'Brent Oil Futures T-1' {up,down,equal}
+@attribute 'US Cotton #2 Futures T-1' {up,down,equal}
+@attribute GBP/USD {down,up,equal}
+@attribute Facebook {down,up,equal}
+@attribute 'US 30 Year T-Bond Futures' {down,up,equal}
+@attribute 'USD/JPY T-1' {up,down,equal}
+@attribute 'BP T-1' {up,down,equal}
+@attribute 'Crude Oil WTI Futures T-1' {down,up,equal}
+@attribute AUD/USD {up,down,equal}
+@attribute 'Copper Futures T-1' {up,down,equal}
+@attribute 'Nasdaq 100' {up,down,equal}
+@attribute Apple {up,down,equal}
+@attribute NVIDIA {up,down,equal}
+@attribute 'EUR/USD T-1' {down,up,equal}
+@attribute '3M T-1' {down,up,equal}
+@attribute 'US 10 Year T-Note Futures T-1' {up,down,equal}
+@attribute Tesla {down,up,equal}
+@attribute 'Japan Government Bond Futures' {down,up,equal}
+@attribute 'Alphabet A' {down,up,equal}
+@attribute 3M {down,up,equal}
+@attribute BP {up,down,equal}
+@attribute USD/JPY {up,down,equal}
+@attribute 'S&P 500' {down,up,equal}
+@attribute 'AT&T T-1' {down,up,equal}
+@attribute 'US Cotton #2 Futures' {up,down,equal}
+@attribute 'Dow Jones Industrial Average T-1' {down,equal,up}
+@attribute 'Natural Gas Futures T-1' {up,down,equal}
+@attribute 'Tesla T-1' {down,up,equal}
+@attribute 'Crude Oil WTI Futures' {up,down,equal}
+@attribute 'Copper Futures' {down,up,equal}
+@attribute BTC/USD {up,down}
+
+@data
+
+
+Classifier Model
+
+REPTree
+============
+
+S&P 500 = down
+|   US 10 Year T-Note Futures T-1 = up : up (39/19) [15/5]
+|   US 10 Year T-Note Futures T-1 = down : down (30/11) [17/7]
+|   US 10 Year T-Note Futures T-1 = equal : up (1/1) [2/0]
+S&P 500 = up
+|   EUR/USD T-1 = down
+|   |   AUD/USD = up : up (27/5) [10/3]
+|   |   AUD/USD = down
+|   |   |   Tesla T-1 = down
+|   |   |   |   BP T-1 = up : up (4/0) [1/1]
+|   |   |   |   BP T-1 = down : up (6/0) [1/0]
+|   |   |   |   BP T-1 = equal : down (1/0) [1/0]
+|   |   |   Tesla T-1 = up
+|   |   |   |   BP = up : up (4/1) [1/1]
+|   |   |   |   BP = down : down (5/2) [5/1]
+|   |   |   |   BP = equal : down (1/0) [0/0]
+|   |   |   Tesla T-1 = equal : down (1/0) [0/0]
+|   |   AUD/USD = equal : down (2/0) [0/0]
+|   EUR/USD T-1 = up
+|   |   AT&T T-1 = down : up (22/10) [7/4]
+|   |   AT&T T-1 = up
+|   |   |   NVIDIA = up
+|   |   |   |   BP = up
+|   |   |   |   |   Japan Government Bond Futures = down : up (5/1) [2/0]
+|   |   |   |   |   Japan Government Bond Futures = up : down (5/1) [2/0]
+|   |   |   |   |   Japan Government Bond Futures = equal : up (0/0) [0/0]
+|   |   |   |   BP = down : up (3/0) [4/2]
+|   |   |   |   BP = equal : down (2/0) [0/0]
+|   |   |   NVIDIA = down : down (4/0) [2/1]
+|   |   |   NVIDIA = equal : down (0/0) [0/0]
+|   |   AT&T T-1 = equal : up (3/0) [3/1]
+|   EUR/USD T-1 = equal : up (0/0) [1/0]
+S&P 500 = equal : down (7/1) [12/7]
+
+Size of the tree : 34
+
+FilteredClassifier using weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 1928712657 -L -1 -I 0.0 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 15,52,2,22,37,17,10,6,42,32,53,16,51,60,25,5,7,18,56,26,39,45,41,50,58,61,36,47,62,48,4,63
+
+Filtered Header
+@relation 'train-weka.filters.unsupervised.attribute.Remove-V-R15,52,2,22,37,17,10,6,42,32,53,16,51,60,25,5,7,18,56,26,39,45,41,50,58,61,36,47,62,48,4,63'
+
+@attribute 'Natural Gas Futures' {down,up,equal}
+@attribute 'NVIDIA T-1' {down,up,equal}
+@attribute USD/JPY {up,down,equal}
+@attribute Citigroup {up,down,equal}
+@attribute 'S&P 500 T-1' {down,equal,up}
+@attribute 'US Coffee C Futures' {down,up,equal}
+@attribute 'Gold Futures' {down,up,equal}
+@attribute 'S&P 500' {down,up,equal}
+@attribute 'Silver Futures T-1' {down,up}
+@attribute 'USD/JPY T-1' {up,down,equal}
+@attribute 'Citigroup T-1' {down,up,equal}
+@attribute 'US Cotton #2 Futures' {up,down,equal}
+@attribute 'Facebook T-1' {down,equal,up}
+@attribute 'US 10 Year T-Note Futures T-1' {up,down,equal}
+@attribute BP {up,down,equal}
+@attribute AUD/USD {up,down,equal}
+@attribute 'Dow Jones Industrial Average' {down,up,equal}
+@attribute Apple {up,down,equal}
+@attribute 'BP T-1' {up,down,equal}
+@attribute Tesla {down,up,equal}
+@attribute 'Nasdaq 100 T-1' {down,equal,up}
+@attribute 'Brent Oil Futures T-1' {up,down,equal}
+@attribute 'Gold Futures T-1' {up,down,equal}
+@attribute 'Alphabet A T-1' {down,equal,up}
+@attribute 'Amazon.com T-1' {down,equal,up}
+@attribute 'US 30 Year T-Bond Futures T-1' {up,down,equal}
+@attribute 'BTC/USD T-1' {up,down}
+@attribute 'US Cotton #2 Futures T-1' {up,down,equal}
+@attribute 'US 2 Year T-Note Futures T-1' {equal,down,up}
+@attribute 'US Coffee C Futures T-1' {up,down,equal}
+@attribute GBP/USD {down,up,equal}
+@attribute BTC/USD {up,down}
+
+@data
+
+
+Classifier Model
+
+REPTree
+============
+
+Nasdaq 100 T-1 = down
+|   Facebook T-1 = down
+|   |   USD/JPY T-1 = up
+|   |   |   Brent Oil Futures T-1 = up : down (3/0) [5/2]
+|   |   |   Brent Oil Futures T-1 = down
+|   |   |   |   NVIDIA T-1 = down
+|   |   |   |   |   US 2 Year T-Note Futures T-1 = equal : down (1/0) [0/0]
+|   |   |   |   |   US 2 Year T-Note Futures T-1 = down : up (6/1) [4/3]
+|   |   |   |   |   US 2 Year T-Note Futures T-1 = up
+|   |   |   |   |   |   AUD/USD = up : up (7/1) [1/1]
+|   |   |   |   |   |   AUD/USD = down : down (5/2) [1/0]
+|   |   |   |   |   |   AUD/USD = equal : up (0/0) [0/0]
+|   |   |   |   NVIDIA T-1 = up : down (2/0) [1/0]
+|   |   |   |   NVIDIA T-1 = equal : up (0/0) [0/0]
+|   |   |   Brent Oil Futures T-1 = equal : down (0/0) [0/0]
+|   |   USD/JPY T-1 = down : up (24/7) [9/1]
+|   |   USD/JPY T-1 = equal : down (1/0) [1/0]
+|   Facebook T-1 = equal : up (0/0) [0/0]
+|   Facebook T-1 = up
+|   |   BP T-1 = up : up (4/0) [3/1]
+|   |   BP T-1 = down : up (8/1) [4/1]
+|   |   BP T-1 = equal : down (1/0) [1/0]
+Nasdaq 100 T-1 = equal
+|   US Coffee C Futures = down : up (3/0) [3/1]
+|   US Coffee C Futures = up : down (2/0) [4/2]
+|   US Coffee C Futures = equal
+|   |   BP T-1 = up : up (2/1) [0/0]
+|   |   BP T-1 = down : up (3/0) [0/0]
+|   |   BP T-1 = equal : down (3/1) [1/0]
+Nasdaq 100 T-1 = up
+|   Dow Jones Industrial Average = down
+|   |   NVIDIA T-1 = down : down (8/0) [4/3]
+|   |   NVIDIA T-1 = up
+|   |   |   Alphabet A T-1 = down : up (6/1) [2/2]
+|   |   |   Alphabet A T-1 = equal : down (0/0) [0/0]
+|   |   |   Alphabet A T-1 = up
+|   |   |   |   US Coffee C Futures = down : down (16/3) [9/3]
+|   |   |   |   US Coffee C Futures = up
+|   |   |   |   |   US Cotton #2 Futures = up : up (4/0) [5/0]
+|   |   |   |   |   US Cotton #2 Futures = down : down (9/2) [4/2]
+|   |   |   |   |   US Cotton #2 Futures = equal : up (0/0) [0/0]
+|   |   |   |   US Coffee C Futures = equal : down (0/0) [0/0]
+|   |   NVIDIA T-1 = equal : down (0/0) [0/0]
+|   Dow Jones Industrial Average = up
+|   |   Gold Futures = down
+|   |   |   Citigroup = up
+|   |   |   |   US Cotton #2 Futures = up
+|   |   |   |   |   USD/JPY T-1 = up : down (10/1) [2/1]
+|   |   |   |   |   USD/JPY T-1 = down : up (3/1) [2/0]
+|   |   |   |   |   USD/JPY T-1 = equal : down (1/0) [0/0]
+|   |   |   |   US Cotton #2 Futures = down
+|   |   |   |   |   Citigroup T-1 = down : down (2/0) [1/0]
+|   |   |   |   |   Citigroup T-1 = up : up (3/0) [3/1]
+|   |   |   |   |   Citigroup T-1 = equal : up (0/0) [0/0]
+|   |   |   |   US Cotton #2 Futures = equal : down (0/0) [0/0]
+|   |   |   Citigroup = down : up (2/0) [2/2]
+|   |   |   Citigroup = equal : down (0/0) [0/0]
+|   |   Gold Futures = up : up (27/8) [12/4]
+|   |   Gold Futures = equal : up (0/0) [0/0]
+|   Dow Jones Industrial Average = equal : down (6/2) [2/0]
+
+Size of the tree : 61
+
+FilteredClassifier using weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S -2115326284 -L -1 -I 0.0 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 61,49,35,2,52,10,50,11,43,16,40,27,36,26,21,42,34,6,51,62,57,5,28,45,37,18,9,25,46,8,1,63
+
+Filtered Header
+@relation 'train-weka.filters.unsupervised.attribute.Remove-V-R61,49,35,2,52,10,50,11,43,16,40,27,36,26,21,42,34,6,51,62,57,5,28,45,37,18,9,25,46,8,1,63'
+
+@attribute 'US 30 Year T-Bond Futures T-1' {up,down,equal}
+@attribute 'Apple T-1' {down,up,equal}
+@attribute 'AUD/USD T-1' {down,up,equal}
+@attribute USD/JPY {up,down,equal}
+@attribute 'NVIDIA T-1' {down,up,equal}
+@attribute 'Gold Futures' {down,up,equal}
+@attribute 'Alphabet A T-1' {down,equal,up}
+@attribute 'Silver Futures' {down,up}
+@attribute 'Copper Futures T-1' {up,down,equal}
+@attribute 'US Cotton #2 Futures' {up,down,equal}
+@attribute 'Nikkei 225 T-1' {down,equal,up}
+@attribute Amazon.com {up,down,equal}
+@attribute 'BTC/USD T-1' {up,down}
+@attribute Tesla {down,up,equal}
+@attribute NVIDIA {up,down,equal}
+@attribute 'Silver Futures T-1' {down,up}
+@attribute 'GBP/USD T-1' {down,up,equal}
+@attribute 'S&P 500' {down,up,equal}
+@attribute 'Facebook T-1' {down,equal,up}
+@attribute 'US 2 Year T-Note Futures T-1' {equal,down,up}
+@attribute 'Tesla T-1' {down,up,equal}
+@attribute AUD/USD {up,down,equal}
+@attribute 'Japan Government Bond Futures' {down,up,equal}
+@attribute 'Brent Oil Futures T-1' {up,down,equal}
+@attribute 'S&P 500 T-1' {down,equal,up}
+@attribute Apple {up,down,equal}
+@attribute 'Nikkei 225' {down,equal,up}
+@attribute BP {up,down,equal}
+@attribute 'Natural Gas Futures T-1' {up,down,equal}
+@attribute 'Nasdaq 100' {up,down,equal}
+@attribute Date numeric
+@attribute BTC/USD {up,down}
+
+@data
+
+
+Classifier Model
+
+REPTree
+============
+
+Gold Futures = down
+|   Japan Government Bond Futures = down : down (34/14) [19/8]
+|   Japan Government Bond Futures = up : down (28/8) [19/10]
+|   Japan Government Bond Futures = equal : up (4/1) [1/0]
+Gold Futures = up
+|   Natural Gas Futures T-1 = up
+|   |   Date < 342.5
+|   |   |   Date < 75 : up (8/1) [2/2]
+|   |   |   Date >= 75 : down (37/17) [11/2]
+|   |   Date >= 342.5 : up (7/0) [5/2]
+|   Natural Gas Futures T-1 = down : up (52/16) [26/7]
+|   Natural Gas Futures T-1 = equal : up (2/2) [2/0]
+Gold Futures = equal : up (0/0) [1/0]
+
+Size of the tree : 14
+
+FilteredClassifier using weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 514801656 -L -1 -I 0.0 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 15,61,16,26,35,55,20,38,4,17,27,59,19,36,18,1,50,62,9,37,21,60,10,47,13,41,49,2,28,42,57,63
+
+Filtered Header
+@relation 'train-weka.filters.unsupervised.attribute.Remove-V-R15,61,16,26,35,55,20,38,4,17,27,59,19,36,18,1,50,62,9,37,21,60,10,47,13,41,49,2,28,42,57,63'
+
+@attribute 'Natural Gas Futures' {down,up,equal}
+@attribute 'US 30 Year T-Bond Futures T-1' {up,down,equal}
+@attribute 'US Cotton #2 Futures' {up,down,equal}
+@attribute Tesla {down,up,equal}
+@attribute 'AUD/USD T-1' {down,up,equal}
+@attribute '3M T-1' {down,up,equal}
+@attribute Facebook {down,up,equal}
+@attribute 'Dow Jones Industrial Average T-1' {down,equal,up}
+@attribute GBP/USD {down,up,equal}
+@attribute 'US Coffee C Futures' {down,up,equal}
+@attribute Amazon.com {up,down,equal}
+@attribute 'Japan Government Bond Futures T-1' {up,equal,down}
+@attribute 'Alphabet A' {down,up,equal}
+@attribute 'BTC/USD T-1' {up,down}
+@attribute Apple {up,down,equal}
+@attribute Date numeric
+@attribute 'Alphabet A T-1' {down,equal,up}
+@attribute 'US 2 Year T-Note Futures T-1' {equal,down,up}
+@attribute 'Nikkei 225' {down,equal,up}
+@attribute 'S&P 500 T-1' {down,equal,up}
+@attribute NVIDIA {up,down,equal}
+@attribute 'US 10 Year T-Note Futures T-1' {up,down,equal}
+@attribute 'Gold Futures' {down,up,equal}
+@attribute 'US Cotton #2 Futures T-1' {up,down,equal}
+@attribute 'Crude Oil WTI Futures' {up,down,equal}
+@attribute 'Gold Futures T-1' {up,down,equal}
+@attribute 'Apple T-1' {down,up,equal}
+@attribute USD/JPY {up,down,equal}
+@attribute 'Japan Government Bond Futures' {down,up,equal}
+@attribute 'Silver Futures T-1' {down,up}
+@attribute 'Tesla T-1' {down,up,equal}
+@attribute BTC/USD {up,down}
+
+@data
+
+
+Classifier Model
+
+REPTree
+============
+
+Japan Government Bond Futures T-1 = up
+|   Date < 379 : down (82/39) [39/16]
+|   Date >= 379 : up (3/0) [1/0]
+Japan Government Bond Futures T-1 = equal : up (4/0) [6/4]
+Japan Government Bond Futures T-1 = down : up (83/37) [40/13]
+
+Size of the tree : 6
+
+FilteredClassifier using weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S -885014437 -L -1 -I 0.0 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 54,52,38,37,60,6,50,21,44,27,24,58,31,51,5,55,14,61,34,23,46,2,43,57,3,26,16,42,29,48,62,63
+
+Filtered Header
+@relation 'train-weka.filters.unsupervised.attribute.Remove-V-R54,52,38,37,60,6,50,21,44,27,24,58,31,51,5,55,14,61,34,23,46,2,43,57,3,26,16,42,29,48,62,63'
+
+@attribute 'AT&T T-1' {down,up,equal}
+@attribute 'NVIDIA T-1' {down,up,equal}
+@attribute 'Dow Jones Industrial Average T-1' {down,equal,up}
+@attribute 'S&P 500 T-1' {down,equal,up}
+@attribute 'US 10 Year T-Note Futures T-1' {up,down,equal}
+@attribute 'S&P 500' {down,up,equal}
+@attribute 'Alphabet A T-1' {down,equal,up}
+@attribute NVIDIA {up,down,equal}
+@attribute 'Crude Oil WTI Futures T-1' {down,up,equal}
+@attribute Amazon.com {up,down,equal}
+@attribute 3M {down,up,equal}
+@attribute 'Amazon.com T-1' {down,equal,up}
+@attribute 'US 2 Year T-Note Futures' {down,up,equal}
+@attribute 'Facebook T-1' {down,equal,up}
+@attribute AUD/USD {up,down,equal}
+@attribute '3M T-1' {down,up,equal}
+@attribute 'Brent Oil Futures' {up,down,equal}
+@attribute 'US 30 Year T-Bond Futures T-1' {up,down,equal}
+@attribute 'GBP/USD T-1' {down,up,equal}
+@attribute AT&T {down,up,equal}
+@attribute 'Natural Gas Futures T-1' {up,down,equal}
+@attribute USD/JPY {up,down,equal}
+@attribute 'Copper Futures T-1' {up,down,equal}
+@attribute 'Tesla T-1' {down,up,equal}
+@attribute EUR/USD {up,down,equal}
+@attribute Tesla {down,up,equal}
+@attribute 'US Cotton #2 Futures' {up,down,equal}
+@attribute 'Silver Futures T-1' {down,up}
+@attribute 'US 10 Year T-Note Futures' {down,up,equal}
+@attribute 'US Coffee C Futures T-1' {up,down,equal}
+@attribute 'US 2 Year T-Note Futures T-1' {equal,down,up}
+@attribute BTC/USD {up,down}
+
+@data
+
+
+Classifier Model
+
+REPTree
+============
+
+S&P 500 = down
+|   US 2 Year T-Note Futures T-1 = equal : up (2/0) [3/2]
+|   US 2 Year T-Note Futures T-1 = down
+|   |   S&P 500 T-1 = down : up (8/3) [4/2]
+|   |   S&P 500 T-1 = equal : down (2/1) [1/0]
+|   |   S&P 500 T-1 = up
+|   |   |   US Cotton #2 Futures = up : up (6/3) [8/2]
+|   |   |   US Cotton #2 Futures = down : down (12/1) [7/3]
+|   |   |   US Cotton #2 Futures = equal : down (1/0) [0/0]
+|   US 2 Year T-Note Futures T-1 = up : up (36/17) [14/7]
+S&P 500 = up
+|   Silver Futures T-1 = down
+|   |   AUD/USD = up
+|   |   |   Amazon.com T-1 = down
+|   |   |   |   Facebook T-1 = down : up (6/1) [3/0]
+|   |   |   |   Facebook T-1 = equal : up (0/0) [0/0]
+|   |   |   |   Facebook T-1 = up : down (3/0) [1/0]
+|   |   |   Amazon.com T-1 = equal : up (2/0) [0/0]
+|   |   |   Amazon.com T-1 = up : up (13/0) [6/1]
+|   |   AUD/USD = down : up (18/6) [6/1]
+|   |   AUD/USD = equal : down (1/0) [1/0]
+|   Silver Futures T-1 = up : down (47/23) [28/12]
+S&P 500 = equal : down (15/6) [4/2]
+
+Size of the tree : 24
+
+FilteredClassifier using weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 938392440 -L -1 -I 0.0 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 12,50,43,40,3,53,47,28,26,21,17,10,51,5,62,9,59,35,4,48,44,22,19,2,58,36,25,16,55,1,31,63
+
+Filtered Header
+@relation 'train-weka.filters.unsupervised.attribute.Remove-V-R12,50,43,40,3,53,47,28,26,21,17,10,51,5,62,9,59,35,4,48,44,22,19,2,58,36,25,16,55,1,31,63'
+
+@attribute 'Copper Futures' {down,up,equal}
+@attribute 'Alphabet A T-1' {down,equal,up}
+@attribute 'Copper Futures T-1' {up,down,equal}
+@attribute 'Nikkei 225 T-1' {down,equal,up}
+@attribute EUR/USD {up,down,equal}
+@attribute 'Citigroup T-1' {down,up,equal}
+@attribute 'US Cotton #2 Futures T-1' {up,down,equal}
+@attribute 'Japan Government Bond Futures' {down,up,equal}
+@attribute Tesla {down,up,equal}
+@attribute NVIDIA {up,down,equal}
+@attribute 'US Coffee C Futures' {down,up,equal}
+@attribute 'Gold Futures' {down,up,equal}
+@attribute 'Facebook T-1' {down,equal,up}
+@attribute AUD/USD {up,down,equal}
+@attribute 'US 2 Year T-Note Futures T-1' {equal,down,up}
+@attribute 'Nikkei 225' {down,equal,up}
+@attribute 'Japan Government Bond Futures T-1' {up,equal,down}
+@attribute 'AUD/USD T-1' {down,up,equal}
+@attribute GBP/USD {down,up,equal}
+@attribute 'US Coffee C Futures T-1' {up,down,equal}
+@attribute 'Crude Oil WTI Futures T-1' {down,up,equal}
+@attribute Citigroup {up,down,equal}
+@attribute 'Alphabet A' {down,up,equal}
+@attribute USD/JPY {up,down,equal}
+@attribute 'Amazon.com T-1' {down,equal,up}
+@attribute 'BTC/USD T-1' {up,down}
+@attribute BP {up,down,equal}
+@attribute 'US Cotton #2 Futures' {up,down,equal}
+@attribute '3M T-1' {down,up,equal}
+@attribute Date numeric
+@attribute 'US 2 Year T-Note Futures' {down,up,equal}
+@attribute BTC/USD {up,down}
+
+@data
+
+
+Classifier Model
+
+REPTree
+============
+
+Gold Futures = down
+|   Date < 69 : up (11/3) [4/1]
+|   Date >= 69 : down (63/22) [27/11]
+Gold Futures = up : up (98/36) [54/23]
+Gold Futures = equal : up (0/0) [1/0]
+
+Size of the tree : 6
+
+FilteredClassifier using weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S -453360142 -L -1 -I 0.0 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 26,48,17,31,13,24,16,36,52,41,42,45,29,32,57,38,51,8,2,9,1,15,19,56,34,7,46,3,10,55,49,63
+
+Filtered Header
+@relation 'train-weka.filters.unsupervised.attribute.Remove-V-R26,48,17,31,13,24,16,36,52,41,42,45,29,32,57,38,51,8,2,9,1,15,19,56,34,7,46,3,10,55,49,63'
+
+@attribute Tesla {down,up,equal}
+@attribute 'US Coffee C Futures T-1' {up,down,equal}
+@attribute 'US Coffee C Futures' {down,up,equal}
+@attribute 'US 2 Year T-Note Futures' {down,up,equal}
+@attribute 'Crude Oil WTI Futures' {up,down,equal}
+@attribute 3M {down,up,equal}
+@attribute 'US Cotton #2 Futures' {up,down,equal}
+@attribute 'BTC/USD T-1' {up,down}
+@attribute 'NVIDIA T-1' {down,up,equal}
+@attribute 'Gold Futures T-1' {up,down,equal}
+@attribute 'Silver Futures T-1' {down,up}
+@attribute 'Brent Oil Futures T-1' {up,down,equal}
+@attribute 'US 10 Year T-Note Futures' {down,up,equal}
+@attribute 'USD/JPY T-1' {up,down,equal}
+@attribute 'Tesla T-1' {down,up,equal}
+@attribute 'Dow Jones Industrial Average T-1' {down,equal,up}
+@attribute 'Facebook T-1' {down,equal,up}
+@attribute 'Nasdaq 100' {up,down,equal}
+@attribute USD/JPY {up,down,equal}
+@attribute 'Nikkei 225' {down,equal,up}
+@attribute Date numeric
+@attribute 'Natural Gas Futures' {down,up,equal}
+@attribute 'Alphabet A' {down,up,equal}
+@attribute 'BP T-1' {up,down,equal}
+@attribute 'GBP/USD T-1' {down,up,equal}
+@attribute 'Dow Jones Industrial Average' {down,up,equal}
+@attribute 'Natural Gas Futures T-1' {up,down,equal}
+@attribute EUR/USD {up,down,equal}
+@attribute 'Gold Futures' {down,up,equal}
+@attribute '3M T-1' {down,up,equal}
+@attribute 'Apple T-1' {down,up,equal}
+@attribute BTC/USD {up,down}
+
+@data
+
+
+Classifier Model
+
+REPTree
+============
+
+Date < 75.5
+|   Crude Oil WTI Futures = up : up (15/1) [7/1]
+|   Crude Oil WTI Futures = down
+|   |   USD/JPY T-1 = up : down (6/1) [1/0]
+|   |   USD/JPY T-1 = down : up (10/2) [3/1]
+|   |   USD/JPY T-1 = equal : up (1/0) [0/0]
+|   Crude Oil WTI Futures = equal : up (2/0) [0/0]
+Date >= 75.5
+|   Gold Futures = down
+|   |   BP T-1 = up
+|   |   |   Silver Futures T-1 = down : up (7/0) [5/3]
+|   |   |   Silver Futures T-1 = up
+|   |   |   |   USD/JPY T-1 = up : down (8/1) [4/2]
+|   |   |   |   USD/JPY T-1 = down : up (4/1) [2/0]
+|   |   |   |   USD/JPY T-1 = equal : down (0/0) [1/0]
+|   |   BP T-1 = down
+|   |   |   3M T-1 = down
+|   |   |   |   USD/JPY = up
+|   |   |   |   |   Date < 280.5 : down (5/0) [4/1]
+|   |   |   |   |   Date >= 280.5 : up (2/1) [1/0]
+|   |   |   |   USD/JPY = down
+|   |   |   |   |   Brent Oil Futures T-1 = up : down (2/0) [2/1]
+|   |   |   |   |   Brent Oil Futures T-1 = down
+|   |   |   |   |   |   Natural Gas Futures T-1 = up : down (3/1) [1/0]
+|   |   |   |   |   |   Natural Gas Futures T-1 = down : up (5/0) [2/1]
+|   |   |   |   |   |   Natural Gas Futures T-1 = equal : up (0/0) [0/0]
+|   |   |   |   |   Brent Oil Futures T-1 = equal : up (0/0) [0/0]
+|   |   |   |   USD/JPY = equal : down (1/0) [0/0]
+|   |   |   3M T-1 = up : down (17/2) [7/2]
+|   |   |   3M T-1 = equal : down (3/0) [0/0]
+|   |   BP T-1 = equal : down (3/1) [1/0]
+|   Gold Futures = up
+|   |   Date < 350.5
+|   |   |   Natural Gas Futures T-1 = up
+|   |   |   |   Date < 110.5 : down (4/0) [2/0]
+|   |   |   |   Date >= 110.5
+|   |   |   |   |   US Coffee C Futures T-1 = up : up (11/4) [11/3]
+|   |   |   |   |   US Coffee C Futures T-1 = down : down (7/1) [7/2]
+|   |   |   |   |   US Coffee C Futures T-1 = equal : down (8/3) [1/0]
+|   |   |   Natural Gas Futures T-1 = down : up (35/13) [16/4]
+|   |   |   Natural Gas Futures T-1 = equal : down (1/1) [2/0]
+|   |   Date >= 350.5 : up (11/1) [6/2]
+|   Gold Futures = equal : up (1/0) [0/0]
+
+Size of the tree : 44
+
+FilteredClassifier using weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S -751789767 -L -1 -I 0.0 on data filtered through weka.filters.unsupervised.attribute.Remove -V -R 23,40,34,62,61,51,18,16,29,28,58,39,27,48,13,53,10,15,5,54,6,11,44,19,37,9,46,32,17,52,42,63
+
+Filtered Header
+@relation 'train-weka.filters.unsupervised.attribute.Remove-V-R23,40,34,62,61,51,18,16,29,28,58,39,27,48,13,53,10,15,5,54,6,11,44,19,37,9,46,32,17,52,42,63'
+
+@attribute AT&T {down,up,equal}
+@attribute 'Nikkei 225 T-1' {down,equal,up}
+@attribute 'GBP/USD T-1' {down,up,equal}
+@attribute 'US 2 Year T-Note Futures T-1' {equal,down,up}
+@attribute 'US 30 Year T-Bond Futures T-1' {up,down,equal}
+@attribute 'Facebook T-1' {down,equal,up}
+@attribute Apple {up,down,equal}
+@attribute 'US Cotton #2 Futures' {up,down,equal}
+@attribute 'US 10 Year T-Note Futures' {down,up,equal}
+@attribute 'Japan Government Bond Futures' {down,up,equal}
+@attribute 'Amazon.com T-1' {down,equal,up}
+@attribute 'Nasdaq 100 T-1' {down,equal,up}
+@attribute Amazon.com {up,down,equal}
+@attribute 'US Coffee C Futures T-1' {up,down,equal}
+@attribute 'Crude Oil WTI Futures' {up,down,equal}
+@attribute 'Citigroup T-1' {down,up,equal}
+@attribute 'Gold Futures' {down,up,equal}
+@attribute 'Natural Gas Futures' {down,up,equal}
+@attribute AUD/USD {up,down,equal}
+@attribute 'AT&T T-1' {down,up,equal}
+@attribute 'S&P 500' {down,up,equal}
+@attribute 'Silver Futures' {down,up}
+@attribute 'Crude Oil WTI Futures T-1' {down,up,equal}
+@attribute 'Alphabet A' {down,up,equal}
+@attribute 'S&P 500 T-1' {down,equal,up}
+@attribute 'Nikkei 225' {down,equal,up}
+@attribute 'Natural Gas Futures T-1' {up,down,equal}
+@attribute 'USD/JPY T-1' {up,down,equal}
+@attribute 'US Coffee C Futures' {down,up,equal}
+@attribute 'NVIDIA T-1' {down,up,equal}
+@attribute 'Silver Futures T-1' {down,up}
+@attribute BTC/USD {up,down}
+
+@data
+
+
+Classifier Model
+
+REPTree
+============
+
+Gold Futures = down
+|   Nasdaq 100 T-1 = down
+|   |   USD/JPY T-1 = up : down (18/7) [5/1]
+|   |   USD/JPY T-1 = down : up (9/1) [3/1]
+|   |   USD/JPY T-1 = equal : up (1/0) [0/0]
+|   Nasdaq 100 T-1 = equal : down (2/1) [1/0]
+|   Nasdaq 100 T-1 = up
+|   |   USD/JPY T-1 = up
+|   |   |   Nikkei 225 T-1 = down : down (8/0) [6/1]
+|   |   |   Nikkei 225 T-1 = equal : up (3/2) [1/0]
+|   |   |   Nikkei 225 T-1 = up
+|   |   |   |   US Cotton #2 Futures = up : down (6/1) [3/0]
+|   |   |   |   US Cotton #2 Futures = down : up (2/0) [4/1]
+|   |   |   |   US Cotton #2 Futures = equal : down (1/0) [0/0]
+|   |   USD/JPY T-1 = down
+|   |   |   S&P 500 = down : down (8/1) [8/4]
+|   |   |   S&P 500 = up : up (6/2) [5/0]
+|   |   |   S&P 500 = equal : down (2/1) [1/0]
+|   |   USD/JPY T-1 = equal : down (2/0) [0/0]
+Gold Futures = up
+|   Natural Gas Futures T-1 = up
+|   |   USD/JPY T-1 = up
+|   |   |   US Cotton #2 Futures = up
+|   |   |   |   Crude Oil WTI Futures = up : up (7/3) [1/0]
+|   |   |   |   Crude Oil WTI Futures = down : down (7/0) [1/1]
+|   |   |   |   Crude Oil WTI Futures = equal : down (0/0) [0/0]
+|   |   |   US Cotton #2 Futures = down
+|   |   |   |   US 2 Year T-Note Futures T-1 = equal : down (1/0) [2/0]
+|   |   |   |   US 2 Year T-Note Futures T-1 = down : up (3/0) [2/1]
+|   |   |   |   US 2 Year T-Note Futures T-1 = up : up (2/0) [0/0]
+|   |   |   US Cotton #2 Futures = equal : down (0/0) [1/0]
+|   |   USD/JPY T-1 = down
+|   |   |   US Coffee C Futures = down
+|   |   |   |   Facebook T-1 = down : up (4/1) [2/1]
+|   |   |   |   Facebook T-1 = equal : down (0/0) [0/0]
+|   |   |   |   Facebook T-1 = up
+|   |   |   |   |   Apple = up : down (5/0) [2/1]
+|   |   |   |   |   Apple = down : up (4/2) [1/0]
+|   |   |   |   |   Apple = equal : down (0/0) [0/0]
+|   |   |   US Coffee C Futures = up
+|   |   |   |   US Cotton #2 Futures = up : up (7/0) [2/0]
+|   |   |   |   US Cotton #2 Futures = down
+|   |   |   |   |   Amazon.com = up : up (3/0) [1/1]
+|   |   |   |   |   Amazon.com = down : down (4/1) [4/1]
+|   |   |   |   |   Amazon.com = equal : down (0/0) [0/0]
+|   |   |   |   US Cotton #2 Futures = equal : up (0/0) [0/0]
+|   |   |   US Coffee C Futures = equal : up (3/1) [0/0]
+|   |   USD/JPY T-1 = equal : down (1/0) [0/0]
+|   Natural Gas Futures T-1 = down
+|   |   US 10 Year T-Note Futures = down : up (11/0) [9/2]
+|   |   US 10 Year T-Note Futures = up
+|   |   |   GBP/USD T-1 = down
+|   |   |   |   NVIDIA T-1 = down : up (13/4) [7/1]
+|   |   |   |   NVIDIA T-1 = up : down (10/3) [2/0]
+|   |   |   |   NVIDIA T-1 = equal : up (1/1) [1/0]
+|   |   |   GBP/USD T-1 = up : up (11/0) [10/5]
+|   |   |   GBP/USD T-1 = equal : up (1/0) [0/0]
+|   |   US 10 Year T-Note Futures = equal : up (2/1) [0/0]
+|   Natural Gas Futures T-1 = equal : up (4/2) [0/0]
+Gold Futures = equal : up (0/0) [1/0]
+
+Size of the tree : 61
+
+
+
+Time taken to build model: 0.04 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         149               57.7519 %
+Incorrectly Classified Instances       109               42.2481 %
+Kappa statistic                          0.1411
+Mean absolute error                      0.4846
+Root mean squared error                  0.4945
+Relative absolute error                 97.3819 %
+Root relative squared error             99.1413 %
+Total Number of Instances              258     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.681    0.542    0.591      0.681    0.633      0.143    0.592     0.590     up
+                 0.458    0.319    0.556      0.458    0.502      0.143    0.592     0.547     down
+Weighted Avg.    0.578    0.438    0.575      0.578    0.572      0.143    0.592     0.570     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 94 44 |  a = up
+ 65 55 |  b = down
+

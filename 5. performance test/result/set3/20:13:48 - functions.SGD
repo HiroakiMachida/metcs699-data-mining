@@ -1,0 +1,57 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.SGD -F 0 -L 0.01 -R 1.0E-4 -E 500 -C 0.001 -S 1
+Relation:     set3.train
+Instances:    258
+Attributes:   4
+              Gold Futures
+              Silver Futures
+              Apple T-1
+              BTC/USD
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+Loss function: Hinge loss (SVM)
+
+BTC/USD = 
+
+         1.1994 (normalized) Gold Futures=down
+ +      -0.6497 (normalized) Gold Futures=up
+ +      -0.7397 (normalized) Gold Futures=equal
+ +      -0.1    (normalized) Silver Futures=up
+ +      -0.1099 (normalized) Apple T-1=down
+ +      -0.05   (normalized) Apple T-1=up
+ +      -0.03   (normalized) Apple T-1=equal
+ -       0.19  
+
+Time taken to build model: 0.01 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances          75               58.1395 %
+Incorrectly Classified Instances        54               41.8605 %
+Kappa statistic                          0.1623
+Mean absolute error                      0.4186
+Root mean squared error                  0.647 
+Relative absolute error                 83.7659 %
+Root relative squared error            129.1593 %
+Total Number of Instances              129     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.615    0.453    0.580      0.615    0.597      0.163    0.581     0.551     up
+                 0.547    0.385    0.583      0.547    0.565      0.163    0.581     0.544     down
+Weighted Avg.    0.581    0.419    0.582      0.581    0.581      0.163    0.581     0.547     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 40 25 |  a = up
+ 29 35 |  b = down
+

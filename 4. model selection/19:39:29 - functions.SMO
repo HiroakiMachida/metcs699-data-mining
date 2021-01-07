@@ -1,0 +1,292 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.SMO -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007" -calibrator "weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4"
+Relation:     train
+Instances:    258
+Attributes:   63
+              Date
+              USD/JPY
+              EUR/USD
+              GBP/USD
+              AUD/USD
+              S&P 500
+              Dow Jones Industrial Average
+              Nasdaq 100
+              Nikkei 225
+              Gold Futures
+              Silver Futures
+              Copper Futures
+              Crude Oil WTI Futures
+              Brent Oil Futures
+              Natural Gas Futures
+              US Cotton #2 Futures
+              US Coffee C Futures
+              Apple
+              Alphabet A
+              Facebook
+              NVIDIA
+              Citigroup
+              AT&T
+              3M
+              BP
+              Tesla
+              Amazon.com
+              Japan Government Bond Futures
+              US 10 Year T-Note Futures
+              US 30 Year T-Bond Futures
+              US 2 Year T-Note Futures
+              USD/JPY T-1
+              EUR/USD T-1
+              GBP/USD T-1
+              AUD/USD T-1
+              BTC/USD T-1
+              S&P 500 T-1
+              Dow Jones Industrial Average T-1
+              Nasdaq 100 T-1
+              Nikkei 225 T-1
+              Gold Futures T-1
+              Silver Futures T-1
+              Copper Futures T-1
+              Crude Oil WTI Futures T-1
+              Brent Oil Futures T-1
+              Natural Gas Futures T-1
+              US Cotton #2 Futures T-1
+              US Coffee C Futures T-1
+              Apple T-1
+              Alphabet A T-1
+              Facebook T-1
+              NVIDIA T-1
+              Citigroup T-1
+              AT&T T-1
+              3M T-1
+              BP T-1
+              Tesla T-1
+              Amazon.com T-1
+              Japan Government Bond Futures T-1
+              US 10 Year T-Note Futures T-1
+              US 30 Year T-Bond Futures T-1
+              US 2 Year T-Note Futures T-1
+              BTC/USD
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: up, down
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.361  * (normalized) Date
+ +      -0.116  * (normalized) USD/JPY=up
+ +      -0.5615 * (normalized) USD/JPY=down
+ +       0.6775 * (normalized) USD/JPY=equal
+ +      -0.2302 * (normalized) EUR/USD=up
+ +       0.0216 * (normalized) EUR/USD=down
+ +       0.2086 * (normalized) EUR/USD=equal
+ +      -0.133  * (normalized) GBP/USD=down
+ +       0.133  * (normalized) GBP/USD=up
+ +      -0.6653 * (normalized) AUD/USD=up
+ +      -0.2357 * (normalized) AUD/USD=down
+ +       0.901  * (normalized) AUD/USD=equal
+ +       0.4878 * (normalized) S&P 500=down
+ +      -0.2218 * (normalized) S&P 500=up
+ +      -0.2661 * (normalized) S&P 500=equal
+ +      -0.0542 * (normalized) Dow Jones Industrial Average=down
+ +       0.3202 * (normalized) Dow Jones Industrial Average=up
+ +      -0.2661 * (normalized) Dow Jones Industrial Average=equal
+ +       0.2939 * (normalized) Nasdaq 100=up
+ +      -0.0279 * (normalized) Nasdaq 100=down
+ +      -0.2661 * (normalized) Nasdaq 100=equal
+ +      -0.0042 * (normalized) Nikkei 225=down
+ +      -0.1644 * (normalized) Nikkei 225=equal
+ +       0.1686 * (normalized) Nikkei 225=up
+ +       0.7011 * (normalized) Gold Futures=down
+ +      -0.1716 * (normalized) Gold Futures=up
+ +      -0.5295 * (normalized) Gold Futures=equal
+ +      -0.0905 * (normalized) Silver Futures=up
+ +      -0.1649 * (normalized) Copper Futures=down
+ +       0.4297 * (normalized) Copper Futures=up
+ +      -0.2647 * (normalized) Copper Futures=equal
+ +      -0.1397 * (normalized) Crude Oil WTI Futures=up
+ +       0.575  * (normalized) Crude Oil WTI Futures=down
+ +      -0.4353 * (normalized) Crude Oil WTI Futures=equal
+ +       0.2078 * (normalized) Brent Oil Futures=up
+ +      -0.2292 * (normalized) Brent Oil Futures=down
+ +       0.0214 * (normalized) Brent Oil Futures=equal
+ +      -0.3352 * (normalized) Natural Gas Futures=down
+ +       0.1952 * (normalized) Natural Gas Futures=up
+ +       0.14   * (normalized) Natural Gas Futures=equal
+ +      -0.0571 * (normalized) US Cotton #2 Futures=up
+ +       0.2254 * (normalized) US Cotton #2 Futures=down
+ +      -0.1683 * (normalized) US Cotton #2 Futures=equal
+ +       0.3176 * (normalized) US Coffee C Futures=down
+ +      -0.0516 * (normalized) US Coffee C Futures=up
+ +      -0.2661 * (normalized) US Coffee C Futures=equal
+ +      -0.379  * (normalized) Apple=up
+ +      -0.355  * (normalized) Apple=down
+ +       0.7339 * (normalized) Apple=equal
+ +      -0.1055 * (normalized) Alphabet A=down
+ +       0.3716 * (normalized) Alphabet A=up
+ +      -0.2661 * (normalized) Alphabet A=equal
+ +       0.075  * (normalized) Facebook=down
+ +       0.1911 * (normalized) Facebook=up
+ +      -0.2661 * (normalized) Facebook=equal
+ +      -0.4047 * (normalized) NVIDIA=up
+ +      -0.3293 * (normalized) NVIDIA=down
+ +       0.7339 * (normalized) NVIDIA=equal
+ +       0.4169 * (normalized) Citigroup=up
+ +      -0.1509 * (normalized) Citigroup=down
+ +      -0.2661 * (normalized) Citigroup=equal
+ +      -0.0005 * (normalized) AT&T=down
+ +       0.0349 * (normalized) AT&T=up
+ +      -0.0344 * (normalized) AT&T=equal
+ +      -0.4683 * (normalized) 3M=down
+ +      -1.1453 * (normalized) 3M=up
+ +       1.6136 * (normalized) 3M=equal
+ +      -0.179  * (normalized) BP=up
+ +       0.3049 * (normalized) BP=down
+ +      -0.1259 * (normalized) BP=equal
+ +       0.092  * (normalized) Tesla=down
+ +       0.174  * (normalized) Tesla=up
+ +      -0.2661 * (normalized) Tesla=equal
+ +      -0.1776 * (normalized) Amazon.com=up
+ +       0.4437 * (normalized) Amazon.com=down
+ +      -0.2661 * (normalized) Amazon.com=equal
+ +       0.0319 * (normalized) Japan Government Bond Futures=down
+ +       0.5933 * (normalized) Japan Government Bond Futures=up
+ +      -0.6252 * (normalized) Japan Government Bond Futures=equal
+ +      -0.7806 * (normalized) US 10 Year T-Note Futures=down
+ +      -0.4992 * (normalized) US 10 Year T-Note Futures=up
+ +       1.2797 * (normalized) US 10 Year T-Note Futures=equal
+ +      -0.1607 * (normalized) US 30 Year T-Bond Futures=down
+ +       0.1493 * (normalized) US 30 Year T-Bond Futures=up
+ +       0.0115 * (normalized) US 30 Year T-Bond Futures=equal
+ +       0.2727 * (normalized) US 2 Year T-Note Futures=down
+ +       0.0238 * (normalized) US 2 Year T-Note Futures=up
+ +      -0.2965 * (normalized) US 2 Year T-Note Futures=equal
+ +       0.3843 * (normalized) USD/JPY T-1=up
+ +      -0.4841 * (normalized) USD/JPY T-1=down
+ +       0.0998 * (normalized) USD/JPY T-1=equal
+ +       0.2164 * (normalized) EUR/USD T-1=down
+ +       0.5819 * (normalized) EUR/USD T-1=up
+ +      -0.7983 * (normalized) EUR/USD T-1=equal
+ +       0.0234 * (normalized) GBP/USD T-1=down
+ +      -0.0234 * (normalized) GBP/USD T-1=up
+ +       0      * (normalized) GBP/USD T-1=equal
+ +      -0.0462 * (normalized) AUD/USD T-1=down
+ +       0.1414 * (normalized) AUD/USD T-1=up
+ +      -0.0952 * (normalized) AUD/USD T-1=equal
+ +       0.3118 * (normalized) BTC/USD T-1=down
+ +       0.5039 * (normalized) S&P 500 T-1=down
+ +      -0.2053 * (normalized) S&P 500 T-1=equal
+ +      -0.2987 * (normalized) S&P 500 T-1=up
+ +      -0.5789 * (normalized) Dow Jones Industrial Average T-1=down
+ +       0.7947 * (normalized) Dow Jones Industrial Average T-1=equal
+ +      -0.2159 * (normalized) Dow Jones Industrial Average T-1=up
+ +      -0.3055 * (normalized) Nasdaq 100 T-1=down
+ +      -0.2053 * (normalized) Nasdaq 100 T-1=equal
+ +       0.5108 * (normalized) Nasdaq 100 T-1=up
+ +       0.169  * (normalized) Nikkei 225 T-1=down
+ +       0.3725 * (normalized) Nikkei 225 T-1=equal
+ +      -0.5415 * (normalized) Nikkei 225 T-1=up
+ +       0.2445 * (normalized) Gold Futures T-1=up
+ +      -0.2445 * (normalized) Gold Futures T-1=down
+ +       0.4292 * (normalized) Silver Futures T-1=up
+ +       0.2259 * (normalized) Copper Futures T-1=up
+ +       0.5447 * (normalized) Copper Futures T-1=down
+ +      -0.7705 * (normalized) Copper Futures T-1=equal
+ +       0.5877 * (normalized) Crude Oil WTI Futures T-1=down
+ +       0.2015 * (normalized) Crude Oil WTI Futures T-1=up
+ +      -0.7892 * (normalized) Crude Oil WTI Futures T-1=equal
+ +       0.6542 * (normalized) Brent Oil Futures T-1=up
+ +       0.0955 * (normalized) Brent Oil Futures T-1=down
+ +      -0.7497 * (normalized) Brent Oil Futures T-1=equal
+ +      -0.0065 * (normalized) Natural Gas Futures T-1=up
+ +      -0.8863 * (normalized) Natural Gas Futures T-1=down
+ +       0.8928 * (normalized) Natural Gas Futures T-1=equal
+ +       0.1439 * (normalized) US Cotton #2 Futures T-1=up
+ +       0.158  * (normalized) US Cotton #2 Futures T-1=down
+ +      -0.3019 * (normalized) US Cotton #2 Futures T-1=equal
+ +      -0.0586 * (normalized) US Coffee C Futures T-1=up
+ +      -0.0196 * (normalized) US Coffee C Futures T-1=down
+ +       0.0783 * (normalized) US Coffee C Futures T-1=equal
+ +      -0.7491 * (normalized) Apple T-1=down
+ +       0.226  * (normalized) Apple T-1=up
+ +       0.5232 * (normalized) Apple T-1=equal
+ +       0.055  * (normalized) Alphabet A T-1=down
+ +      -0.2053 * (normalized) Alphabet A T-1=equal
+ +       0.1503 * (normalized) Alphabet A T-1=up
+ +       0.5215 * (normalized) Facebook T-1=down
+ +      -0.2053 * (normalized) Facebook T-1=equal
+ +      -0.3162 * (normalized) Facebook T-1=up
+ +       0.2483 * (normalized) NVIDIA T-1=down
+ +      -0.043  * (normalized) NVIDIA T-1=up
+ +      -0.2053 * (normalized) NVIDIA T-1=equal
+ +      -0.018  * (normalized) Citigroup T-1=down
+ +       0.2233 * (normalized) Citigroup T-1=up
+ +      -0.2053 * (normalized) Citigroup T-1=equal
+ +      -0.0988 * (normalized) AT&T T-1=down
+ +      -0.1591 * (normalized) AT&T T-1=up
+ +       0.2579 * (normalized) AT&T T-1=equal
+ +      -0.0588 * (normalized) 3M T-1=down
+ +       0.0301 * (normalized) 3M T-1=up
+ +       0.0287 * (normalized) 3M T-1=equal
+ +      -0.5833 * (normalized) BP T-1=up
+ +      -0.2104 * (normalized) BP T-1=down
+ +       0.7936 * (normalized) BP T-1=equal
+ +       0.0002 * (normalized) Tesla T-1=down
+ +       0.2051 * (normalized) Tesla T-1=up
+ +      -0.2053 * (normalized) Tesla T-1=equal
+ +       0.4323 * (normalized) Amazon.com T-1=down
+ +      -0.2053 * (normalized) Amazon.com T-1=equal
+ +      -0.227  * (normalized) Amazon.com T-1=up
+ +       0.1534 * (normalized) Japan Government Bond Futures T-1=up
+ +      -0.2213 * (normalized) Japan Government Bond Futures T-1=equal
+ +       0.0679 * (normalized) Japan Government Bond Futures T-1=down
+ +      -0.1198 * (normalized) US 10 Year T-Note Futures T-1=up
+ +       0.5233 * (normalized) US 10 Year T-Note Futures T-1=down
+ +      -0.4035 * (normalized) US 10 Year T-Note Futures T-1=equal
+ +       0.2745 * (normalized) US 30 Year T-Bond Futures T-1=up
+ +      -0.2745 * (normalized) US 30 Year T-Bond Futures T-1=down
+ +      -0.386  * (normalized) US 2 Year T-Note Futures T-1=equal
+ +       0.3254 * (normalized) US 2 Year T-Note Futures T-1=down
+ +       0.0605 * (normalized) US 2 Year T-Note Futures T-1=up
+ -       1.1359
+
+Number of kernel evaluations: 33255 (98.652% cached)
+
+
+
+Time taken to build model: 0.25 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         132               51.1628 %
+Incorrectly Classified Instances       126               48.8372 %
+Kappa statistic                          0.0217
+Mean absolute error                      0.4884
+Root mean squared error                  0.6988
+Relative absolute error                 98.1456 %
+Root relative squared error            140.1052 %
+Total Number of Instances              258     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.522    0.500    0.545      0.522    0.533      0.022    0.511     0.540     up
+                 0.500    0.478    0.476      0.500    0.488      0.022    0.511     0.471     down
+Weighted Avg.    0.512    0.490    0.513      0.512    0.512      0.022    0.511     0.508     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 72 66 |  a = up
+ 60 60 |  b = down
+

@@ -1,0 +1,215 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.AttributeSelectedClassifier -E "weka.attributeSelection.CfsSubsetEval -P 1 -E 1" -S "weka.attributeSelection.BestFirst -D 1 -N 5" -W weka.classifiers.trees.J48 -- -C 0.25 -M 2
+Relation:     train
+Instances:    258
+Attributes:   63
+              Date
+              USD/JPY
+              EUR/USD
+              GBP/USD
+              AUD/USD
+              S&P 500
+              Dow Jones Industrial Average
+              Nasdaq 100
+              Nikkei 225
+              Gold Futures
+              Silver Futures
+              Copper Futures
+              Crude Oil WTI Futures
+              Brent Oil Futures
+              Natural Gas Futures
+              US Cotton #2 Futures
+              US Coffee C Futures
+              Apple
+              Alphabet A
+              Facebook
+              NVIDIA
+              Citigroup
+              AT&T
+              3M
+              BP
+              Tesla
+              Amazon.com
+              Japan Government Bond Futures
+              US 10 Year T-Note Futures
+              US 30 Year T-Bond Futures
+              US 2 Year T-Note Futures
+              USD/JPY T-1
+              EUR/USD T-1
+              GBP/USD T-1
+              AUD/USD T-1
+              BTC/USD T-1
+              S&P 500 T-1
+              Dow Jones Industrial Average T-1
+              Nasdaq 100 T-1
+              Nikkei 225 T-1
+              Gold Futures T-1
+              Silver Futures T-1
+              Copper Futures T-1
+              Crude Oil WTI Futures T-1
+              Brent Oil Futures T-1
+              Natural Gas Futures T-1
+              US Cotton #2 Futures T-1
+              US Coffee C Futures T-1
+              Apple T-1
+              Alphabet A T-1
+              Facebook T-1
+              NVIDIA T-1
+              Citigroup T-1
+              AT&T T-1
+              3M T-1
+              BP T-1
+              Tesla T-1
+              Amazon.com T-1
+              Japan Government Bond Futures T-1
+              US 10 Year T-Note Futures T-1
+              US 30 Year T-Bond Futures T-1
+              US 2 Year T-Note Futures T-1
+              BTC/USD
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+AttributeSelectedClassifier:
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 818
+	Merit of best subset found:    0.042
+
+Attribute Subset Evaluator (supervised, Class (nominal): 63 BTC/USD):
+	CFS Subset Evaluator
+	Including locally predictive attributes
+
+Selected attributes: 5,10,11,27,29,32,42,46,49,59 : 10
+                     AUD/USD
+                     Gold Futures
+                     Silver Futures
+                     Amazon.com
+                     US 10 Year T-Note Futures
+                     USD/JPY T-1
+                     Silver Futures T-1
+                     Natural Gas Futures T-1
+                     Apple T-1
+                     Japan Government Bond Futures T-1
+
+
+Header of reduced data:
+@relation 'train-weka.filters.unsupervised.attribute.Remove-V-R5,10-11,27,29,32,42,46,49,59,63'
+
+@attribute AUD/USD {up,down,equal}
+@attribute 'Gold Futures' {down,up,equal}
+@attribute 'Silver Futures' {down,up}
+@attribute Amazon.com {up,down,equal}
+@attribute 'US 10 Year T-Note Futures' {down,up,equal}
+@attribute 'USD/JPY T-1' {up,down,equal}
+@attribute 'Silver Futures T-1' {down,up}
+@attribute 'Natural Gas Futures T-1' {up,down,equal}
+@attribute 'Apple T-1' {down,up,equal}
+@attribute 'Japan Government Bond Futures T-1' {up,equal,down}
+@attribute BTC/USD {up,down}
+
+@data
+
+
+Classifier Model
+J48 pruned tree
+------------------
+
+Gold Futures = down
+|   USD/JPY T-1 = up
+|   |   Silver Futures T-1 = down
+|   |   |   Japan Government Bond Futures T-1 = up: down (13.0/5.0)
+|   |   |   Japan Government Bond Futures T-1 = equal: up (1.0)
+|   |   |   Japan Government Bond Futures T-1 = down: up (8.0/2.0)
+|   |   Silver Futures T-1 = up: down (35.0/5.0)
+|   USD/JPY T-1 = down
+|   |   Amazon.com = up: up (19.0/4.0)
+|   |   Amazon.com = down
+|   |   |   Japan Government Bond Futures T-1 = up: down (13.0/4.0)
+|   |   |   Japan Government Bond Futures T-1 = equal: up (1.0)
+|   |   |   Japan Government Bond Futures T-1 = down
+|   |   |   |   Apple T-1 = down: up (3.0)
+|   |   |   |   Apple T-1 = up: down (5.0/2.0)
+|   |   |   |   Apple T-1 = equal: down (1.0)
+|   |   Amazon.com = equal: down (3.0/1.0)
+|   USD/JPY T-1 = equal: down (3.0/1.0)
+Gold Futures = up
+|   Natural Gas Futures T-1 = up
+|   |   US 10 Year T-Note Futures = down
+|   |   |   AUD/USD = up
+|   |   |   |   Silver Futures = down
+|   |   |   |   |   USD/JPY T-1 = up: up (2.0)
+|   |   |   |   |   USD/JPY T-1 = down: down (3.0)
+|   |   |   |   |   USD/JPY T-1 = equal: down (0.0)
+|   |   |   |   Silver Futures = up: up (13.0/3.0)
+|   |   |   AUD/USD = down
+|   |   |   |   Silver Futures T-1 = down: up (4.0/1.0)
+|   |   |   |   Silver Futures T-1 = up: down (2.0)
+|   |   |   AUD/USD = equal: down (1.0)
+|   |   US 10 Year T-Note Futures = up
+|   |   |   Apple T-1 = down
+|   |   |   |   Silver Futures = down: up (3.0)
+|   |   |   |   Silver Futures = up
+|   |   |   |   |   AUD/USD = up: up (7.0/1.0)
+|   |   |   |   |   AUD/USD = down: down (5.0/1.0)
+|   |   |   |   |   AUD/USD = equal: up (0.0)
+|   |   |   Apple T-1 = up: down (23.0/9.0)
+|   |   |   Apple T-1 = equal: down (5.0/2.0)
+|   |   US 10 Year T-Note Futures = equal: down (2.0)
+|   Natural Gas Futures T-1 = down
+|   |   US 10 Year T-Note Futures = down: up (20.0/2.0)
+|   |   US 10 Year T-Note Futures = up
+|   |   |   USD/JPY T-1 = up
+|   |   |   |   Amazon.com = up: up (12.0/1.0)
+|   |   |   |   Amazon.com = down: down (7.0/1.0)
+|   |   |   |   Amazon.com = equal: up (0.0)
+|   |   |   USD/JPY T-1 = down: up (35.0/11.0)
+|   |   |   USD/JPY T-1 = equal: down (2.0)
+|   |   US 10 Year T-Note Futures = equal: up (2.0/1.0)
+|   Natural Gas Futures T-1 = equal
+|   |   Japan Government Bond Futures T-1 = up: down (2.0)
+|   |   Japan Government Bond Futures T-1 = equal: up (0.0)
+|   |   Japan Government Bond Futures T-1 = down: up (2.0)
+Gold Futures = equal: up (1.0)
+
+Number of Leaves  : 	37
+
+Size of the tree : 	57
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         136               52.7132 %
+Incorrectly Classified Instances       122               47.2868 %
+Kappa statistic                          0.036 
+Mean absolute error                      0.4767
+Root mean squared error                  0.5555
+Relative absolute error                 95.8097 %
+Root relative squared error            111.3743 %
+Total Number of Instances              258     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.652    0.617    0.549      0.652    0.596      0.037    0.531     0.543     up
+                 0.383    0.348    0.489      0.383    0.430      0.037    0.531     0.508     down
+Weighted Avg.    0.527    0.492    0.521      0.527    0.519      0.037    0.531     0.527     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 90 48 |  a = up
+ 74 46 |  b = down
+

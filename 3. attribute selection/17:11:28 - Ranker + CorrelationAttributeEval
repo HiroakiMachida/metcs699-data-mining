@@ -1,0 +1,147 @@
+=== Run information ===
+
+Evaluator:    weka.attributeSelection.CorrelationAttributeEval 
+Search:       weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N -1
+Relation:     train
+Instances:    258
+Attributes:   63
+              Date
+              USD/JPY
+              EUR/USD
+              GBP/USD
+              AUD/USD
+              S&P 500
+              Dow Jones Industrial Average
+              Nasdaq 100
+              Nikkei 225
+              Gold Futures
+              Silver Futures
+              Copper Futures
+              Crude Oil WTI Futures
+              Brent Oil Futures
+              Natural Gas Futures
+              US Cotton #2 Futures
+              US Coffee C Futures
+              Apple
+              Alphabet A
+              Facebook
+              NVIDIA
+              Citigroup
+              AT&T
+              3M
+              BP
+              Tesla
+              Amazon.com
+              Japan Government Bond Futures
+              US 10 Year T-Note Futures
+              US 30 Year T-Bond Futures
+              US 2 Year T-Note Futures
+              USD/JPY T-1
+              EUR/USD T-1
+              GBP/USD T-1
+              AUD/USD T-1
+              BTC/USD T-1
+              S&P 500 T-1
+              Dow Jones Industrial Average T-1
+              Nasdaq 100 T-1
+              Nikkei 225 T-1
+              Gold Futures T-1
+              Silver Futures T-1
+              Copper Futures T-1
+              Crude Oil WTI Futures T-1
+              Brent Oil Futures T-1
+              Natural Gas Futures T-1
+              US Cotton #2 Futures T-1
+              US Coffee C Futures T-1
+              Apple T-1
+              Alphabet A T-1
+              Facebook T-1
+              NVIDIA T-1
+              Citigroup T-1
+              AT&T T-1
+              3M T-1
+              BP T-1
+              Tesla T-1
+              Amazon.com T-1
+              Japan Government Bond Futures T-1
+              US 10 Year T-Note Futures T-1
+              US 30 Year T-Bond Futures T-1
+              US 2 Year T-Note Futures T-1
+              BTC/USD
+Evaluation mode:    evaluate on all training data
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Attribute ranking.
+
+Attribute Evaluator (supervised, Class (nominal): 63 BTC/USD):
+	Correlation Ranking Filter
+Ranked attributes:
+ 0.18738    10 Gold Futures
+ 0.14956    11 Silver Futures
+ 0.13857    42 Silver Futures T-1
+ 0.13406    49 Apple T-1
+ 0.12959    32 USD/JPY T-1
+ 0.12218    39 Nasdaq 100 T-1
+ 0.1178      5 AUD/USD
+ 0.11371    59 Japan Government Bond Futures T-1
+ 0.1081     27 Amazon.com
+ 0.10542    46 Natural Gas Futures T-1
+ 0.1041      6 S&P 500
+ 0.09267    53 Citigroup T-1
+ 0.08264     8 Nasdaq 100
+ 0.0824     33 EUR/USD T-1
+ 0.07842    37 S&P 500 T-1
+ 0.06641    15 Natural Gas Futures
+ 0.06541    41 Gold Futures T-1
+ 0.06463     7 Dow Jones Industrial Average
+ 0.06377    13 Crude Oil WTI Futures
+ 0.0631     50 Alphabet A T-1
+ 0.06052    22 Citigroup
+ 0.06023    21 NVIDIA
+ 0.05618     9 Nikkei 225
+ 0.05191    34 GBP/USD T-1
+ 0.05105    52 NVIDIA T-1
+ 0.04948    30 US 30 Year T-Bond Futures
+ 0.04885    45 Brent Oil Futures T-1
+ 0.04871    57 Tesla T-1
+ 0.04735    24 3M
+ 0.04451    18 Apple
+ 0.04349    19 Alphabet A
+ 0.04152    40 Nikkei 225 T-1
+ 0.0409     47 US Cotton #2 Futures T-1
+ 0.03859    38 Dow Jones Industrial Average T-1
+ 0.03794     1 Date
+ 0.03765     3 EUR/USD
+ 0.03742    12 Copper Futures
+ 0.03665    16 US Cotton #2 Futures
+ 0.03665    17 US Coffee C Futures
+ 0.03601    56 BP T-1
+ 0.03548    35 AUD/USD T-1
+ 0.0344     26 Tesla
+ 0.03366    20 Facebook
+ 0.03229    28 Japan Government Bond Futures
+ 0.03222     4 GBP/USD
+ 0.03218    55 3M T-1
+ 0.02893    23 AT&T
+ 0.02879    14 Brent Oil Futures
+ 0.02785    58 Amazon.com T-1
+ 0.02582    51 Facebook T-1
+ 0.02187    29 US 10 Year T-Note Futures
+ 0.02115    25 BP
+ 0.02103    36 BTC/USD T-1
+ 0.01941    48 US Coffee C Futures T-1
+ 0.01923    43 Copper Futures T-1
+ 0.01459    60 US 10 Year T-Note Futures T-1
+ 0.01459    31 US 2 Year T-Note Futures
+ 0.01162     2 USD/JPY
+ 0.01157    44 Crude Oil WTI Futures T-1
+ 0.01153    54 AT&T T-1
+ 0.01127    62 US 2 Year T-Note Futures T-1
+ 0.0079     61 US 30 Year T-Bond Futures T-1
+
+Selected attributes: 10,11,42,49,32,39,5,59,27,46,6,53,8,33,37,15,41,7,13,50,22,21,9,34,52,30,45,57,24,18,19,40,47,38,1,3,12,16,17,56,35,26,20,28,4,55,23,14,58,51,29,25,36,48,43,60,31,2,44,54,62,61 : 62
+

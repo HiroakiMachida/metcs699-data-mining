@@ -1,0 +1,65 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.DecisionTable -X 1 -S "weka.attributeSelection.BestFirst -D 1 -N 5"
+Relation:     set1.train
+Instances:    258
+Attributes:   11
+              AUD/USD
+              Gold Futures
+              Silver Futures
+              Amazon.com
+              US 10 Year T-Note Futures
+              USD/JPY T-1
+              Silver Futures T-1
+              Natural Gas Futures T-1
+              Apple T-1
+              Japan Government Bond Futures T-1
+              BTC/USD
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+Decision Table:
+
+Number of training instances: 258
+Number of Rules : 61
+Non matches covered by Majority class.
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 68
+	Merit of best subset found:   65.116
+Evaluation (for feature selection): CV (leave one out) 
+Feature set: 2,6,7,9,10,11
+
+Time taken to build model: 0.02 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances          68               52.7132 %
+Incorrectly Classified Instances        61               47.2868 %
+Kappa statistic                          0.052 
+Mean absolute error                      0.4782
+Root mean squared error                  0.5158
+Relative absolute error                 95.6991 %
+Root relative squared error            102.9598 %
+Total Number of Instances              129     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.677    0.625    0.524      0.677    0.591      0.054    0.572     0.557     up
+                 0.375    0.323    0.533      0.375    0.440      0.054    0.572     0.564     down
+Weighted Avg.    0.527    0.475    0.529      0.527    0.516      0.054    0.572     0.560     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 44 21 |  a = up
+ 40 24 |  b = down
+

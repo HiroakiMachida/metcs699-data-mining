@@ -1,0 +1,244 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.LogitBoost -P 100 -L -1.7976931348623157E308 -H 1.0 -Z 3.0 -O 1 -E 1 -S 1 -I 10 -W weka.classifiers.trees.DecisionStump
+Relation:     train
+Instances:    258
+Attributes:   63
+              Date
+              USD/JPY
+              EUR/USD
+              GBP/USD
+              AUD/USD
+              S&P 500
+              Dow Jones Industrial Average
+              Nasdaq 100
+              Nikkei 225
+              Gold Futures
+              Silver Futures
+              Copper Futures
+              Crude Oil WTI Futures
+              Brent Oil Futures
+              Natural Gas Futures
+              US Cotton #2 Futures
+              US Coffee C Futures
+              Apple
+              Alphabet A
+              Facebook
+              NVIDIA
+              Citigroup
+              AT&T
+              3M
+              BP
+              Tesla
+              Amazon.com
+              Japan Government Bond Futures
+              US 10 Year T-Note Futures
+              US 30 Year T-Bond Futures
+              US 2 Year T-Note Futures
+              USD/JPY T-1
+              EUR/USD T-1
+              GBP/USD T-1
+              AUD/USD T-1
+              BTC/USD T-1
+              S&P 500 T-1
+              Dow Jones Industrial Average T-1
+              Nasdaq 100 T-1
+              Nikkei 225 T-1
+              Gold Futures T-1
+              Silver Futures T-1
+              Copper Futures T-1
+              Crude Oil WTI Futures T-1
+              Brent Oil Futures T-1
+              Natural Gas Futures T-1
+              US Cotton #2 Futures T-1
+              US Coffee C Futures T-1
+              Apple T-1
+              Alphabet A T-1
+              Facebook T-1
+              NVIDIA T-1
+              Citigroup T-1
+              AT&T T-1
+              3M T-1
+              BP T-1
+              Tesla T-1
+              Amazon.com T-1
+              Japan Government Bond Futures T-1
+              US 10 Year T-Note Futures T-1
+              US 30 Year T-Bond Futures T-1
+              US 2 Year T-Note Futures T-1
+              BTC/USD
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+LogitBoost: Base classifiers and their weights: 
+
+Iteration 1
+	Class 1 (BTC/USD=up)
+
+Decision Stump
+
+Classifications
+
+Date <= 75.5 : 1.0222222222222221
+Date > 75.5 : -0.046948356807511735
+Date is missing : 0.13953488372093023
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 2
+	Class 1 (BTC/USD=up)
+
+Decision Stump
+
+Classifications
+
+Gold Futures = down : -0.4285648315765368
+Gold Futures != down : 0.32177162935910847
+Gold Futures is missing : 0.01449322733733914
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 3
+	Class 1 (BTC/USD=up)
+
+Decision Stump
+
+Classifications
+
+Silver Futures T-1 = down : 0.3398784780815899
+Silver Futures T-1 != down : -0.28661394901612114
+Silver Futures T-1 is missing : 0.0024199897183794163
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 4
+	Class 1 (BTC/USD=up)
+
+Decision Stump
+
+Classifications
+
+AUD/USD = up : 0.33130825689056415
+AUD/USD != up : -0.292217624269559
+AUD/USD is missing : 0.0026240526952740384
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 5
+	Class 1 (BTC/USD=up)
+
+Decision Stump
+
+Classifications
+
+US 10 Year T-Note Futures = equal : -1.6195679801315308
+US 10 Year T-Note Futures != equal : 0.04791245147886978
+US 10 Year T-Note Futures is missing : 6.638692042594264E-4
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 6
+	Class 1 (BTC/USD=up)
+
+Decision Stump
+
+Classifications
+
+Apple T-1 = down : 0.3169887869208762
+Apple T-1 != down : -0.20301613607123845
+Apple T-1 is missing : -0.007085299799672184
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 7
+	Class 1 (BTC/USD=up)
+
+Decision Stump
+
+Classifications
+
+Date <= 380.5 : -0.03360816946968146
+Date > 380.5 : 1.8417979106090963
+Date is missing : 0.0029368696472607593
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 8
+	Class 1 (BTC/USD=up)
+
+Decision Stump
+
+Classifications
+
+Japan Government Bond Futures T-1 = up : -0.23691843234086804
+Japan Government Bond Futures T-1 != up : 0.23640950280425038
+Japan Government Bond Futures T-1 is missing : 0.009060019058401838
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 9
+	Class 1 (BTC/USD=up)
+
+Decision Stump
+
+Classifications
+
+US 10 Year T-Note Futures T-1 = equal : 1.2582650349516393
+US 10 Year T-Note Futures T-1 != equal : -0.03893464809043413
+US 10 Year T-Note Futures T-1 is missing : 0.0011691109809257344
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 10
+	Class 1 (BTC/USD=up)
+
+Decision Stump
+
+Classifications
+
+USD/JPY T-1 = down : 0.2159394286161147
+USD/JPY T-1 != down : -0.21506653273047305
+USD/JPY T-1 is missing : 0.002759631114358556
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+Number of performed iterations: 10
+
+
+Time taken to build model: 0.02 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         149               57.7519 %
+Incorrectly Classified Instances       109               42.2481 %
+Kappa statistic                          0.1477
+Mean absolute error                      0.4623
+Root mean squared error                  0.5001
+Relative absolute error                 92.9075 %
+Root relative squared error            100.2663 %
+Total Number of Instances              258     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.630    0.483    0.600      0.630    0.615      0.148    0.608     0.619     up
+                 0.517    0.370    0.549      0.517    0.532      0.148    0.608     0.571     down
+Weighted Avg.    0.578    0.430    0.576      0.578    0.576      0.148    0.608     0.596     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 87 51 |  a = up
+ 58 62 |  b = down
+

@@ -1,0 +1,151 @@
+=== Run information ===
+
+Evaluator:    weka.attributeSelection.OneRAttributeEval -S 1 -F 10 -B 6
+Search:       weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N -1
+Relation:     train
+Instances:    258
+Attributes:   63
+              Date
+              USD/JPY
+              EUR/USD
+              GBP/USD
+              AUD/USD
+              S&P 500
+              Dow Jones Industrial Average
+              Nasdaq 100
+              Nikkei 225
+              Gold Futures
+              Silver Futures
+              Copper Futures
+              Crude Oil WTI Futures
+              Brent Oil Futures
+              Natural Gas Futures
+              US Cotton #2 Futures
+              US Coffee C Futures
+              Apple
+              Alphabet A
+              Facebook
+              NVIDIA
+              Citigroup
+              AT&T
+              3M
+              BP
+              Tesla
+              Amazon.com
+              Japan Government Bond Futures
+              US 10 Year T-Note Futures
+              US 30 Year T-Bond Futures
+              US 2 Year T-Note Futures
+              USD/JPY T-1
+              EUR/USD T-1
+              GBP/USD T-1
+              AUD/USD T-1
+              BTC/USD T-1
+              S&P 500 T-1
+              Dow Jones Industrial Average T-1
+              Nasdaq 100 T-1
+              Nikkei 225 T-1
+              Gold Futures T-1
+              Silver Futures T-1
+              Copper Futures T-1
+              Crude Oil WTI Futures T-1
+              Brent Oil Futures T-1
+              Natural Gas Futures T-1
+              US Cotton #2 Futures T-1
+              US Coffee C Futures T-1
+              Apple T-1
+              Alphabet A T-1
+              Facebook T-1
+              NVIDIA T-1
+              Citigroup T-1
+              AT&T T-1
+              3M T-1
+              BP T-1
+              Tesla T-1
+              Amazon.com T-1
+              Japan Government Bond Futures T-1
+              US 10 Year T-Note Futures T-1
+              US 30 Year T-Bond Futures T-1
+              US 2 Year T-Note Futures T-1
+              BTC/USD
+Evaluation mode:    evaluate on all training data
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Attribute ranking.
+
+Attribute Evaluator (supervised, Class (nominal): 63 BTC/USD):
+	OneR feature evaluator.
+
+	Using 10 fold cross validation for evaluating attributes.
+	Minimum bucket size for OneR: 6
+
+Ranked attributes:
+60.0775    10 Gold Futures
+57.7519    11 Silver Futures
+56.9767    49 Apple T-1
+56.5891    42 Silver Futures T-1
+56.2016     6 S&P 500
+56.2016    39 Nasdaq 100 T-1
+56.2016    59 Japan Government Bond Futures T-1
+55.814     46 Natural Gas Futures T-1
+55.4264    29 US 10 Year T-Note Futures
+55.4264    53 Citigroup T-1
+55.4264    24 3M
+55.0388    32 USD/JPY T-1
+55.0388    18 Apple
+54.6512    26 Tesla
+54.6512    19 Alphabet A
+54.6512    16 US Cotton #2 Futures
+54.6512     3 EUR/USD
+54.6512     1 Date
+54.6512    23 AT&T
+54.6512    20 Facebook
+54.2636    14 Brent Oil Futures
+54.2636     2 USD/JPY
+53.4884    61 US 30 Year T-Bond Futures T-1
+53.4884    30 US 30 Year T-Bond Futures
+53.4884    35 AUD/USD T-1
+53.4884    28 Japan Government Bond Futures
+53.4884    31 US 2 Year T-Note Futures
+53.4884    36 BTC/USD T-1
+53.4884    44 Crude Oil WTI Futures T-1
+53.4884    54 AT&T T-1
+53.4884    58 Amazon.com T-1
+53.4884    60 US 10 Year T-Note Futures T-1
+53.4884    48 US Coffee C Futures T-1
+53.4884    51 Facebook T-1
+53.4884    38 Dow Jones Industrial Average T-1
+53.1008    27 Amazon.com
+53.1008     5 AUD/USD
+53.1008    43 Copper Futures T-1
+52.7132    40 Nikkei 225 T-1
+52.3256    62 US 2 Year T-Note Futures T-1
+52.3256    37 S&P 500 T-1
+52.3256    33 EUR/USD T-1
+51.938     56 BP T-1
+51.938     41 Gold Futures T-1
+51.938     45 Brent Oil Futures T-1
+51.938     21 NVIDIA
+51.5504    17 US Coffee C Futures
+51.5504     7 Dow Jones Industrial Average
+51.5504    12 Copper Futures
+51.5504    25 BP
+51.1628    55 3M T-1
+50.7752    13 Crude Oil WTI Futures
+50.7752     9 Nikkei 225
+50.3876    52 NVIDIA T-1
+50.3876     4 GBP/USD
+50.3876    50 Alphabet A T-1
+50.3876     8 Nasdaq 100
+50         34 GBP/USD T-1
+49.6124    47 US Cotton #2 Futures T-1
+49.2248    22 Citigroup
+48.4496    15 Natural Gas Futures
+47.6744    57 Tesla T-1
+
+Selected attributes: 10,11,49,42,6,39,59,46,29,53,24,32,18,26,19,16,3,1,23,20,14,2,61,30,35,28,31,36,44,54,58,60,48,51,38,27,5,43,40,62,37,33,56,41,45,21,17,7,12,25,55,13,9,52,4,50,8,34,47,22,15,57 : 62
+

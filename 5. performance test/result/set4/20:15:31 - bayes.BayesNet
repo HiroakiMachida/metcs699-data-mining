@@ -1,0 +1,59 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.K2 -- -P 1 -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+Relation:     set4.train
+Instances:    258
+Attributes:   4
+              S&P 500
+              Dow Jones Industrial Average
+              Gold Futures
+              BTC/USD
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+Bayes Network Classifier
+not using ADTree
+#attributes=4 #classindex=3
+Network structure (nodes followed by parents)
+S&P 500(3): BTC/USD 
+Dow Jones Industrial Average(3): BTC/USD 
+Gold Futures(3): BTC/USD 
+BTC/USD(2): 
+LogScore Bayes: -848.9419663027699
+LogScore BDeu: -865.381716078174
+LogScore MDL: -868.4931328378924
+LogScore ENTROPY: -832.3988955359019
+LogScore AIC: -845.3988955359019
+
+
+Time taken to build model: 0 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances          74               57.3643 %
+Incorrectly Classified Instances        55               42.6357 %
+Kappa statistic                          0.144 
+Mean absolute error                      0.4697
+Root mean squared error                  0.489 
+Relative absolute error                 93.9989 %
+Root relative squared error             97.6106 %
+Total Number of Instances              129     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.815    0.672    0.552      0.815    0.658      0.164    0.627     0.603     up
+                 0.328    0.185    0.636      0.328    0.433      0.164    0.627     0.577     down
+Weighted Avg.    0.574    0.430    0.594      0.574    0.547      0.164    0.627     0.590     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 53 12 |  a = up
+ 43 21 |  b = down
+

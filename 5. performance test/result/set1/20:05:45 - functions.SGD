@@ -1,0 +1,83 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.SGD -F 0 -L 0.01 -R 1.0E-4 -E 500 -C 0.001 -S 1
+Relation:     set1.train
+Instances:    258
+Attributes:   11
+              AUD/USD
+              Gold Futures
+              Silver Futures
+              Amazon.com
+              US 10 Year T-Note Futures
+              USD/JPY T-1
+              Silver Futures T-1
+              Natural Gas Futures T-1
+              Apple T-1
+              Japan Government Bond Futures T-1
+              BTC/USD
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+Loss function: Hinge loss (SVM)
+
+BTC/USD = 
+
+        -0.8596 (normalized) AUD/USD=up
+ +      -0.4498 (normalized) AUD/USD=down
+ +       1.3994 (normalized) AUD/USD=equal
+ +       0.9296 (normalized) Gold Futures=down
+ +       0.4498 (normalized) Gold Futures=up
+ +      -1.2894 (normalized) Gold Futures=equal
+ +      -0.3398 (normalized) Silver Futures=up
+ +      -0.3198 (normalized) Amazon.com=up
+ +       0.2099 (normalized) Amazon.com=down
+ +       0.1999 (normalized) Amazon.com=equal
+ +      -1.0795 (normalized) US 10 Year T-Note Futures=down
+ +      -0.2699 (normalized) US 10 Year T-Note Futures=up
+ +       1.4393 (normalized) US 10 Year T-Note Futures=equal
+ +       0.5197 (normalized) USD/JPY T-1=up
+ +      -0.6197 (normalized) USD/JPY T-1=down
+ +       0.1899 (normalized) USD/JPY T-1=equal
+ +       0.6797 (normalized) Silver Futures T-1=up
+ +       0.4098 (normalized) Natural Gas Futures T-1=up
+ +      -0.3198 (normalized) Natural Gas Futures T-1=down
+ +      -0      (normalized) Natural Gas Futures T-1=equal
+ +      -0.4298 (normalized) Apple T-1=down
+ +       0.1999 (normalized) Apple T-1=up
+ +       0.3198 (normalized) Apple T-1=equal
+ +       0.4198 (normalized) Japan Government Bond Futures T-1=up
+ +      -0.2299 (normalized) Japan Government Bond Futures T-1=equal
+ +      -0.1    (normalized) Japan Government Bond Futures T-1=down
+ +       0.09  
+
+Time taken to build model: 0.02 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances          75               58.1395 %
+Incorrectly Classified Instances        54               41.8605 %
+Kappa statistic                          0.1613
+Mean absolute error                      0.4186
+Root mean squared error                  0.647 
+Relative absolute error                 83.7659 %
+Root relative squared error            129.1593 %
+Total Number of Instances              129     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.692    0.531    0.570      0.692    0.625      0.165    0.581     0.549     up
+                 0.469    0.308    0.600      0.469    0.526      0.165    0.581     0.545     down
+Weighted Avg.    0.581    0.420    0.585      0.581    0.576      0.165    0.581     0.547     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 45 20 |  a = up
+ 34 30 |  b = down
+

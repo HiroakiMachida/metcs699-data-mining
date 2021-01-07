@@ -1,0 +1,60 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.LMT -I -1 -M 15 -W 0.0
+Relation:     set2.train
+Instances:    258
+Attributes:   3
+              Gold Futures
+              Silver Futures
+              BTC/USD
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+Logistic model tree 
+------------------
+: LM_1:1/1 (258)
+
+Number of Leaves  : 	1
+
+Size of the Tree : 	1
+LM_1:
+Class up :
+0.23 + 
+[Gold Futures=down] * -0.39
+
+Class down :
+-0.23 + 
+[Gold Futures=down] * 0.39
+
+
+Time taken to build model: 0.03 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances          75               58.1395 %
+Incorrectly Classified Instances        54               41.8605 %
+Kappa statistic                          0.1623
+Mean absolute error                      0.4842
+Root mean squared error                  0.4939
+Relative absolute error                 96.8905 %
+Root relative squared error             98.5991 %
+Total Number of Instances              129     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.615    0.453    0.580      0.615    0.597      0.163    0.581     0.551     up
+                 0.547    0.385    0.583      0.547    0.565      0.163    0.581     0.544     down
+Weighted Avg.    0.581    0.419    0.582      0.581    0.581      0.163    0.581     0.547     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 40 25 |  a = up
+ 29 35 |  b = down
+

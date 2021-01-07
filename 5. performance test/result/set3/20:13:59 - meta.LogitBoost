@@ -1,0 +1,188 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.LogitBoost -P 100 -L -1.7976931348623157E308 -H 1.0 -Z 3.0 -O 1 -E 1 -S 1 -I 10 -W weka.classifiers.trees.DecisionStump
+Relation:     set3.train
+Instances:    258
+Attributes:   4
+              Gold Futures
+              Silver Futures
+              Apple T-1
+              BTC/USD
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+LogitBoost: Base classifiers and their weights: 
+
+Iteration 1
+	Class 1 (BTC/USD=up)
+
+Decision Stump
+
+Classifications
+
+Gold Futures = down : -0.3238095238095238
+Gold Futures != down : 0.45751633986928103
+Gold Futures is missing : 0.13953488372093023
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 2
+	Class 1 (BTC/USD=up)
+
+Decision Stump
+
+Classifications
+
+Apple T-1 = down : 0.3669771959392592
+Apple T-1 != down : -0.21493450532616473
+Apple T-1 is missing : 0.00364361108360169
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 3
+	Class 1 (BTC/USD=up)
+
+Decision Stump
+
+Classifications
+
+Gold Futures = equal : 1.784599537606772
+Gold Futures != equal : -0.0034896173258559347
+Gold Futures is missing : 0.003734194093094312
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 4
+	Class 1 (BTC/USD=up)
+
+Decision Stump
+
+Classifications
+
+Silver Futures = down : -0.0883063652781982
+Silver Futures != down : 0.07735877800742216
+Silver Futures is missing : 0.0018938812648261344
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 5
+	Class 1 (BTC/USD=up)
+
+Decision Stump
+
+Classifications
+
+Gold Futures = up : -0.04974857119165231
+Gold Futures != up : 0.07196220342495922
+Gold Futures is missing : 4.1801859911280286E-4
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 6
+	Class 1 (BTC/USD=up)
+
+Decision Stump
+
+Classifications
+
+Gold Futures = equal : 1.1134376022005064
+Gold Futures != equal : -0.002067370310067586
+Gold Futures is missing : -3.91883871575088E-4
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 7
+	Class 1 (BTC/USD=up)
+
+Decision Stump
+
+Classifications
+
+Silver Futures = down : -0.03688344275171009
+Silver Futures != down : 0.03209514443971946
+Silver Futures is missing : 5.790549568091658E-4
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 8
+	Class 1 (BTC/USD=up)
+
+Decision Stump
+
+Classifications
+
+Gold Futures = equal : 1.0360793319332182
+Gold Futures != equal : -3.771977210094403E-4
+Gold Futures is missing : 1.970979489104599E-4
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 9
+	Class 1 (BTC/USD=up)
+
+Decision Stump
+
+Classifications
+
+Gold Futures = up : -0.015022510849651649
+Gold Futures != up : 0.021955574486097546
+Gold Futures is missing : 2.0601403086497995E-4
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 10
+	Class 1 (BTC/USD=up)
+
+Decision Stump
+
+Classifications
+
+Apple T-1 = down : 0.020591043131102108
+Apple T-1 != down : -0.012114643690690634
+Apple T-1 is missing : -9.906085221042945E-5
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+Number of performed iterations: 10
+
+
+Time taken to build model: 0 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances          75               58.1395 %
+Incorrectly Classified Instances        54               41.8605 %
+Kappa statistic                          0.1597
+Mean absolute error                      0.4766
+Root mean squared error                  0.4926
+Relative absolute error                 95.3624 %
+Root relative squared error             98.3445 %
+Total Number of Instances              129     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.815    0.656    0.558      0.815    0.663      0.181    0.606     0.586     up
+                 0.344    0.185    0.647      0.344    0.449      0.181    0.606     0.578     down
+Weighted Avg.    0.581    0.422    0.602      0.581    0.557      0.181    0.606     0.582     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 53 12 |  a = up
+ 42 22 |  b = down
+

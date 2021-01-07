@@ -1,0 +1,59 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.K2 -- -P 1 -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+Relation:     set5.train
+Instances:    258
+Attributes:   4
+              Date
+              USD/JPY
+              Gold Futures
+              BTC/USD
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+Bayes Network Classifier
+not using ADTree
+#attributes=4 #classindex=3
+Network structure (nodes followed by parents)
+Date(1): BTC/USD 
+USD/JPY(3): BTC/USD 
+Gold Futures(3): BTC/USD 
+BTC/USD(2): 
+LogScore Bayes: -583.8736587736571
+LogScore BDeu: -594.8334919572599
+LogScore MDL: -598.66992593035
+LogScore ENTROPY: -573.6816077982028
+LogScore AIC: -582.6816077982028
+
+
+Time taken to build model: 0 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances          76               58.9147 %
+Incorrectly Classified Instances        53               41.0853 %
+Kappa statistic                          0.1781
+Mean absolute error                      0.4819
+Root mean squared error                  0.4917
+Relative absolute error                 96.4312 %
+Root relative squared error             98.1531 %
+Total Number of Instances              129     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.600    0.422    0.591      0.600    0.595      0.178    0.636     0.603     up
+                 0.578    0.400    0.587      0.578    0.583      0.178    0.636     0.605     down
+Weighted Avg.    0.589    0.411    0.589      0.589    0.589      0.178    0.636     0.604     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 39 26 |  a = up
+ 27 37 |  b = down
+

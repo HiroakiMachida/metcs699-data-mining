@@ -1,0 +1,172 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.misc.InputMappedClassifier -I -trim -W weka.classifiers.rules.ZeroR
+Relation:     train
+Instances:    258
+Attributes:   63
+              Date
+              USD/JPY
+              EUR/USD
+              GBP/USD
+              AUD/USD
+              S&P 500
+              Dow Jones Industrial Average
+              Nasdaq 100
+              Nikkei 225
+              Gold Futures
+              Silver Futures
+              Copper Futures
+              Crude Oil WTI Futures
+              Brent Oil Futures
+              Natural Gas Futures
+              US Cotton #2 Futures
+              US Coffee C Futures
+              Apple
+              Alphabet A
+              Facebook
+              NVIDIA
+              Citigroup
+              AT&T
+              3M
+              BP
+              Tesla
+              Amazon.com
+              Japan Government Bond Futures
+              US 10 Year T-Note Futures
+              US 30 Year T-Bond Futures
+              US 2 Year T-Note Futures
+              USD/JPY T-1
+              EUR/USD T-1
+              GBP/USD T-1
+              AUD/USD T-1
+              BTC/USD T-1
+              S&P 500 T-1
+              Dow Jones Industrial Average T-1
+              Nasdaq 100 T-1
+              Nikkei 225 T-1
+              Gold Futures T-1
+              Silver Futures T-1
+              Copper Futures T-1
+              Crude Oil WTI Futures T-1
+              Brent Oil Futures T-1
+              Natural Gas Futures T-1
+              US Cotton #2 Futures T-1
+              US Coffee C Futures T-1
+              Apple T-1
+              Alphabet A T-1
+              Facebook T-1
+              NVIDIA T-1
+              Citigroup T-1
+              AT&T T-1
+              3M T-1
+              BP T-1
+              Tesla T-1
+              Amazon.com T-1
+              Japan Government Bond Futures T-1
+              US 10 Year T-Note Futures T-1
+              US 30 Year T-Bond Futures T-1
+              US 2 Year T-Note Futures T-1
+              BTC/USD
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+InputMappedClassifier:
+
+ZeroR predicts class value: up
+Attribute mappings:
+
+Model attributes                             	    Incoming attributes
+---------------------------------------------	    ----------------
+(numeric) Date                               	--> 1 (numeric) Date
+(nominal) USD/JPY                            	--> 2 (nominal) USD/JPY
+(nominal) EUR/USD                            	--> 3 (nominal) EUR/USD
+(nominal) GBP/USD                            	--> 4 (nominal) GBP/USD
+(nominal) AUD/USD                            	--> 5 (nominal) AUD/USD
+(nominal) S&P 500                            	--> 6 (nominal) S&P 500
+(nominal) Dow Jones Industrial Average       	--> 7 (nominal) Dow Jones Industrial Average
+(nominal) Nasdaq 100                         	--> 8 (nominal) Nasdaq 100
+(nominal) Nikkei 225                         	--> 9 (nominal) Nikkei 225
+(nominal) Gold Futures                       	--> 10 (nominal) Gold Futures
+(nominal) Silver Futures                     	--> 11 (nominal) Silver Futures
+(nominal) Copper Futures                     	--> 12 (nominal) Copper Futures
+(nominal) Crude Oil WTI Futures              	--> 13 (nominal) Crude Oil WTI Futures
+(nominal) Brent Oil Futures                  	--> 14 (nominal) Brent Oil Futures
+(nominal) Natural Gas Futures                	--> 15 (nominal) Natural Gas Futures
+(nominal) US Cotton #2 Futures               	--> 16 (nominal) US Cotton #2 Futures
+(nominal) US Coffee C Futures                	--> 17 (nominal) US Coffee C Futures
+(nominal) Apple                              	--> 18 (nominal) Apple
+(nominal) Alphabet A                         	--> 19 (nominal) Alphabet A
+(nominal) Facebook                           	--> 20 (nominal) Facebook
+(nominal) NVIDIA                             	--> 21 (nominal) NVIDIA
+(nominal) Citigroup                          	--> 22 (nominal) Citigroup
+(nominal) AT&T                               	--> 23 (nominal) AT&T
+(nominal) 3M                                 	--> 24 (nominal) 3M
+(nominal) BP                                 	--> 25 (nominal) BP
+(nominal) Tesla                              	--> 26 (nominal) Tesla
+(nominal) Amazon.com                         	--> 27 (nominal) Amazon.com
+(nominal) Japan Government Bond Futures      	--> 28 (nominal) Japan Government Bond Futures
+(nominal) US 10 Year T-Note Futures          	--> 29 (nominal) US 10 Year T-Note Futures
+(nominal) US 30 Year T-Bond Futures          	--> 30 (nominal) US 30 Year T-Bond Futures
+(nominal) US 2 Year T-Note Futures           	--> 31 (nominal) US 2 Year T-Note Futures
+(nominal) USD/JPY T-1                        	--> 32 (nominal) USD/JPY T-1
+(nominal) EUR/USD T-1                        	--> 33 (nominal) EUR/USD T-1
+(nominal) GBP/USD T-1                        	--> 34 (nominal) GBP/USD T-1
+(nominal) AUD/USD T-1                        	--> 35 (nominal) AUD/USD T-1
+(nominal) BTC/USD T-1                        	--> 36 (nominal) BTC/USD T-1
+(nominal) S&P 500 T-1                        	--> 37 (nominal) S&P 500 T-1
+(nominal) Dow Jones Industrial Average T-1   	--> 38 (nominal) Dow Jones Industrial Average T-1
+(nominal) Nasdaq 100 T-1                     	--> 39 (nominal) Nasdaq 100 T-1
+(nominal) Nikkei 225 T-1                     	--> 40 (nominal) Nikkei 225 T-1
+(nominal) Gold Futures T-1                   	--> 41 (nominal) Gold Futures T-1
+(nominal) Silver Futures T-1                 	--> 42 (nominal) Silver Futures T-1
+(nominal) Copper Futures T-1                 	--> 43 (nominal) Copper Futures T-1
+(nominal) Crude Oil WTI Futures T-1          	--> 44 (nominal) Crude Oil WTI Futures T-1
+(nominal) Brent Oil Futures T-1              	--> 45 (nominal) Brent Oil Futures T-1
+(nominal) Natural Gas Futures T-1            	--> 46 (nominal) Natural Gas Futures T-1
+(nominal) US Cotton #2 Futures T-1           	--> 47 (nominal) US Cotton #2 Futures T-1
+(nominal) US Coffee C Futures T-1            	--> 48 (nominal) US Coffee C Futures T-1
+(nominal) Apple T-1                          	--> 49 (nominal) Apple T-1
+(nominal) Alphabet A T-1                     	--> 50 (nominal) Alphabet A T-1
+(nominal) Facebook T-1                       	--> 51 (nominal) Facebook T-1
+(nominal) NVIDIA T-1                         	--> 52 (nominal) NVIDIA T-1
+(nominal) Citigroup T-1                      	--> 53 (nominal) Citigroup T-1
+(nominal) AT&T T-1                           	--> 54 (nominal) AT&T T-1
+(nominal) 3M T-1                             	--> 55 (nominal) 3M T-1
+(nominal) BP T-1                             	--> 56 (nominal) BP T-1
+(nominal) Tesla T-1                          	--> 57 (nominal) Tesla T-1
+(nominal) Amazon.com T-1                     	--> 58 (nominal) Amazon.com T-1
+(nominal) Japan Government Bond Futures T-1  	--> 59 (nominal) Japan Government Bond Futures T-1
+(nominal) US 10 Year T-Note Futures T-1      	--> 60 (nominal) US 10 Year T-Note Futures T-1
+(nominal) US 30 Year T-Bond Futures T-1      	--> 61 (nominal) US 30 Year T-Bond Futures T-1
+(nominal) US 2 Year T-Note Futures T-1       	--> 62 (nominal) US 2 Year T-Note Futures T-1
+(nominal) BTC/USD                            	--> 63 (nominal) BTC/USD
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         138               53.4884 %
+Incorrectly Classified Instances       120               46.5116 %
+Kappa statistic                          0     
+Mean absolute error                      0.4976
+Root mean squared error                  0.4988
+Relative absolute error                100      %
+Root relative squared error            100      %
+Total Number of Instances              258     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    1.000    0.535      1.000    0.697      ?        0.494     0.532     up
+                 0.000    0.000    ?          0.000    ?          ?        0.494     0.462     down
+Weighted Avg.    0.535    0.535    ?          0.535    ?          ?        0.494     0.500     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 138   0 |   a = up
+ 120   0 |   b = down
+

@@ -1,0 +1,195 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.LogitBoost -P 100 -L -1.7976931348623157E308 -H 1.0 -Z 3.0 -O 1 -E 1 -S 1 -I 10 -W weka.classifiers.trees.DecisionStump
+Relation:     set1.train
+Instances:    258
+Attributes:   11
+              AUD/USD
+              Gold Futures
+              Silver Futures
+              Amazon.com
+              US 10 Year T-Note Futures
+              USD/JPY T-1
+              Silver Futures T-1
+              Natural Gas Futures T-1
+              Apple T-1
+              Japan Government Bond Futures T-1
+              BTC/USD
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+LogitBoost: Base classifiers and their weights: 
+
+Iteration 1
+	Class 1 (BTC/USD=up)
+
+Decision Stump
+
+Classifications
+
+Gold Futures = down : -0.3238095238095238
+Gold Futures != down : 0.45751633986928103
+Gold Futures is missing : 0.13953488372093023
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 2
+	Class 1 (BTC/USD=up)
+
+Decision Stump
+
+Classifications
+
+Apple T-1 = down : 0.3669771959392592
+Apple T-1 != down : -0.21493450532616473
+Apple T-1 is missing : 0.00364361108360169
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 3
+	Class 1 (BTC/USD=up)
+
+Decision Stump
+
+Classifications
+
+Silver Futures T-1 = down : 0.28386491122558183
+Silver Futures T-1 != down : -0.23218487796204582
+Silver Futures T-1 is missing : 0.003734194093094312
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 4
+	Class 1 (BTC/USD=up)
+
+Decision Stump
+
+Classifications
+
+US 10 Year T-Note Futures = equal : -1.7189937666084814
+US 10 Year T-Note Futures != equal : 0.050923342173522325
+US 10 Year T-Note Futures is missing : 0.002782338106210801
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 5
+	Class 1 (BTC/USD=up)
+
+Decision Stump
+
+Classifications
+
+USD/JPY T-1 = down : 0.25334812319087924
+USD/JPY T-1 != down : -0.273557854638395
+USD/JPY T-1 is missing : -0.004906867961625877
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 6
+	Class 1 (BTC/USD=up)
+
+Decision Stump
+
+Classifications
+
+Amazon.com = up : 0.2780225836297668
+Amazon.com != up : -0.2556875352372898
+Amazon.com is missing : 0.0021880520730904376
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 7
+	Class 1 (BTC/USD=up)
+
+Decision Stump
+
+Classifications
+
+Japan Government Bond Futures T-1 = up : -0.24992560449611842
+Japan Government Bond Futures T-1 != up : 0.2405019730951014
+Japan Government Bond Futures T-1 is missing : 0.00208687854124925
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 8
+	Class 1 (BTC/USD=up)
+
+Decision Stump
+
+Classifications
+
+US 10 Year T-Note Futures = down : 0.26313987718856724
+US 10 Year T-Note Futures != down : -0.18808664677067202
+US 10 Year T-Note Futures is missing : 0.0026212270987300943
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 9
+	Class 1 (BTC/USD=up)
+
+Decision Stump
+
+Classifications
+
+Natural Gas Futures T-1 = down : 0.2132565432200701
+Natural Gas Futures T-1 != down : -0.24095263723756571
+Natural Gas Futures T-1 is missing : 0.0012649287565771217
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+
+Iteration 10
+	Class 1 (BTC/USD=up)
+
+Decision Stump
+
+Classifications
+
+AUD/USD = equal : -1.576357025055226
+AUD/USD != equal : 0.02316460044113708
+AUD/USD is missing : 2.9736798225746323E-5
+
+Two-class case: second classifier predicts additive inverse of first classifier and is not explicitly computed.
+
+Number of performed iterations: 10
+
+
+Time taken to build model: 0 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances          75               58.1395 %
+Incorrectly Classified Instances        54               41.8605 %
+Kappa statistic                          0.1611
+Mean absolute error                      0.4579
+Root mean squared error                  0.4968
+Relative absolute error                 91.6198 %
+Root relative squared error             99.1704 %
+Total Number of Instances              129     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.708    0.547    0.568      0.708    0.630      0.166    0.610     0.637     up
+                 0.453    0.292    0.604      0.453    0.518      0.166    0.610     0.624     down
+Weighted Avg.    0.581    0.421    0.586      0.581    0.574      0.166    0.610     0.630     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 46 19 |  a = up
+ 35 29 |  b = down
+
